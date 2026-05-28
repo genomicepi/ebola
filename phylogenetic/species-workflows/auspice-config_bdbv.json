@@ -1,8 +1,7 @@
 {
   "title": "Bundibugyo ebolavirus genomes",
   "maintainers": [
-    {"name": "Eddy Lusamaki,  Institut National de Recherche Biomédicale", "url": "https://inrb.net/"},
-    {"name": "Nextstrain", "url": "http://nextstrain.org"}
+    {"name": "GenomicEpi", "url": "https://github.com/genomicepi"}
   ],
   "data_provenance": [
     {
@@ -14,7 +13,7 @@
       "url": "https://pathoplexus.org"
     }
   ],
-  "build_url": "https://github.com/nextstrain/ebola",
+  "build_url": "https://github.com/genomicepi/ebola",
   "colorings": [
     {
       "key": "gt",
@@ -62,7 +61,7 @@
     "division"
   ],
   "display_defaults": {
-    "tip_label": "strain",
+    "tip_label": "country",
     "color_by": "outbreak",
     "geo_resolution": "division"
   },

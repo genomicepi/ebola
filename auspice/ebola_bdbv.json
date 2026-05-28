@@ -3,7 +3,7 @@
   "meta": {
     "title": "Bundibugyo ebolavirus genomes",
     "updated": "2026-05-28",
-    "build_url": "https://github.com/nextstrain/ebola",
+    "build_url": "https://github.com/genomicepi/ebola",
     "data_provenance": [
       {
         "name": "GenBank",
@@ -16,16 +16,12 @@
     ],
     "maintainers": [
       {
-        "name": "Eddy Lusamaki,  Institut National de Recherche Biom\u00e9dicale",
-        "url": "https://inrb.net/"
-      },
-      {
-        "name": "Nextstrain",
-        "url": "http://nextstrain.org"
+        "name": "GenomicEpi",
+        "url": "https://github.com/genomicepi"
       }
     ],
     "display_defaults": {
-      "tip_label": "strain",
+      "tip_label": "country",
       "color_by": "outbreak",
       "geo_resolution": "division"
     },
@@ -200,13 +196,13 @@
             "latitude": 1.3733,
             "longitude": 32.2903
           },
-          "Bundibugyo": {
-            "latitude": 0.708,
-            "longitude": 30.062
-          },
           "Ituri": {
             "latitude": 1.754,
             "longitude": 29.497
+          },
+          "Bundibugyo": {
+            "latitude": 0.708,
+            "longitude": 30.062
           },
           "Isiro": {
             "latitude": 2.468,
@@ -436,15 +432,15 @@
                       "country": {
                         "value": "Democratic Republic of the Congo"
                       },
+                      "year": {
+                        "value": "2026"
+                      },
                       "date": {
                         "value": "2026-05-20"
                       },
                       "dataUseTerms": {
                         "value": "RESTRICTED",
                         "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
-                      },
-                      "year": {
-                        "value": "2026"
                       }
                     },
                     "branch_attrs": {
@@ -480,15 +476,15 @@
                       "country": {
                         "value": "Democratic Republic of the Congo"
                       },
+                      "year": {
+                        "value": "2026"
+                      },
                       "date": {
                         "value": "2026-05-03"
                       },
                       "dataUseTerms": {
                         "value": "RESTRICTED",
                         "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
-                      },
-                      "year": {
-                        "value": "2026"
                       },
                       "division": {
                         "value": "Ituri"
@@ -550,15 +546,15 @@
                           "country": {
                             "value": "Democratic Republic of the Congo"
                           },
+                          "year": {
+                            "value": "2026"
+                          },
                           "date": {
                             "value": "2026-05-07"
                           },
                           "dataUseTerms": {
                             "value": "RESTRICTED",
                             "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
-                          },
-                          "year": {
-                            "value": "2026"
                           },
                           "division": {
                             "value": "Ituri"
@@ -634,15 +630,15 @@
                               "country": {
                                 "value": "Democratic Republic of the Congo"
                               },
+                              "year": {
+                                "value": "2026"
+                              },
                               "date": {
                                 "value": "2026-05-06"
                               },
                               "dataUseTerms": {
                                 "value": "RESTRICTED",
                                 "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
-                              },
-                              "year": {
-                                "value": "2026"
                               },
                               "division": {
                                 "value": "Ituri"
@@ -702,15 +698,15 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
+                                  "year": {
+                                    "value": "2026"
+                                  },
                                   "date": {
                                     "value": "2026-05-16"
                                   },
                                   "dataUseTerms": {
                                     "value": "RESTRICTED",
                                     "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
-                                  },
-                                  "year": {
-                                    "value": "2026"
                                   },
                                   "division": {
                                     "value": "Ituri"
@@ -745,15 +741,15 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
+                                  "year": {
+                                    "value": "2026"
+                                  },
                                   "date": {
                                     "value": "2026-05-16"
                                   },
                                   "dataUseTerms": {
                                     "value": "RESTRICTED",
                                     "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
-                                  },
-                                  "year": {
-                                    "value": "2026"
                                   },
                                   "division": {
                                     "value": "Ituri"
@@ -803,15 +799,15 @@
                           "country": {
                             "value": "Uganda"
                           },
+                          "year": {
+                            "value": "2026"
+                          },
                           "date": {
                             "value": "2026-05-14"
                           },
                           "dataUseTerms": {
                             "value": "RESTRICTED",
                             "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
-                          },
-                          "year": {
-                            "value": "2026"
                           },
                           "division": {
                             "value": "Uganda"
@@ -878,15 +874,15 @@
                               "country": {
                                 "value": "Democratic Republic of the Congo"
                               },
+                              "year": {
+                                "value": "2026"
+                              },
                               "date": {
                                 "value": "2026-05-15"
                               },
                               "dataUseTerms": {
                                 "value": "RESTRICTED",
                                 "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
-                              },
-                              "year": {
-                                "value": "2026"
                               },
                               "division": {
                                 "value": "Ituri"
@@ -930,15 +926,15 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
+                                  "year": {
+                                    "value": "2026"
+                                  },
                                   "date": {
                                     "value": "2026-05-15"
                                   },
                                   "dataUseTerms": {
                                     "value": "RESTRICTED",
                                     "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
-                                  },
-                                  "year": {
-                                    "value": "2026"
                                   },
                                   "division": {
                                     "value": "Ituri"
@@ -973,15 +969,15 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
+                                  "year": {
+                                    "value": "2026"
+                                  },
                                   "date": {
                                     "value": "2026-05-15"
                                   },
                                   "dataUseTerms": {
                                     "value": "RESTRICTED",
                                     "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
-                                  },
-                                  "year": {
-                                    "value": "2026"
                                   },
                                   "division": {
                                     "value": "Ituri"
@@ -1316,15 +1312,15 @@
                           "country": {
                             "value": "Uganda"
                           },
+                          "year": {
+                            "value": "2007"
+                          },
                           "date": {
                             "value": "2007-XX-XX"
                           },
                           "dataUseTerms": {
                             "value": "OPEN",
                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                          },
-                          "year": {
-                            "value": "2007"
                           },
                           "division": {
                             "value": "Bundibugyo"
@@ -1381,15 +1377,15 @@
                           "country": {
                             "value": "Uganda"
                           },
+                          "year": {
+                            "value": "2007"
+                          },
                           "date": {
                             "value": "2007-11-XX"
                           },
                           "dataUseTerms": {
                             "value": "OPEN",
                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                          },
-                          "year": {
-                            "value": "2007"
                           }
                         },
                         "branch_attrs": {
@@ -1431,15 +1427,15 @@
                               "country": {
                                 "value": "Uganda"
                               },
+                              "year": {
+                                "value": "2007"
+                              },
                               "date": {
                                 "value": "2007-11-XX"
                               },
                               "dataUseTerms": {
                                 "value": "OPEN",
                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                              },
-                              "year": {
-                                "value": "2007"
                               }
                             },
                             "branch_attrs": {
@@ -1485,15 +1481,15 @@
                                   "country": {
                                     "value": "Uganda"
                                   },
+                                  "year": {
+                                    "value": "2007"
+                                  },
                                   "date": {
                                     "value": "2007-XX-XX"
                                   },
                                   "dataUseTerms": {
                                     "value": "OPEN",
                                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                  },
-                                  "year": {
-                                    "value": "2007"
                                   }
                                 },
                                 "branch_attrs": {
@@ -1542,15 +1538,15 @@
                                       "country": {
                                         "value": "Uganda"
                                       },
+                                      "year": {
+                                        "value": "2007"
+                                      },
                                       "date": {
                                         "value": "2007-XX-XX"
                                       },
                                       "dataUseTerms": {
                                         "value": "OPEN",
                                         "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                      },
-                                      "year": {
-                                        "value": "2007"
                                       }
                                     },
                                     "branch_attrs": {
@@ -1596,15 +1592,15 @@
                                           "country": {
                                             "value": "Uganda"
                                           },
+                                          "year": {
+                                            "value": "2007"
+                                          },
                                           "date": {
                                             "value": "2007-11-14"
                                           },
                                           "dataUseTerms": {
                                             "value": "OPEN",
                                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                          },
-                                          "year": {
-                                            "value": "2007"
                                           }
                                         },
                                         "branch_attrs": {
@@ -1646,15 +1642,15 @@
                                               "country": {
                                                 "value": "Uganda"
                                               },
+                                              "year": {
+                                                "value": "2007"
+                                              },
                                               "date": {
                                                 "value": "2007-XX-XX"
                                               },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                              },
-                                              "year": {
-                                                "value": "2007"
                                               }
                                             },
                                             "branch_attrs": {
@@ -1696,15 +1692,15 @@
                                                   "country": {
                                                     "value": "Uganda"
                                                   },
+                                                  "year": {
+                                                    "value": "2007"
+                                                  },
                                                   "date": {
                                                     "value": "2007-10-01"
                                                   },
                                                   "dataUseTerms": {
                                                     "value": "OPEN",
                                                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                                  },
-                                                  "year": {
-                                                    "value": "2007"
                                                   }
                                                 },
                                                 "branch_attrs": {
@@ -1746,15 +1742,15 @@
                                                       "country": {
                                                         "value": "Uganda"
                                                       },
+                                                      "year": {
+                                                        "value": "2007"
+                                                      },
                                                       "date": {
                                                         "value": "2007-XX-XX"
                                                       },
                                                       "dataUseTerms": {
                                                         "value": "OPEN",
                                                         "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                                      },
-                                                      "year": {
-                                                        "value": "2007"
                                                       },
                                                       "division": {
                                                         "value": "Bundibugyo"
@@ -2023,15 +2019,15 @@
               "country": {
                 "value": "Democratic Republic of the Congo"
               },
+              "year": {
+                "value": "2012"
+              },
               "date": {
                 "value": "2012-08-20"
               },
               "dataUseTerms": {
                 "value": "OPEN",
                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-              },
-              "year": {
-                "value": "2012"
               },
               "division": {
                 "value": "Isiro"
@@ -2076,15 +2072,15 @@
                   "country": {
                     "value": "Democratic Republic of the Congo"
                   },
+                  "year": {
+                    "value": "2012"
+                  },
                   "date": {
                     "value": "2012-08-20"
                   },
                   "dataUseTerms": {
                     "value": "OPEN",
                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                  },
-                  "year": {
-                    "value": "2012"
                   },
                   "division": {
                     "value": "Isiro"
@@ -2143,15 +2139,15 @@
                           "country": {
                             "value": "Democratic Republic of the Congo"
                           },
+                          "year": {
+                            "value": "2012"
+                          },
                           "date": {
                             "value": "2012-XX-XX"
                           },
                           "dataUseTerms": {
                             "value": "OPEN",
                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                          },
-                          "year": {
-                            "value": "2012"
                           }
                         },
                         "branch_attrs": {
@@ -2197,15 +2193,15 @@
                               "country": {
                                 "value": "Democratic Republic of the Congo"
                               },
+                              "year": {
+                                "value": "2012"
+                              },
                               "date": {
                                 "value": "2012-08-XX"
                               },
                               "dataUseTerms": {
                                 "value": "OPEN",
                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                              },
-                              "year": {
-                                "value": "2012"
                               },
                               "division": {
                                 "value": "Isiro"
@@ -2241,15 +2237,15 @@
                               "country": {
                                 "value": "Democratic Republic of the Congo"
                               },
+                              "year": {
+                                "value": "2012"
+                              },
                               "date": {
                                 "value": "2012-09-21"
                               },
                               "dataUseTerms": {
                                 "value": "OPEN",
                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                              },
-                              "year": {
-                                "value": "2012"
                               },
                               "division": {
                                 "value": "Isiro"
@@ -2327,15 +2323,15 @@
                               "country": {
                                 "value": "Democratic Republic of the Congo"
                               },
+                              "year": {
+                                "value": "2012"
+                              },
                               "date": {
                                 "value": "2012-XX-XX"
                               },
                               "dataUseTerms": {
                                 "value": "OPEN",
                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                              },
-                              "year": {
-                                "value": "2012"
                               }
                             },
                             "branch_attrs": {
@@ -2381,15 +2377,15 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
+                                  "year": {
+                                    "value": "2012"
+                                  },
                                   "date": {
                                     "value": "2012-08-XX"
                                   },
                                   "dataUseTerms": {
                                     "value": "OPEN",
                                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                  },
-                                  "year": {
-                                    "value": "2012"
                                   },
                                   "division": {
                                     "value": "Isiro"
@@ -2425,15 +2421,15 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
+                                  "year": {
+                                    "value": "2012"
+                                  },
                                   "date": {
                                     "value": "2012-08-XX"
                                   },
                                   "dataUseTerms": {
                                     "value": "OPEN",
                                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                  },
-                                  "year": {
-                                    "value": "2012"
                                   },
                                   "division": {
                                     "value": "Isiro"
@@ -2505,15 +2501,15 @@
                                       "country": {
                                         "value": "Democratic Republic of the Congo"
                                       },
+                                      "year": {
+                                        "value": "2012"
+                                      },
                                       "date": {
                                         "value": "2012-XX-XX"
                                       },
                                       "dataUseTerms": {
                                         "value": "OPEN",
                                         "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                      },
-                                      "year": {
-                                        "value": "2012"
                                       }
                                     },
                                     "branch_attrs": {
@@ -2559,15 +2555,15 @@
                                           "country": {
                                             "value": "Democratic Republic of the Congo"
                                           },
+                                          "year": {
+                                            "value": "2012"
+                                          },
                                           "date": {
                                             "value": "2012-08-XX"
                                           },
                                           "dataUseTerms": {
                                             "value": "OPEN",
                                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                          },
-                                          "year": {
-                                            "value": "2012"
                                           },
                                           "division": {
                                             "value": "Isiro"
@@ -2603,15 +2599,15 @@
                                           "country": {
                                             "value": "Democratic Republic of the Congo"
                                           },
+                                          "year": {
+                                            "value": "2012"
+                                          },
                                           "date": {
                                             "value": "2012-08-XX"
                                           },
                                           "dataUseTerms": {
                                             "value": "OPEN",
                                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                          },
-                                          "year": {
-                                            "value": "2012"
                                           },
                                           "division": {
                                             "value": "Isiro"
@@ -2660,15 +2656,15 @@
                                       "country": {
                                         "value": "Democratic Republic of the Congo"
                                       },
+                                      "year": {
+                                        "value": "2012"
+                                      },
                                       "date": {
                                         "value": "2012-08-XX"
                                       },
                                       "dataUseTerms": {
                                         "value": "OPEN",
                                         "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                      },
-                                      "year": {
-                                        "value": "2012"
                                       },
                                       "division": {
                                         "value": "Isiro"
@@ -2719,15 +2715,15 @@
                                           "country": {
                                             "value": "Democratic Republic of the Congo"
                                           },
+                                          "year": {
+                                            "value": "2012"
+                                          },
                                           "date": {
                                             "value": "2012-XX-XX"
                                           },
                                           "dataUseTerms": {
                                             "value": "OPEN",
                                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                          },
-                                          "year": {
-                                            "value": "2012"
                                           }
                                         },
                                         "branch_attrs": {
@@ -2773,15 +2769,15 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
+                                              "year": {
+                                                "value": "2012"
+                                              },
                                               "date": {
                                                 "value": "2012-09-21"
                                               },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                              },
-                                              "year": {
-                                                "value": "2012"
                                               },
                                               "division": {
                                                 "value": "Isiro"
@@ -2817,15 +2813,15 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
+                                              "year": {
+                                                "value": "2012"
+                                              },
                                               "date": {
                                                 "value": "2012-09-09"
                                               },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                              },
-                                              "year": {
-                                                "value": "2012"
                                               },
                                               "division": {
                                                 "value": "Isiro"
@@ -2878,15 +2874,15 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
+                                  "year": {
+                                    "value": "2012"
+                                  },
                                   "date": {
                                     "value": "2012-08-XX"
                                   },
                                   "dataUseTerms": {
                                     "value": "OPEN",
                                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                  },
-                                  "year": {
-                                    "value": "2012"
                                   },
                                   "division": {
                                     "value": "Isiro"
@@ -2940,15 +2936,15 @@
                                           "country": {
                                             "value": "Democratic Republic of the Congo"
                                           },
+                                          "year": {
+                                            "value": "2012"
+                                          },
                                           "date": {
                                             "value": "2012-08-XX"
                                           },
                                           "dataUseTerms": {
                                             "value": "OPEN",
                                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                          },
-                                          "year": {
-                                            "value": "2012"
                                           },
                                           "division": {
                                             "value": "Isiro"
@@ -2993,15 +2989,15 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
+                                              "year": {
+                                                "value": "2012"
+                                              },
                                               "date": {
                                                 "value": "2012-08-XX"
                                               },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                              },
-                                              "year": {
-                                                "value": "2012"
                                               },
                                               "division": {
                                                 "value": "Isiro"
@@ -3037,15 +3033,15 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
+                                              "year": {
+                                                "value": "2012"
+                                              },
                                               "date": {
                                                 "value": "2012-08-XX"
                                               },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                              },
-                                              "year": {
-                                                "value": "2012"
                                               },
                                               "division": {
                                                 "value": "Isiro"
@@ -3107,15 +3103,15 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
+                                              "year": {
+                                                "value": "2012"
+                                              },
                                               "date": {
                                                 "value": "2012-08-XX"
                                               },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                              },
-                                              "year": {
-                                                "value": "2012"
                                               },
                                               "division": {
                                                 "value": "Isiro"
@@ -3151,15 +3147,15 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
+                                              "year": {
+                                                "value": "2012"
+                                              },
                                               "date": {
                                                 "value": "2012-08-XX"
                                               },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                              },
-                                              "year": {
-                                                "value": "2012"
                                               },
                                               "division": {
                                                 "value": "Isiro"
@@ -3216,15 +3212,15 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
+                                              "year": {
+                                                "value": "2012"
+                                              },
                                               "date": {
                                                 "value": "2012-08-XX"
                                               },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                              },
-                                              "year": {
-                                                "value": "2012"
                                               },
                                               "division": {
                                                 "value": "Isiro"
@@ -3260,15 +3256,15 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
+                                              "year": {
+                                                "value": "2012"
+                                              },
                                               "date": {
                                                 "value": "2012-08-XX"
                                               },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
-                                              },
-                                              "year": {
-                                                "value": "2012"
                                               },
                                               "division": {
                                                 "value": "Isiro"
