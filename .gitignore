@@ -11,6 +11,7 @@ benchmarks/
 # Sensitive environment variables
 environment*
 env.d/
+.env
 
 # Snakemake
 .snakemake/

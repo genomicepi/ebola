@@ -1,0 +1,232 @@
+{
+  "seqSetId": "PP_SS_2047",
+  "name": "Bundibugyo ebolavirus 2026 outbreak build",
+  "description": "Bundibugyo ebolavirus sequences used in the GenomicEpi 2026 outbreak community build. Bdbv-2026 records are focal; historical BDBV records are background.",
+  "records": [
+    {
+      "accession": "PP_006XCJJ",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_006XHKB",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_006XHL9",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_006XXY5",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_006Y8ME",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_006Y8NC",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_006Y8PA",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_006Y8Q8",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_006Y8R6",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_006Y8S4",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_006X5RB",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X5YX",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X5ZV",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X60T",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X61R",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X62P",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X63M",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X64K",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X68B",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X699",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6A7",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6B5",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6C3",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6D1",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6EZ",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6FX",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6GV",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6HS",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6JQ",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6KN",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6LL",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6MJ",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6NG",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6PE",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6QC",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6RA",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6S8",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6T6",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6U4",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6V2",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6W0",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6XY",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6YW",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X6ZU",
+      "type": "Loculus",
+      "isFocal": false
+    },
+    {
+      "accession": "PP_006X70S",
+      "type": "Loculus",
+      "isFocal": false
+    }
+  ]
+}
