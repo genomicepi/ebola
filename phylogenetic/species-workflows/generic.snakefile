@@ -195,13 +195,27 @@ rule modify_auspice_config:
         with open(output.auspice_config, "w") as f:
             json.dump(auspice_config, f, indent=2)
 
+rule build_description:
+    input:
+        metadata="results/{species}/metadata.tsv",
+        template=f"{REPO}/nextclade/defaults/description.md",
+    output:
+        description="results/{species}/description.md",
+    shell:
+        r"""
+        python {REPO}/scripts/render_build_description.py \
+            --metadata {input.metadata:q} \
+            --template {input.template:q} \
+            --output {output.description:q}
+        """
+
 rule export:
     input:
         tree="results/{species}/tree.nwk",
         metadata="results/{species}/metadata.tsv",
         node_data = lambda w: node_data_files(w),
         lat_longs = "defaults/lat_longs.tsv",
-        description = f"{REPO}/nextclade/defaults/description.md",
+        description = "results/{species}/description.md",
         auspice_config="results/{species}/auspice_config.json",
     output:
         auspice_tree="auspice/ebola_{species}.json",

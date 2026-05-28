@@ -9,7 +9,7 @@ Our bioinformatic processing workflow can be found at [github.com/genomicepi/ebo
 
 ## Underlying Data
 
-This build uses 50 Bundibugyo ebolavirus records shared through [Pathoplexus](https://pathoplexus.org). Of these, 15 sequences were submitted directly to Pathoplexus and 35 were ingested into Pathoplexus from INSDC sources. All sequences used in this build are available through [Pathoplexus SeqSet PP_SS_2047](https://pathoplexus.org/seqsets/PP_SS_2047).
+This build uses {total_sequences} Bundibugyo ebolavirus {total_sequence_word} shared through [Pathoplexus](https://pathoplexus.org). Of these, {direct_pathoplexus_sequences} {direct_pathoplexus_sequence_word} were submitted directly to Pathoplexus and {insdc_sequences} {insdc_sequence_word} were ingested into Pathoplexus from INSDC sources. All sequences used in this build are available through [Pathoplexus SeqSet PP_SS_2047](https://pathoplexus.org/seqsets/PP_SS_2047).
 
 Some data in this build may be RESTRICTED-USE, meaning use in preprints or publications is restricted. Please see the [Pathoplexus Data Use Terms](https://pathoplexus.org/about/terms-of-use/data-use-terms) for more details.
 
