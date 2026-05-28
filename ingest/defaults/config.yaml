@@ -87,7 +87,7 @@ curate:
     "INSDC_accession__url",
     "strain",
     "date",
-    "outbreak", # this is for EBOV datasets only as it requires a nextclade dataset
+    "outbreak",
     "region",
     "country",
     "division",
@@ -163,6 +163,7 @@ ppx_metadata_fields:
  - "ncbiUpdateDate"
  - "ncbiVirusName"
  - "ncbiVirusTaxId"
+ - "outbreak"
  - "purposeOfSampling"
  - "purposeOfSequencing"
  - "qualityControlDetails"

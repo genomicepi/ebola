@@ -1,5 +1,7 @@
 # Files created by workflows that we usually want to keep out of git
-auspice/
+/auspice/*
+!/auspice/ebola_bdbv.json
+*/auspice/
 builds/
 data/
 results/
