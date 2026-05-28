@@ -21,7 +21,7 @@
       }
     ],
     "display_defaults": {
-      "tip_label": "country",
+      "tip_label": "country_label",
       "color_by": "outbreak",
       "geo_resolution": "division"
     },
@@ -159,6 +159,11 @@
         "type": "categorical"
       },
       {
+        "key": "country_label",
+        "title": "Country label",
+        "type": "categorical"
+      },
+      {
         "key": "division",
         "title": "Division",
         "type": "categorical"
@@ -179,34 +184,34 @@
       {
         "key": "country",
         "demes": {
-          "Uganda": {
-            "latitude": 1.861287,
-            "longitude": 32.55149
-          },
           "Democratic Republic of the Congo": {
             "latitude": -4.0383,
             "longitude": 21.7587
+          },
+          "Uganda": {
+            "latitude": 1.861287,
+            "longitude": 32.55149
           }
         }
       },
       {
         "key": "division",
         "demes": {
-          "Uganda": {
-            "latitude": 1.3733,
-            "longitude": 32.2903
+          "Bundibugyo": {
+            "latitude": 0.708,
+            "longitude": 30.062
           },
           "Ituri": {
             "latitude": 1.754,
             "longitude": 29.497
           },
-          "Bundibugyo": {
-            "latitude": 0.708,
-            "longitude": 30.062
-          },
           "Isiro": {
             "latitude": 2.468,
             "longitude": 27.293
+          },
+          "Uganda": {
+            "latitude": 1.3733,
+            "longitude": 32.2903
           }
         }
       }
@@ -234,22 +239,25 @@
         "branch_attrs": {
           "mutations": {
             "nuc": [
-              "A2542G",
-              "T5511C",
-              "G7120A",
-              "T7255C",
-              "A13063G",
-              "G18556A"
+              "C8124T",
+              "A9805G",
+              "T10478C",
+              "C10574T",
+              "A11281G",
+              "G11312A",
+              "C14696T",
+              "A15817T",
+              "C16039T",
+              "A16177G",
+              "C16712T",
+              "T18258C"
             ],
             "L": [
-              "N1667D"
-            ],
-            "VP40": [
-              "S28N"
+              "G1772D"
             ]
           },
           "labels": {
-            "aa": "L: N1667D; VP40: S28N"
+            "aa": "L: G1772D"
           }
         },
         "children": [
@@ -267,7 +275,8 @@
                   "G832A",
                   "A1066G",
                   "T1405C",
-                  "C1675A",
+                  "T1675A",
+                  "C1702T",
                   "T1774G",
                   "G1924A",
                   "A1943G",
@@ -276,6 +285,7 @@
                   "C2163T",
                   "G2676A",
                   "C2716A",
+                  "T2819C",
                   "T2820C",
                   "T2874C",
                   "T2906C",
@@ -285,7 +295,6 @@
                   "G3941A",
                   "T4356C",
                   "A4432G",
-                  "T4550C",
                   "C4685T",
                   "T4739C",
                   "A5273T",
@@ -310,7 +319,6 @@
                   "T8235C",
                   "A8456T",
                   "C8508T",
-                  "C9489T",
                   "A9633G",
                   "T9715C",
                   "C9771A",
@@ -380,6 +388,7 @@
                   "N496D",
                   "R537K",
                   "V544I",
+                  "D546N",
                   "A569V"
                 ],
                 "VP30": [
@@ -390,7 +399,7 @@
                 ]
               },
               "labels": {
-                "aa": "GP: Y387H, R506S; GP_003: T320I, P328L; L: L1011F, N1342H, K1738N, Q1770R, N1771D, R1954G; NP: N496D, R537K, V544I, A569V; VP30: H5Y; VP35: N79S"
+                "aa": "GP: Y387H, R506S; GP_003: T320I, P328L; L: L1011F, N1342H, K1738N, Q1770R, N1771D, R1954G; NP: N496D, R537K, V544I, D546N, A569V; VP30: H5Y; VP35: N79S"
               }
             },
             "children": [
@@ -421,6 +430,9 @@
                       "outbreak": {
                         "value": "Bdbv-2026"
                       },
+                      "country_label": {
+                        "value": "DRC"
+                      },
                       "strain": {
                         "value": "PP_006XXY5|Democratic_Republic_of_the_Congo/PP_006XXY5.1/2026-05-20|Democratic Republic of the Congo/2026-05-20"
                       },
@@ -432,15 +444,15 @@
                       "country": {
                         "value": "Democratic Republic of the Congo"
                       },
-                      "year": {
-                        "value": "2026"
+                      "dataUseTerms": {
+                        "value": "RESTRICTED",
+                        "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
                       },
                       "date": {
                         "value": "2026-05-20"
                       },
-                      "dataUseTerms": {
-                        "value": "RESTRICTED",
-                        "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
+                      "year": {
+                        "value": "2026"
                       }
                     },
                     "branch_attrs": {
@@ -465,6 +477,9 @@
                       "outbreak": {
                         "value": "Bdbv-2026"
                       },
+                      "country_label": {
+                        "value": "DRC"
+                      },
                       "strain": {
                         "value": "PP_006XHKB|Democratic_Republic_of_the_Congo/PP_006XHKB.2/2026-05-03|Democratic Republic of the Congo/2026-05-03"
                       },
@@ -476,18 +491,18 @@
                       "country": {
                         "value": "Democratic Republic of the Congo"
                       },
-                      "year": {
-                        "value": "2026"
-                      },
-                      "date": {
-                        "value": "2026-05-03"
-                      },
                       "dataUseTerms": {
                         "value": "RESTRICTED",
                         "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
                       },
+                      "date": {
+                        "value": "2026-05-03"
+                      },
                       "division": {
                         "value": "Ituri"
+                      },
+                      "year": {
+                        "value": "2026"
                       }
                     },
                     "branch_attrs": {
@@ -535,6 +550,9 @@
                           "outbreak": {
                             "value": "Bdbv-2026"
                           },
+                          "country_label": {
+                            "value": "DRC"
+                          },
                           "strain": {
                             "value": "PP_006XHL9|Democratic_Republic_of_the_Congo/PP_006XHL9.2/2026-05-07|Democratic Republic of the Congo/2026-05-07"
                           },
@@ -546,18 +564,18 @@
                           "country": {
                             "value": "Democratic Republic of the Congo"
                           },
-                          "year": {
-                            "value": "2026"
-                          },
-                          "date": {
-                            "value": "2026-05-07"
-                          },
                           "dataUseTerms": {
                             "value": "RESTRICTED",
                             "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
                           },
+                          "date": {
+                            "value": "2026-05-07"
+                          },
                           "division": {
                             "value": "Ituri"
+                          },
+                          "year": {
+                            "value": "2026"
                           }
                         },
                         "branch_attrs": {
@@ -619,6 +637,9 @@
                               "outbreak": {
                                 "value": "Bdbv-2026"
                               },
+                              "country_label": {
+                                "value": "DRC"
+                              },
                               "strain": {
                                 "value": "PP_006Y8ME|Democratic_Republic_of_the_Congo/PP_006Y8ME.1/2026-05-06|Democratic Republic of the Congo/2026-05-06"
                               },
@@ -630,18 +651,18 @@
                               "country": {
                                 "value": "Democratic Republic of the Congo"
                               },
-                              "year": {
-                                "value": "2026"
-                              },
-                              "date": {
-                                "value": "2026-05-06"
-                              },
                               "dataUseTerms": {
                                 "value": "RESTRICTED",
                                 "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
                               },
+                              "date": {
+                                "value": "2026-05-06"
+                              },
                               "division": {
                                 "value": "Ituri"
+                              },
+                              "year": {
+                                "value": "2026"
                               }
                             },
                             "branch_attrs": {
@@ -687,6 +708,9 @@
                                   "outbreak": {
                                     "value": "Bdbv-2026"
                                   },
+                                  "country_label": {
+                                    "value": "DRC"
+                                  },
                                   "strain": {
                                     "value": "PP_006Y8R6|Democratic_Republic_of_the_Congo/PP_006Y8R6.1/2026-05-16|Democratic Republic of the Congo/2026-05-16"
                                   },
@@ -698,18 +722,18 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
-                                  "year": {
-                                    "value": "2026"
-                                  },
-                                  "date": {
-                                    "value": "2026-05-16"
-                                  },
                                   "dataUseTerms": {
                                     "value": "RESTRICTED",
                                     "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
                                   },
+                                  "date": {
+                                    "value": "2026-05-16"
+                                  },
                                   "division": {
                                     "value": "Ituri"
+                                  },
+                                  "year": {
+                                    "value": "2026"
                                   }
                                 },
                                 "branch_attrs": {
@@ -730,6 +754,9 @@
                                   "outbreak": {
                                     "value": "Bdbv-2026"
                                   },
+                                  "country_label": {
+                                    "value": "DRC"
+                                  },
                                   "strain": {
                                     "value": "PP_006Y8S4|Democratic_Republic_of_the_Congo/PP_006Y8S4.1/2026-05-16|Democratic Republic of the Congo/2026-05-16"
                                   },
@@ -741,18 +768,18 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
-                                  "year": {
-                                    "value": "2026"
-                                  },
-                                  "date": {
-                                    "value": "2026-05-16"
-                                  },
                                   "dataUseTerms": {
                                     "value": "RESTRICTED",
                                     "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
                                   },
+                                  "date": {
+                                    "value": "2026-05-16"
+                                  },
                                   "division": {
                                     "value": "Ituri"
+                                  },
+                                  "year": {
+                                    "value": "2026"
                                   }
                                 },
                                 "branch_attrs": {
@@ -788,6 +815,9 @@
                           "outbreak": {
                             "value": "Bdbv-2026"
                           },
+                          "country_label": {
+                            "value": "Uganda"
+                          },
                           "strain": {
                             "value": "PP_006XCJJ|Uganda/PP_006XCJJ.1/2026-05-14|Uganda/2026-05-14"
                           },
@@ -799,18 +829,18 @@
                           "country": {
                             "value": "Uganda"
                           },
-                          "year": {
-                            "value": "2026"
-                          },
-                          "date": {
-                            "value": "2026-05-14"
-                          },
                           "dataUseTerms": {
                             "value": "RESTRICTED",
                             "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
                           },
+                          "date": {
+                            "value": "2026-05-14"
+                          },
                           "division": {
                             "value": "Uganda"
+                          },
+                          "year": {
+                            "value": "2026"
                           }
                         },
                         "branch_attrs": {
@@ -863,6 +893,9 @@
                               "outbreak": {
                                 "value": "Bdbv-2026"
                               },
+                              "country_label": {
+                                "value": "DRC"
+                              },
                               "strain": {
                                 "value": "PP_006Y8Q8|Democratic_Republic_of_the_Congo/PP_006Y8Q8.2/2026-05-15|Democratic Republic of the Congo/2026-05-15"
                               },
@@ -874,18 +907,18 @@
                               "country": {
                                 "value": "Democratic Republic of the Congo"
                               },
-                              "year": {
-                                "value": "2026"
-                              },
-                              "date": {
-                                "value": "2026-05-15"
-                              },
                               "dataUseTerms": {
                                 "value": "RESTRICTED",
                                 "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
                               },
+                              "date": {
+                                "value": "2026-05-15"
+                              },
                               "division": {
                                 "value": "Ituri"
+                              },
+                              "year": {
+                                "value": "2026"
                               }
                             },
                             "branch_attrs": {
@@ -915,6 +948,9 @@
                                   "outbreak": {
                                     "value": "Bdbv-2026"
                                   },
+                                  "country_label": {
+                                    "value": "DRC"
+                                  },
                                   "strain": {
                                     "value": "PP_006Y8PA|Democratic_Republic_of_the_Congo/PP_006Y8PA.2/2026-05-15|Democratic Republic of the Congo/2026-05-15"
                                   },
@@ -926,18 +962,18 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
-                                  "year": {
-                                    "value": "2026"
-                                  },
-                                  "date": {
-                                    "value": "2026-05-15"
-                                  },
                                   "dataUseTerms": {
                                     "value": "RESTRICTED",
                                     "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
                                   },
+                                  "date": {
+                                    "value": "2026-05-15"
+                                  },
                                   "division": {
                                     "value": "Ituri"
+                                  },
+                                  "year": {
+                                    "value": "2026"
                                   }
                                 },
                                 "branch_attrs": {
@@ -958,6 +994,9 @@
                                   "outbreak": {
                                     "value": "Bdbv-2026"
                                   },
+                                  "country_label": {
+                                    "value": "DRC"
+                                  },
                                   "strain": {
                                     "value": "PP_006Y8NC|Democratic_Republic_of_the_Congo/PP_006Y8NC.2/2026-05-15|Democratic Republic of the Congo/2026-05-15"
                                   },
@@ -969,18 +1008,18 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
-                                  "year": {
-                                    "value": "2026"
-                                  },
-                                  "date": {
-                                    "value": "2026-05-15"
-                                  },
                                   "dataUseTerms": {
                                     "value": "RESTRICTED",
                                     "url": "https://pathoplexus.org/about/terms-of-use/restricted-data"
                                   },
+                                  "date": {
+                                    "value": "2026-05-15"
+                                  },
                                   "division": {
                                     "value": "Ituri"
+                                  },
+                                  "year": {
+                                    "value": "2026"
                                   }
                                 },
                                 "branch_attrs": {
@@ -1019,7 +1058,7 @@
                   "T530C",
                   "T1018C",
                   "C1375T",
-                  "T1702C",
+                  "T1675C",
                   "G1954A",
                   "G2007A",
                   "A2027G",
@@ -1027,7 +1066,6 @@
                   "A2093G",
                   "C2188T",
                   "C2383T",
-                  "C2819T",
                   "T2922C",
                   "G3042A",
                   "A3554G",
@@ -1039,6 +1077,7 @@
                   "C4349T",
                   "T4453C",
                   "G4502A",
+                  "C4550T",
                   "T4551G",
                   "A5036G",
                   "A5440G",
@@ -1084,6 +1123,7 @@
                   "C9393T",
                   "G9411A",
                   "T9472C",
+                  "T9489C",
                   "G9594A",
                   "T9697C",
                   "C10094T",
@@ -1163,8 +1203,7 @@
                 "NP": [
                   "R517Q",
                   "S524G",
-                  "A531V",
-                  "N546D"
+                  "A531V"
                 ],
                 "VP24": [
                   "N24S"
@@ -1179,7 +1218,7 @@
                 ]
               },
               "labels": {
-                "aa": "GP: F151Y, K188E, S365P, L367P, L389P, G394R, I458T, L481P, I486T, V489A; GP_003: F151Y, K188E, *367Q; L: I402V, A1323S, R1570K, Q1595L, R1664I, V1784I, D1969E, V2191A; NP: R517Q, S524G, A531V, N546D; VP24: N24S; VP35: E187G, I192M; VP40: M14I, S31A"
+                "aa": "GP: F151Y, K188E, S365P, L367P, L389P, G394R, I458T, L481P, I486T, V489A; GP_003: F151Y, K188E, *367Q; L: I402V, A1323S, R1570K, Q1595L, R1664I, V1784I, D1969E, V2191A; NP: R517Q, S524G, A531V; VP24: N24S; VP35: E187G, I192M; VP40: M14I, S31A"
               }
             },
             "children": [
@@ -1206,12 +1245,12 @@
                     "author": "Bennett et al.",
                     "value": "Bennett et al."
                   },
-                  "date": {
-                    "value": "XXXX-XX-XX"
-                  },
                   "dataUseTerms": {
                     "value": "OPEN",
                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                  },
+                  "date": {
+                    "value": "XXXX-XX-XX"
                   }
                 },
                 "branch_attrs": {
@@ -1274,12 +1313,12 @@
                             "author": "Manuguerra et al.",
                             "value": "Manuguerra et al."
                           },
-                          "date": {
-                            "value": "XXXX-XX-XX"
-                          },
                           "dataUseTerms": {
                             "value": "OPEN",
                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                          },
+                          "date": {
+                            "value": "XXXX-XX-XX"
                           }
                         },
                         "branch_attrs": {
@@ -1301,6 +1340,9 @@
                           "outbreak": {
                             "value": "Bdbv-2007"
                           },
+                          "country_label": {
+                            "value": "Uganda"
+                          },
                           "strain": {
                             "value": "PP_006X699|Uganda/PP_006X699.1/2007|Uganda/2007-XX-XX"
                           },
@@ -1312,18 +1354,18 @@
                           "country": {
                             "value": "Uganda"
                           },
-                          "year": {
-                            "value": "2007"
-                          },
-                          "date": {
-                            "value": "2007-XX-XX"
-                          },
                           "dataUseTerms": {
                             "value": "OPEN",
                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                           },
+                          "date": {
+                            "value": "2007-XX-XX"
+                          },
                           "division": {
                             "value": "Bundibugyo"
+                          },
+                          "year": {
+                            "value": "2007"
                           }
                         },
                         "branch_attrs": {
@@ -1366,6 +1408,9 @@
                           "outbreak": {
                             "value": "Bdbv-2007"
                           },
+                          "country_label": {
+                            "value": "Uganda"
+                          },
                           "strain": {
                             "value": "PP_006X5RB|Uganda/PP_006X5RB.1/2007-11|Uganda/2007-11-XX"
                           },
@@ -1377,15 +1422,15 @@
                           "country": {
                             "value": "Uganda"
                           },
-                          "year": {
-                            "value": "2007"
+                          "dataUseTerms": {
+                            "value": "OPEN",
+                            "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                           },
                           "date": {
                             "value": "2007-11-XX"
                           },
-                          "dataUseTerms": {
-                            "value": "OPEN",
-                            "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                          "year": {
+                            "value": "2007"
                           }
                         },
                         "branch_attrs": {
@@ -1416,6 +1461,9 @@
                               "outbreak": {
                                 "value": "Bdbv-2007"
                               },
+                              "country_label": {
+                                "value": "Uganda"
+                              },
                               "strain": {
                                 "value": "PP_006X6ZU|Uganda/PP_006X6ZU.1/2007-11|Uganda/2007-11-XX"
                               },
@@ -1427,15 +1475,15 @@
                               "country": {
                                 "value": "Uganda"
                               },
-                              "year": {
-                                "value": "2007"
+                              "dataUseTerms": {
+                                "value": "OPEN",
+                                "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                               },
                               "date": {
                                 "value": "2007-11-XX"
                               },
-                              "dataUseTerms": {
-                                "value": "OPEN",
-                                "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                              "year": {
+                                "value": "2007"
                               }
                             },
                             "branch_attrs": {
@@ -1470,6 +1518,9 @@
                                   "outbreak": {
                                     "value": "Bdbv-2007"
                                   },
+                                  "country_label": {
+                                    "value": "Uganda"
+                                  },
                                   "strain": {
                                     "value": "PP_006X6D1|Uganda/PP_006X6D1.1/2007|Uganda/2007-XX-XX"
                                   },
@@ -1481,15 +1532,15 @@
                                   "country": {
                                     "value": "Uganda"
                                   },
-                                  "year": {
-                                    "value": "2007"
+                                  "dataUseTerms": {
+                                    "value": "OPEN",
+                                    "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                   },
                                   "date": {
                                     "value": "2007-XX-XX"
                                   },
-                                  "dataUseTerms": {
-                                    "value": "OPEN",
-                                    "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                                  "year": {
+                                    "value": "2007"
                                   }
                                 },
                                 "branch_attrs": {
@@ -1527,6 +1578,9 @@
                                       "outbreak": {
                                         "value": "Bdbv-2007"
                                       },
+                                      "country_label": {
+                                        "value": "Uganda"
+                                      },
                                       "strain": {
                                         "value": "PP_006X6C3|Uganda/PP_006X6C3.1/2007|Uganda/2007-XX-XX"
                                       },
@@ -1538,15 +1592,15 @@
                                       "country": {
                                         "value": "Uganda"
                                       },
-                                      "year": {
-                                        "value": "2007"
+                                      "dataUseTerms": {
+                                        "value": "OPEN",
+                                        "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                       },
                                       "date": {
                                         "value": "2007-XX-XX"
                                       },
-                                      "dataUseTerms": {
-                                        "value": "OPEN",
-                                        "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                                      "year": {
+                                        "value": "2007"
                                       }
                                     },
                                     "branch_attrs": {
@@ -1581,6 +1635,9 @@
                                           "outbreak": {
                                             "value": "Bdbv-2007"
                                           },
+                                          "country_label": {
+                                            "value": "Uganda"
+                                          },
                                           "strain": {
                                             "value": "PP_006X64K|Uganda/PP_006X64K.1/2007-11-14|Uganda/2007-11-14"
                                           },
@@ -1592,15 +1649,15 @@
                                           "country": {
                                             "value": "Uganda"
                                           },
-                                          "year": {
-                                            "value": "2007"
+                                          "dataUseTerms": {
+                                            "value": "OPEN",
+                                            "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                           },
                                           "date": {
                                             "value": "2007-11-14"
                                           },
-                                          "dataUseTerms": {
-                                            "value": "OPEN",
-                                            "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                                          "year": {
+                                            "value": "2007"
                                           }
                                         },
                                         "branch_attrs": {
@@ -1631,6 +1688,9 @@
                                               "outbreak": {
                                                 "value": "Bdbv-2007"
                                               },
+                                              "country_label": {
+                                                "value": "Uganda"
+                                              },
                                               "strain": {
                                                 "value": "PP_006X68B|Uganda/PP_006X68B.1/2007|Uganda/2007-XX-XX"
                                               },
@@ -1642,15 +1702,15 @@
                                               "country": {
                                                 "value": "Uganda"
                                               },
-                                              "year": {
-                                                "value": "2007"
+                                              "dataUseTerms": {
+                                                "value": "OPEN",
+                                                "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                               },
                                               "date": {
                                                 "value": "2007-XX-XX"
                                               },
-                                              "dataUseTerms": {
-                                                "value": "OPEN",
-                                                "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                                              "year": {
+                                                "value": "2007"
                                               }
                                             },
                                             "branch_attrs": {
@@ -1681,6 +1741,9 @@
                                                   "outbreak": {
                                                     "value": "Bdbv-2007"
                                                   },
+                                                  "country_label": {
+                                                    "value": "Uganda"
+                                                  },
                                                   "strain": {
                                                     "value": "PP_006X63M|Uganda/PP_006X63M.1/2007-10-01|Uganda/2007-10-01"
                                                   },
@@ -1692,15 +1755,15 @@
                                                   "country": {
                                                     "value": "Uganda"
                                                   },
-                                                  "year": {
-                                                    "value": "2007"
+                                                  "dataUseTerms": {
+                                                    "value": "OPEN",
+                                                    "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                                   },
                                                   "date": {
                                                     "value": "2007-10-01"
                                                   },
-                                                  "dataUseTerms": {
-                                                    "value": "OPEN",
-                                                    "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                                                  "year": {
+                                                    "value": "2007"
                                                   }
                                                 },
                                                 "branch_attrs": {
@@ -1731,6 +1794,9 @@
                                                       "outbreak": {
                                                         "value": "Bdbv-2007"
                                                       },
+                                                      "country_label": {
+                                                        "value": "Uganda"
+                                                      },
                                                       "strain": {
                                                         "value": "PP_006X6A7|Uganda/PP_006X6A7.1/2007|Uganda/2007-XX-XX"
                                                       },
@@ -1742,18 +1808,18 @@
                                                       "country": {
                                                         "value": "Uganda"
                                                       },
-                                                      "year": {
-                                                        "value": "2007"
-                                                      },
-                                                      "date": {
-                                                        "value": "2007-XX-XX"
-                                                      },
                                                       "dataUseTerms": {
                                                         "value": "OPEN",
                                                         "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                                       },
+                                                      "date": {
+                                                        "value": "2007-XX-XX"
+                                                      },
                                                       "division": {
                                                         "value": "Bundibugyo"
+                                                      },
+                                                      "year": {
+                                                        "value": "2007"
                                                       }
                                                     },
                                                     "branch_attrs": {
@@ -1783,12 +1849,12 @@
                                                         "author": "Towner et al.",
                                                         "value": "Towner et al."
                                                       },
-                                                      "date": {
-                                                        "value": "XXXX-XX-XX"
-                                                      },
                                                       "dataUseTerms": {
                                                         "value": "OPEN",
                                                         "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                                                      },
+                                                      "date": {
+                                                        "value": "XXXX-XX-XX"
                                                       }
                                                     },
                                                     "branch_attrs": {
@@ -1833,20 +1899,18 @@
               "G1288A",
               "T1345C",
               "T1453A",
-              "C1675T",
               "T1696C",
-              "T1702C",
               "T1861C",
               "A2094G",
               "T2132C",
               "C2322T",
+              "G2542A",
               "C2578T",
               "G2665A",
               "T2678C",
               "C2700T",
               "C2780T",
               "T2805C",
-              "C2819T",
               "C2825T",
               "C2899T",
               "A2927G",
@@ -1858,12 +1922,12 @@
               "T4240C",
               "G4537A",
               "A4543G",
-              "T4550C",
               "C4614A",
               "C4634T",
               "C4889T",
               "T4958G",
               "G5493A",
+              "C5511T",
               "T5598C",
               "G5611A",
               "T5653C",
@@ -1874,35 +1938,31 @@
               "T6290C",
               "T6947C",
               "G7052A",
+              "A7120G",
               "G7121A",
+              "C7255T",
               "C7375A",
               "A7519G",
               "G7657A",
               "T7768C",
               "C7801T",
               "C7987T",
-              "T8124C",
               "C8148T",
               "C8677T",
               "G8759A",
               "C8987T",
               "T9053G",
               "C9379T",
-              "C9489G",
+              "T9489G",
               "C9561T",
               "C9568A",
               "T9578C",
               "C9712T",
-              "G9805A",
               "C10155T",
               "A10244G",
-              "C10478T",
-              "T10574C",
               "C10694T",
               "T10806C",
               "C11098A",
-              "G11281A",
-              "A11312G",
               "C11644T",
               "C11671T",
               "G11782A",
@@ -1912,21 +1972,18 @@
               "C12425T",
               "C12712T",
               "G12749A",
+              "G13063A",
               "A13231G",
               "C13648T",
               "T13672G",
               "T13822C",
               "C14215T",
               "A14311G",
-              "T14696C",
               "G14818A",
               "A15030G",
               "T15286C",
               "G15301A",
               "T15592C",
-              "T15817A",
-              "T16039C",
-              "G16177A",
               "A16250G",
               "A16258G",
               "A16298G",
@@ -1934,7 +1991,6 @@
               "G16565A",
               "G16677T",
               "C16709A",
-              "T16712C",
               "T16725C",
               "T16750C",
               "A16881G",
@@ -1946,11 +2002,11 @@
               "A17533G",
               "A17863G",
               "G18194A",
-              "C18258T",
               "C18276T",
               "A18319G",
               "T18448C",
               "C18449A",
+              "A18556G",
               "C18629T",
               "T18692C",
               "G18802A"
@@ -1968,16 +2024,16 @@
               "I1562V",
               "I1578V",
               "D1614G",
+              "D1667N",
               "R1704I",
               "Q1715K",
               "S1716P",
               "I1720T",
-              "D1772G",
               "A1778V",
               "A2210T"
             ],
             "NP": [
-              "N546S",
+              "D546S",
               "S559P",
               "S622L"
             ],
@@ -1985,11 +2041,12 @@
               "S61F"
             ],
             "VP40": [
-              "S26N"
+              "S26N",
+              "N28S"
             ]
           },
           "labels": {
-            "aa": "GP: F310L, E345K, D368N, H452Q; L: Y116H, V395I, K1155R, I1562V, I1578V, D1614G, R1704I, Q1715K, S1716P, I1720T, D1772G, A1778V, A2210T; NP: N546S, S559P, S622L; VP30: S61F; VP40: S26N"
+            "aa": "GP: F310L, E345K, D368N, H452Q; L: Y116H, V395I, K1155R, I1562V, I1578V, D1614G, D1667N, R1704I, Q1715K, S1716P, I1720T, A1778V, A2210T; NP: D546S, S559P, S622L; VP30: S61F; VP40: S26N, N28S"
           }
         },
         "children": [
@@ -2008,6 +2065,9 @@
               "outbreak": {
                 "value": "Bdbv-2012"
               },
+              "country_label": {
+                "value": "DRC"
+              },
               "strain": {
                 "value": "PP_006X6XY|Democratic_Republic_of_the_Congo/PP_006X6XY.1/2012-08-20|Democratic Republic of the Congo/2012-08-20"
               },
@@ -2019,18 +2079,18 @@
               "country": {
                 "value": "Democratic Republic of the Congo"
               },
-              "year": {
-                "value": "2012"
-              },
-              "date": {
-                "value": "2012-08-20"
-              },
               "dataUseTerms": {
                 "value": "OPEN",
                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
               },
+              "date": {
+                "value": "2012-08-20"
+              },
               "division": {
                 "value": "Isiro"
+              },
+              "year": {
+                "value": "2012"
               }
             },
             "branch_attrs": {
@@ -2061,6 +2121,9 @@
                   "outbreak": {
                     "value": "Bdbv-2012"
                   },
+                  "country_label": {
+                    "value": "DRC"
+                  },
                   "strain": {
                     "value": "PP_006X6EZ|Democratic_Republic_of_the_Congo/PP_006X6EZ.1/2012-08-20|Democratic Republic of the Congo/2012-08-20"
                   },
@@ -2072,18 +2135,18 @@
                   "country": {
                     "value": "Democratic Republic of the Congo"
                   },
-                  "year": {
-                    "value": "2012"
-                  },
-                  "date": {
-                    "value": "2012-08-20"
-                  },
                   "dataUseTerms": {
                     "value": "OPEN",
                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                   },
+                  "date": {
+                    "value": "2012-08-20"
+                  },
                   "division": {
                     "value": "Isiro"
+                  },
+                  "year": {
+                    "value": "2012"
                   }
                 },
                 "branch_attrs": {
@@ -2128,6 +2191,9 @@
                           "outbreak": {
                             "value": "Bdbv-2012"
                           },
+                          "country_label": {
+                            "value": "DRC"
+                          },
                           "strain": {
                             "value": "PP_006X62P|Democratic_Republic_of_the_Congo/PP_006X62P.1/2012|Democratic Republic of the Congo/2012-XX-XX"
                           },
@@ -2139,15 +2205,15 @@
                           "country": {
                             "value": "Democratic Republic of the Congo"
                           },
-                          "year": {
-                            "value": "2012"
+                          "dataUseTerms": {
+                            "value": "OPEN",
+                            "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                           },
                           "date": {
                             "value": "2012-XX-XX"
                           },
-                          "dataUseTerms": {
-                            "value": "OPEN",
-                            "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                          "year": {
+                            "value": "2012"
                           }
                         },
                         "branch_attrs": {
@@ -2182,6 +2248,9 @@
                               "outbreak": {
                                 "value": "Bdbv-2012"
                               },
+                              "country_label": {
+                                "value": "DRC"
+                              },
                               "strain": {
                                 "value": "PP_006X6MJ|Democratic_Republic_of_the_Congo/PP_006X6MJ.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                               },
@@ -2193,18 +2262,18 @@
                               "country": {
                                 "value": "Democratic Republic of the Congo"
                               },
-                              "year": {
-                                "value": "2012"
-                              },
-                              "date": {
-                                "value": "2012-08-XX"
-                              },
                               "dataUseTerms": {
                                 "value": "OPEN",
                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                               },
+                              "date": {
+                                "value": "2012-08-XX"
+                              },
                               "division": {
                                 "value": "Isiro"
+                              },
+                              "year": {
+                                "value": "2012"
                               }
                             },
                             "branch_attrs": {
@@ -2226,6 +2295,9 @@
                               "outbreak": {
                                 "value": "Bdbv-2012"
                               },
+                              "country_label": {
+                                "value": "DRC"
+                              },
                               "strain": {
                                 "value": "PP_006X6FX|Democratic_Republic_of_the_Congo/PP_006X6FX.1/2012-09-21|Democratic Republic of the Congo/2012-09-21"
                               },
@@ -2237,18 +2309,18 @@
                               "country": {
                                 "value": "Democratic Republic of the Congo"
                               },
-                              "year": {
-                                "value": "2012"
-                              },
-                              "date": {
-                                "value": "2012-09-21"
-                              },
                               "dataUseTerms": {
                                 "value": "OPEN",
                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                               },
+                              "date": {
+                                "value": "2012-09-21"
+                              },
                               "division": {
                                 "value": "Isiro"
+                              },
+                              "year": {
+                                "value": "2012"
                               }
                             },
                             "branch_attrs": {
@@ -2312,6 +2384,9 @@
                               "outbreak": {
                                 "value": "Bdbv-2012"
                               },
+                              "country_label": {
+                                "value": "DRC"
+                              },
                               "strain": {
                                 "value": "PP_006X5ZV|Democratic_Republic_of_the_Congo/PP_006X5ZV.1/2012|Democratic Republic of the Congo/2012-XX-XX"
                               },
@@ -2323,15 +2398,15 @@
                               "country": {
                                 "value": "Democratic Republic of the Congo"
                               },
-                              "year": {
-                                "value": "2012"
+                              "dataUseTerms": {
+                                "value": "OPEN",
+                                "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                               },
                               "date": {
                                 "value": "2012-XX-XX"
                               },
-                              "dataUseTerms": {
-                                "value": "OPEN",
-                                "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                              "year": {
+                                "value": "2012"
                               }
                             },
                             "branch_attrs": {
@@ -2366,6 +2441,9 @@
                                   "outbreak": {
                                     "value": "Bdbv-2012"
                                   },
+                                  "country_label": {
+                                    "value": "DRC"
+                                  },
                                   "strain": {
                                     "value": "PP_006X6S8|Democratic_Republic_of_the_Congo/PP_006X6S8.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                   },
@@ -2377,18 +2455,18 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
-                                  "year": {
-                                    "value": "2012"
-                                  },
-                                  "date": {
-                                    "value": "2012-08-XX"
-                                  },
                                   "dataUseTerms": {
                                     "value": "OPEN",
                                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                   },
+                                  "date": {
+                                    "value": "2012-08-XX"
+                                  },
                                   "division": {
                                     "value": "Isiro"
+                                  },
+                                  "year": {
+                                    "value": "2012"
                                   }
                                 },
                                 "branch_attrs": {
@@ -2410,6 +2488,9 @@
                                   "outbreak": {
                                     "value": "Bdbv-2012"
                                   },
+                                  "country_label": {
+                                    "value": "DRC"
+                                  },
                                   "strain": {
                                     "value": "PP_006X6HS|Democratic_Republic_of_the_Congo/PP_006X6HS.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                   },
@@ -2421,18 +2502,18 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
-                                  "year": {
-                                    "value": "2012"
-                                  },
-                                  "date": {
-                                    "value": "2012-08-XX"
-                                  },
                                   "dataUseTerms": {
                                     "value": "OPEN",
                                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                   },
+                                  "date": {
+                                    "value": "2012-08-XX"
+                                  },
                                   "division": {
                                     "value": "Isiro"
+                                  },
+                                  "year": {
+                                    "value": "2012"
                                   }
                                 },
                                 "branch_attrs": {
@@ -2490,6 +2571,9 @@
                                       "outbreak": {
                                         "value": "Bdbv-2012"
                                       },
+                                      "country_label": {
+                                        "value": "DRC"
+                                      },
                                       "strain": {
                                         "value": "PP_006X61R|Democratic_Republic_of_the_Congo/PP_006X61R.1/2012|Democratic Republic of the Congo/2012-XX-XX"
                                       },
@@ -2501,15 +2585,15 @@
                                       "country": {
                                         "value": "Democratic Republic of the Congo"
                                       },
-                                      "year": {
-                                        "value": "2012"
+                                      "dataUseTerms": {
+                                        "value": "OPEN",
+                                        "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                       },
                                       "date": {
                                         "value": "2012-XX-XX"
                                       },
-                                      "dataUseTerms": {
-                                        "value": "OPEN",
-                                        "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                                      "year": {
+                                        "value": "2012"
                                       }
                                     },
                                     "branch_attrs": {
@@ -2544,6 +2628,9 @@
                                           "outbreak": {
                                             "value": "Bdbv-2012"
                                           },
+                                          "country_label": {
+                                            "value": "DRC"
+                                          },
                                           "strain": {
                                             "value": "PP_006X6V2|Democratic_Republic_of_the_Congo/PP_006X6V2.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                           },
@@ -2555,18 +2642,18 @@
                                           "country": {
                                             "value": "Democratic Republic of the Congo"
                                           },
-                                          "year": {
-                                            "value": "2012"
-                                          },
-                                          "date": {
-                                            "value": "2012-08-XX"
-                                          },
                                           "dataUseTerms": {
                                             "value": "OPEN",
                                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                           },
+                                          "date": {
+                                            "value": "2012-08-XX"
+                                          },
                                           "division": {
                                             "value": "Isiro"
+                                          },
+                                          "year": {
+                                            "value": "2012"
                                           }
                                         },
                                         "branch_attrs": {
@@ -2588,6 +2675,9 @@
                                           "outbreak": {
                                             "value": "Bdbv-2012"
                                           },
+                                          "country_label": {
+                                            "value": "DRC"
+                                          },
                                           "strain": {
                                             "value": "PP_006X6NG|Democratic_Republic_of_the_Congo/PP_006X6NG.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                           },
@@ -2599,18 +2689,18 @@
                                           "country": {
                                             "value": "Democratic Republic of the Congo"
                                           },
-                                          "year": {
-                                            "value": "2012"
-                                          },
-                                          "date": {
-                                            "value": "2012-08-XX"
-                                          },
                                           "dataUseTerms": {
                                             "value": "OPEN",
                                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                           },
+                                          "date": {
+                                            "value": "2012-08-XX"
+                                          },
                                           "division": {
                                             "value": "Isiro"
+                                          },
+                                          "year": {
+                                            "value": "2012"
                                           }
                                         },
                                         "branch_attrs": {
@@ -2645,6 +2735,9 @@
                                       "outbreak": {
                                         "value": "Bdbv-2012"
                                       },
+                                      "country_label": {
+                                        "value": "DRC"
+                                      },
                                       "strain": {
                                         "value": "PP_006X6U4|Democratic_Republic_of_the_Congo/PP_006X6U4.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                       },
@@ -2656,18 +2749,18 @@
                                       "country": {
                                         "value": "Democratic Republic of the Congo"
                                       },
-                                      "year": {
-                                        "value": "2012"
-                                      },
-                                      "date": {
-                                        "value": "2012-08-XX"
-                                      },
                                       "dataUseTerms": {
                                         "value": "OPEN",
                                         "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                       },
+                                      "date": {
+                                        "value": "2012-08-XX"
+                                      },
                                       "division": {
                                         "value": "Isiro"
+                                      },
+                                      "year": {
+                                        "value": "2012"
                                       }
                                     },
                                     "branch_attrs": {
@@ -2704,6 +2797,9 @@
                                           "outbreak": {
                                             "value": "Bdbv-2012"
                                           },
+                                          "country_label": {
+                                            "value": "DRC"
+                                          },
                                           "strain": {
                                             "value": "PP_006X60T|Democratic_Republic_of_the_Congo/PP_006X60T.1/2012|Democratic Republic of the Congo/2012-XX-XX"
                                           },
@@ -2715,15 +2811,15 @@
                                           "country": {
                                             "value": "Democratic Republic of the Congo"
                                           },
-                                          "year": {
-                                            "value": "2012"
+                                          "dataUseTerms": {
+                                            "value": "OPEN",
+                                            "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                           },
                                           "date": {
                                             "value": "2012-XX-XX"
                                           },
-                                          "dataUseTerms": {
-                                            "value": "OPEN",
-                                            "url": "https://pathoplexus.org/about/terms-of-use/open-data"
+                                          "year": {
+                                            "value": "2012"
                                           }
                                         },
                                         "branch_attrs": {
@@ -2758,6 +2854,9 @@
                                               "outbreak": {
                                                 "value": "Bdbv-2012"
                                               },
+                                              "country_label": {
+                                                "value": "DRC"
+                                              },
                                               "strain": {
                                                 "value": "PP_006X6GV|Democratic_Republic_of_the_Congo/PP_006X6GV.1/2012-09-21|Democratic Republic of the Congo/2012-09-21"
                                               },
@@ -2769,18 +2868,18 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
-                                              "year": {
-                                                "value": "2012"
-                                              },
-                                              "date": {
-                                                "value": "2012-09-21"
-                                              },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                               },
+                                              "date": {
+                                                "value": "2012-09-21"
+                                              },
                                               "division": {
                                                 "value": "Isiro"
+                                              },
+                                              "year": {
+                                                "value": "2012"
                                               }
                                             },
                                             "branch_attrs": {
@@ -2802,6 +2901,9 @@
                                               "outbreak": {
                                                 "value": "Bdbv-2012"
                                               },
+                                              "country_label": {
+                                                "value": "DRC"
+                                              },
                                               "strain": {
                                                 "value": "PP_006X6YW|Democratic_Republic_of_the_Congo/PP_006X6YW.1/2012-09-09|Democratic Republic of the Congo/2012-09-09"
                                               },
@@ -2813,18 +2915,18 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
-                                              "year": {
-                                                "value": "2012"
-                                              },
-                                              "date": {
-                                                "value": "2012-09-09"
-                                              },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                               },
+                                              "date": {
+                                                "value": "2012-09-09"
+                                              },
                                               "division": {
                                                 "value": "Isiro"
+                                              },
+                                              "year": {
+                                                "value": "2012"
                                               }
                                             },
                                             "branch_attrs": {
@@ -2863,6 +2965,9 @@
                                   "outbreak": {
                                     "value": "Bdbv-2012"
                                   },
+                                  "country_label": {
+                                    "value": "DRC"
+                                  },
                                   "strain": {
                                     "value": "PP_006X6T6|Democratic_Republic_of_the_Congo/PP_006X6T6.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                   },
@@ -2874,18 +2979,18 @@
                                   "country": {
                                     "value": "Democratic Republic of the Congo"
                                   },
-                                  "year": {
-                                    "value": "2012"
-                                  },
-                                  "date": {
-                                    "value": "2012-08-XX"
-                                  },
                                   "dataUseTerms": {
                                     "value": "OPEN",
                                     "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                   },
+                                  "date": {
+                                    "value": "2012-08-XX"
+                                  },
                                   "division": {
                                     "value": "Isiro"
+                                  },
+                                  "year": {
+                                    "value": "2012"
                                   }
                                 },
                                 "branch_attrs": {
@@ -2925,6 +3030,9 @@
                                           "outbreak": {
                                             "value": "Bdbv-2012"
                                           },
+                                          "country_label": {
+                                            "value": "DRC"
+                                          },
                                           "strain": {
                                             "value": "PP_006X6RA|Democratic_Republic_of_the_Congo/PP_006X6RA.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                           },
@@ -2936,18 +3044,18 @@
                                           "country": {
                                             "value": "Democratic Republic of the Congo"
                                           },
-                                          "year": {
-                                            "value": "2012"
-                                          },
-                                          "date": {
-                                            "value": "2012-08-XX"
-                                          },
                                           "dataUseTerms": {
                                             "value": "OPEN",
                                             "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                           },
+                                          "date": {
+                                            "value": "2012-08-XX"
+                                          },
                                           "division": {
                                             "value": "Isiro"
+                                          },
+                                          "year": {
+                                            "value": "2012"
                                           }
                                         },
                                         "branch_attrs": {
@@ -2978,6 +3086,9 @@
                                               "outbreak": {
                                                 "value": "Bdbv-2012"
                                               },
+                                              "country_label": {
+                                                "value": "DRC"
+                                              },
                                               "strain": {
                                                 "value": "PP_006X6PE|Democratic_Republic_of_the_Congo/PP_006X6PE.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                               },
@@ -2989,18 +3100,18 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
-                                              "year": {
-                                                "value": "2012"
-                                              },
-                                              "date": {
-                                                "value": "2012-08-XX"
-                                              },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                               },
+                                              "date": {
+                                                "value": "2012-08-XX"
+                                              },
                                               "division": {
                                                 "value": "Isiro"
+                                              },
+                                              "year": {
+                                                "value": "2012"
                                               }
                                             },
                                             "branch_attrs": {
@@ -3022,6 +3133,9 @@
                                               "outbreak": {
                                                 "value": "Bdbv-2012"
                                               },
+                                              "country_label": {
+                                                "value": "DRC"
+                                              },
                                               "strain": {
                                                 "value": "PP_006X6KN|Democratic_Republic_of_the_Congo/PP_006X6KN.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                               },
@@ -3033,18 +3147,18 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
-                                              "year": {
-                                                "value": "2012"
-                                              },
-                                              "date": {
-                                                "value": "2012-08-XX"
-                                              },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                               },
+                                              "date": {
+                                                "value": "2012-08-XX"
+                                              },
                                               "division": {
                                                 "value": "Isiro"
+                                              },
+                                              "year": {
+                                                "value": "2012"
                                               }
                                             },
                                             "branch_attrs": {
@@ -3092,6 +3206,9 @@
                                               "outbreak": {
                                                 "value": "Bdbv-2012"
                                               },
+                                              "country_label": {
+                                                "value": "DRC"
+                                              },
                                               "strain": {
                                                 "value": "PP_006X6W0|Democratic_Republic_of_the_Congo/PP_006X6W0.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                               },
@@ -3103,18 +3220,18 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
-                                              "year": {
-                                                "value": "2012"
-                                              },
-                                              "date": {
-                                                "value": "2012-08-XX"
-                                              },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                               },
+                                              "date": {
+                                                "value": "2012-08-XX"
+                                              },
                                               "division": {
                                                 "value": "Isiro"
+                                              },
+                                              "year": {
+                                                "value": "2012"
                                               }
                                             },
                                             "branch_attrs": {
@@ -3136,6 +3253,9 @@
                                               "outbreak": {
                                                 "value": "Bdbv-2012"
                                               },
+                                              "country_label": {
+                                                "value": "DRC"
+                                              },
                                               "strain": {
                                                 "value": "PP_006X6QC|Democratic_Republic_of_the_Congo/PP_006X6QC.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                               },
@@ -3147,18 +3267,18 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
-                                              "year": {
-                                                "value": "2012"
-                                              },
-                                              "date": {
-                                                "value": "2012-08-XX"
-                                              },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                               },
+                                              "date": {
+                                                "value": "2012-08-XX"
+                                              },
                                               "division": {
                                                 "value": "Isiro"
+                                              },
+                                              "year": {
+                                                "value": "2012"
                                               }
                                             },
                                             "branch_attrs": {
@@ -3201,6 +3321,9 @@
                                               "outbreak": {
                                                 "value": "Bdbv-2012"
                                               },
+                                              "country_label": {
+                                                "value": "DRC"
+                                              },
                                               "strain": {
                                                 "value": "PP_006X6LL|Democratic_Republic_of_the_Congo/PP_006X6LL.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                               },
@@ -3212,18 +3335,18 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
-                                              "year": {
-                                                "value": "2012"
-                                              },
-                                              "date": {
-                                                "value": "2012-08-XX"
-                                              },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                               },
+                                              "date": {
+                                                "value": "2012-08-XX"
+                                              },
                                               "division": {
                                                 "value": "Isiro"
+                                              },
+                                              "year": {
+                                                "value": "2012"
                                               }
                                             },
                                             "branch_attrs": {
@@ -3245,6 +3368,9 @@
                                               "outbreak": {
                                                 "value": "Bdbv-2012"
                                               },
+                                              "country_label": {
+                                                "value": "DRC"
+                                              },
                                               "strain": {
                                                 "value": "PP_006X6JQ|Democratic_Republic_of_the_Congo/PP_006X6JQ.1/2012-08|Democratic Republic of the Congo/2012-08-XX"
                                               },
@@ -3256,18 +3382,18 @@
                                               "country": {
                                                 "value": "Democratic Republic of the Congo"
                                               },
-                                              "year": {
-                                                "value": "2012"
-                                              },
-                                              "date": {
-                                                "value": "2012-08-XX"
-                                              },
                                               "dataUseTerms": {
                                                 "value": "OPEN",
                                                 "url": "https://pathoplexus.org/about/terms-of-use/open-data"
                                               },
+                                              "date": {
+                                                "value": "2012-08-XX"
+                                              },
                                               "division": {
                                                 "value": "Isiro"
+                                              },
+                                              "year": {
+                                                "value": "2012"
                                               }
                                             },
                                             "branch_attrs": {
@@ -3301,12 +3427,12 @@
   "root_sequence": {
     "GP": "MVTSGILQLPRERFRKTSFFVWVIILFHKVFPIPLGVVHNNTLQVSDIDKLVCRDKLSSTSQLKSVGLNLEGNGVATDVPTATKRWGFRAGVPPKVVNYEAGEWAENCYNLDIKKADGSECLPEAPEGVRGFPRCRYVHKVSGTGPCPEGFAFHKEGAFFLYDRLASTIIYRSTTFSEGVVAFLILPKTKKDFFQSPPLHEPANMTTDPSSYYHTVTLNYVADNFGTNMTNFLFQVDHLTYVQLEPRFTPQFLVQLNETIYTNGRRSNTTGTLIWKVNPTVDTGVGEWAFWENKKNFTKTLSSEELSVIFVPRAQDPGSNQKTKVTPTSFANNQTSKNHEDLVPEDPASVVQVRDLQRENTVPTSPLDTVPTTLIPDTMEEQTTSHYELPNISGNHQERNNTAHPETLANNPPDNTTPSTPPQDGERTSSHTTPSPRPVPTSTIHPTTRETHIPTTMITSHDTDSNRPNPIDISESTEPGLLTNTIRGVANLLTGSRRTRREITLRTQAKCNPNLHYWTTQDEGAAIGLAWIPYFGPAAEGIYTEGIMHNQNGLICGLRQLANETTQALQLFLRATTELRTFSILNRKAIDFLLQRWGGTCHILGPDCCIEPHDWTKNITDKIDQIIHDFIDKPLPDQTDNDNWWTGWRQWVPAGIGITGVIIAVIALLCICKFLL*",
     "GP_003": "MVTSGILQLPRERFRKTSFFVWVIILFHKVFPIPLGVVHNNTLQVSDIDKLVCRDKLSSTSQLKSVGLNLEGNGVATDVPTATKRWGFRAGVPPKVVNYEAGEWAENCYNLDIKKADGSECLPEAPEGVRGFPRCRYVHKVSGTGPCPEGFAFHKEGAFFLYDRLASTIIYRSTTFSEGVVAFLILPKTKKDFFQSPPLHEPANMTTDPSSYYHTVTLNYVADNFGTNMTNFLFQVDHLTYVQLEPRFTPQFLVQLNETIYTNGRRSNTTGTLIWKVNPTVDTGVGEWAFWENKKTSQKPFQVKSCLSYLYQEPRIQAATRRRRSLPPASPTTKPPRTTKTWFQRIPLQWFKCETSRGKTQCRPHP*TQSPQL*",
-    "L": "MATQHTQYPDARLSSPIVLDQCDLVTRACGLYSSYSLNPQLKNCRLPKHIYRLKFDATVTKFLSDVPIVTLPIDYLTPLLLRTLSGEGLCPVEPKCSQFLDEIVSYVLQDARFLRYYFRHVGVHDDNVGKNFEPKIKALIYDNEFLQQLFYWYDLAILTRRGRLNRGNNRSTWFANDDLIDILGYGDYIFWKIPLSLLSLNTEGIPHAAKDWYHASIFKEAVQGHTHIVSVSTADVLIMCKDIITCRFNTTLIAALANLEDSICSDYPQPETISNLYKAGDYLISILGSEGYKVIKFLEPLCLAKIQLCSNYTERKGRFLTQMHLAVNHTLEELIEGRGLKSQQDWKMREFHRILVNLKSTPQQLCELFSVQKHWGHPVLHSEKAIQKVKKHATVIKALRPIIIFETYCVFKYSIAKHYFDSQGSWYSVISDKHLTPGLHSYIKRNQFPPLPMIKDLLWEFYHLDHPPLFSTKIISDLSIFIKDRATAVEKTCWDAVFEPNVLGYSPPNKFSTKRVPEQFLEQENFSIDSVLTYAQRLDYLLPQYRNFSFSLKEKELNVGRAFGKLPYPTRNVQTLCEALLADGLAKAFPSNMMVVTEREQKESLLHQASWHHTSDDFGENATVRGSSFVTDLEKYNLAFRYEFTAPFIEYCNRCYGVKNLFNWMHYTIPQCYIHVSDYYNPPHGVSLENREDPPEGPSSYRGHLGGIEGLQQKLWTSISCAQISLVEIKTGFKLRSAVMGDNQCITVLSVFPLETDSNEQEHSSEDNAARVAASLAKVTSACGIFLKPDETFVHSGFIYFGKKQYLNGVQLPQSLKTATRIAPLSDAIFDDLQGTLASIGTAFERSISETRHVYPCRVVAAFHTFFSVRILQYHHLGFNKGTDLGQLSLSKPLDFGTITLALAVPQVLGGLSFLNPEKCFYRNLGDPVTSGLFQLRTYLQMINMDDLFLPLIAKNPGNCSAIDFVLNPSGLNVPGSQDLTSFLRQIVRRTITLSAKNKLINTLFHSSADLEDEMVCKWLLSSTPVMSRFAADIFSRTPSGKRLQILGYLEGTRTLLASKVINNNAETPILDRLRKITLQRWSLWFSYLDHCDQVLADALIKVSCTVDLAQILREYTWAHILEGRQLIGATLPCMLEQFNVFWLKSYEQCPKCAKSRNPKGEPFVSIAIKKQVVSAWPNQSRLNWTIGDGVPYIGSRTEDKIGQPAIKPKCPSAALREAIELTSRLTWVTQGGANSDLLVKPFVEARVNLSVQEILQMTPSHYSGNIVHRYNDQYSPHSFMANRMSNSATRLVVSTNTLGEFSGGGQSARDSNIIFQNVINFAVALFDLRFRNTETSSIQHNRAHLHLSQCCTREVPAQYLTYTSTLSLDLTRYRENELIYDNNPLKGGLNCNLSFDNPLFKGQRLNIIEEDLIRFPHLSGWELAKTIIQSIISDSNNSSTDPISSGETRSFTTHFLTYPKVGLLYSFGAIVSYYLGNTIIRTKKLDLSHFMYYLTTQIHNLPHRSLRILKPTFKHVSVISRLMSIDPHFSIYIGGTAGDRGLSDATRLFLRVAISSFLQFIKKWIVEYRTAIPLWVIYPLEGQNPDPINSFLHQIIALLQNESPQNNIQFQEDRNNQQLSDNLVYMCKSTASNFFHASLAYWRSRHKGRPKNRSTEEQTVKPRPYNNFHSVKCASNPPSIPKSKSGTQGSSAFFEKLEYDKERELPTASTPAEQSKTYIKALSSRIYHGKTPSNAAKDDSTTSKGCDSKEENAVQASHRIVLPFFTLSQNDYRTPSAKKSEYVTEITKLIRQLKAIPDTTVYCRFTGVVSSMHYKLDEVLWEFDSFKTAVTLAEGEGSGALLLLQKYKVRTIFFNTLATEHSIEAEIVSGTTTPRMLLPVMAKLHDDQINVILNNSASQVTDITNPAWFTDQKSRIPTQVEIMTMDAETTENINRSKLYEAIQQLIVSHIDTRVLKIVIIKVFLSDIDGLLWLNDHLAPLFGSGYLIKPITSSPKSSEWYLCLSNFLSASRRRPHQGHATCMQVIQTALRLQVQRSSYWLSHLVQYADINLHLSYVNLGFPSLEKVLYHRYNLVDSRKGPLVSILYHLTHLQAEIRELVCDYNQQRQSRTQTYHFIKTTKGRITKLVNDYLKFYLVVQALKHNCLWQEELRTLPDLINVCNRFYHIRDCSCEDRFLIQTLYLTRMQDSEVKLMERLTGFLGLYPNGINA*",
-    "NP": "MDPRPIRTWMMHNTSEVEADYHKILTAGLSVQQGIVRQRIIPVYQISNLEEVCQLIIQAFEAGVDFQDSADSFLLMLCLHHAYQGDYKQFLESNAVKYLEGHGFRFEMKKKEGVKRLEELLPAASSGKNIKRTLAAMPEEETTEANAGQFLSFASLFLPKLVVGEKACLEKVQRQIQVHAEQGLIQYPTSWQSVGHMMVIFRLMRTNFLIKFLLIHQGMHMVAGHDANDAVIANSVAQARFSGLLIVKTVLDHILQKTEHGVRLHPLARTAKVKNEVSSFKAALASLAQHGEYAPFARLLNLSGVNNLEHGLFPQLSAIALGVATAHGSTLAGVNVGEQYQQLREAATEAEKQLQKYAESRELDHLGLDDQEKKILKDFHQKKNEISFQQTTAMVTLRKERLAKLTEAITSTSILKTGRRYDDDNDIPFPGPINDNENSGQNDDDPTDSQDTTIPDVIIDPNDGGYNNYSDYANDAASAPDDLVLFDLEDEDDADNPAQNTPEKNDRPATTKLRNGRDQDGNQSETASPRAAPNQYRDKPMPQVQNRSENHDQTLQTQSRVLTPISEEADPSDHNDGDNESIPPLESDDEGSTDTTAAETKPATAPPAPVYRSISVDDSVPSENIPAQSNQTNNEDNVRNNAQSEQSIAEMYQHILKTQGPFDAILYYHMMKEEPIIFSTSDGKEYTYPDSLEDEYPPWLSEKEAMNEDNRFITMDGQQFYWPVMNHRNKFMAILQHHR*",
+    "L": "MATQHTQYPDARLSSPIVLDQCDLVTRACGLYSSYSLNPQLKNCRLPKHIYRLKFDATVTKFLSDVPIVTLPIDYLTPLLLRTLSGEGLCPVEPKCSQFLDEIVSYVLQDARFLRYYFRHVGVHDDNVGKNFEPKIKALIYDNEFLQQLFYWYDLAILTRRGRLNRGNNRSTWFANDDLIDILGYGDYIFWKIPLSLLSLNTEGIPHAAKDWYHASIFKEAVQGHTHIVSVSTADVLIMCKDIITCRFNTTLIAALANLEDSICSDYPQPETISNLYKAGDYLISILGSEGYKVIKFLEPLCLAKIQLCSNYTERKGRFLTQMHLAVNHTLEELIEGRGLKSQQDWKMREFHRILVNLKSTPQQLCELFSVQKHWGHPVLHSEKAIQKVKKHATVIKALRPIIIFETYCVFKYSIAKHYFDSQGSWYSVISDKHLTPGLHSYIKRNQFPPLPMIKDLLWEFYHLDHPPLFSTKIISDLSIFIKDRATAVEKTCWDAVFEPNVLGYSPPNKFSTKRVPEQFLEQENFSIDSVLTYAQRLDYLLPQYRNFSFSLKEKELNVGRAFGKLPYPTRNVQTLCEALLADGLAKAFPSNMMVVTEREQKESLLHQASWHHTSDDFGENATVRGSSFVTDLEKYNLAFRYEFTAPFIEYCNRCYGVKNLFNWMHYTIPQCYIHVSDYYNPPHGVSLENREDPPEGPSSYRGHLGGIEGLQQKLWTSISCAQISLVEIKTGFKLRSAVMGDNQCITVLSVFPLETDSNEQEHSSEDNAARVAASLAKVTSACGIFLKPDETFVHSGFIYFGKKQYLNGVQLPQSLKTATRIAPLSDAIFDDLQGTLASIGTAFERSISETRHVYPCRVVAAFHTFFSVRILQYHHLGFNKGTDLGQLSLSKPLDFGTITLALAVPQVLGGLSFLNPEKCFYRNLGDPVTSGLFQLRTYLQMINMDDLFLPLIAKNPGNCSAIDFVLNPSGLNVPGSQDLTSFLRQIVRRTITLSAKNKLINTLFHSSADLEDEMVCKWLLSSTPVMSRFAADIFSRTPSGKRLQILGYLEGTRTLLASKVINNNAETPILDRLRKITLQRWSLWFSYLDHCDQVLADALIKVSCTVDLAQILREYTWAHILEGRQLIGATLPCMLEQFNVFWLKSYEQCPKCAKSRNPKGEPFVSIAIKKQVVSAWPNQSRLNWTIGDGVPYIGSRTEDKIGQPAIKPKCPSAALREAIELTSRLTWVTQGGANSDLLVKPFVEARVNLSVQEILQMTPSHYSGNIVHRYNDQYSPHSFMANRMSNSATRLVVSTNTLGEFSGGGQSARDSNIIFQNVINFAVALFDLRFRNTETSSIQHNRAHLHLSQCCTREVPAQYLTYTSTLSLDLTRYRENELIYDNNPLKGGLNCNLSFDNPLFKGQRLNIIEEDLIRFPHLSGWELAKTIIQSIISDSNNSSTDPISSGETRSFTTHFLTYPKVGLLYSFGAIVSYYLGNTIIRTKKLDLSHFMYYLTTQIHNLPHRSLRILKPTFKHVSVISRLMSIDPHFSIYIGGTAGDRGLSDATRLFLRVAISSFLQFIKKWIVEYRTAIPLWVIYPLEGQNPDPINSFLHQIIALLQNESPQNNIQFQEDRNNQQLSDNLVYMCKSTASNFFHASLAYWRSRHKGRPKNRSTEEQTVKPRPYDNFHSVKCASNPPSIPKSKSGTQGSSAFFEKLEYDKERELPTASTPAEQSKTYIKALSSRIYHGKTPSNAAKDDSTTSKGCDSKEENAVQASHRIVLPFFTLSQNGYRTPSAKKSEYVTEITKLIRQLKAIPDTTVYCRFTGVVSSMHYKLDEVLWEFDSFKTAVTLAEGEGSGALLLLQKYKVRTIFFNTLATEHSIEAEIVSGTTTPRMLLPVMAKLHDDQINVILNNSASQVTDITNPAWFTDQKSRIPTQVEIMTMDAETTENINRSKLYEAIQQLIVSHIDTRVLKIVIIKVFLSDIDGLLWLNDHLAPLFGSGYLIKPITSSPKSSEWYLCLSNFLSASRRRPHQGHATCMQVIQTALRLQVQRSSYWLSHLVQYADINLHLSYVNLGFPSLEKVLYHRYNLVDSRKGPLVSILYHLTHLQAEIRELVCDYNQQRQSRTQTYHFIKTTKGRITKLVNDYLKFYLVVQALKHNCLWQEELRTLPDLINVCNRFYHIRDCSCEDRFLIQTLYLTRMQDSEVKLMERLTGFLGLYPNGINA*",
+    "NP": "MDPRPIRTWMMHNTSEVEADYHKILTAGLSVQQGIVRQRIIPVYQISNLEEVCQLIIQAFEAGVDFQDSADSFLLMLCLHHAYQGDYKQFLESNAVKYLEGHGFRFEMKKKEGVKRLEELLPAASSGKNIKRTLAAMPEEETTEANAGQFLSFASLFLPKLVVGEKACLEKVQRQIQVHAEQGLIQYPTSWQSVGHMMVIFRLMRTNFLIKFLLIHQGMHMVAGHDANDAVIANSVAQARFSGLLIVKTVLDHILQKTEHGVRLHPLARTAKVKNEVSSFKAALASLAQHGEYAPFARLLNLSGVNNLEHGLFPQLSAIALGVATAHGSTLAGVNVGEQYQQLREAATEAEKQLQKYAESRELDHLGLDDQEKKILKDFHQKKNEISFQQTTAMVTLRKERLAKLTEAITSTSILKTGRRYDDDNDIPFPGPINDNENSGQNDDDPTDSQDTTIPDVIIDPNDGGYNNYSDYANDAASAPDDLVLFDLEDEDDADNPAQNTPEKNDRPATTKLRNGRDQDGNQSETASPRAAPNQYRDKPMPQVQDRSENHDQTLQTQSRVLTPISEEADPSDHNDGDNESIPPLESDDEGSTDTTAAETKPATAPPAPVYRSISVDDSVPSENIPAQSNQTNNEDNVRNNAQSEQSIAEMYQHILKTQGPFDAILYYHMMKEEPIIFSTSDGKEYTYPDSLEDEYPPWLSEKEAMNEDNRFITMDGQQFYWPVMNHRNKFMAILQHHR*",
     "VP24": "MAKATGRYNLVSPKKDLERGLVLNDLCTFLVDQTIQGWRVTWVGIEFDIAQKGMALLHRLKTADFAPAWSMTRNLFPHLFQNSNSTIESPLWALRVILAAGIQDQLIDQSLVEPLAGALSLVSDWLLTTNTNHFQMRTQHAKEQLSLKMLSLVRSNILKFISQLDALHVVNYNGLLSSIEIGTRNHTIIITRTNMGFLVELQEPDKSAMNQKKPGPVKFSLLHESTFKALIKKPATKMQALILEFNSSLAI*",
     "VP30": "MDSFHERGRSRTIRQSARDGPSHQVRTRSSSRDSHRSEYHTPRSSSQVRVPTVFHRKRTDSLTVPPAPKDICPTLRKGFLCDSNFCKKDHQLESLTDRELLLLIARKTCGSLEQQLNITAPKDTRLANPIADDFQQKDGPKITLLTLLETAEYWSKQDIKGIDDSRLRALLTLCAVMTRKFSKSQLSLLCESHLRREGLGQDQSESVLEVYQRLHSDKGGNFEAALWQQWDRQSLIMFITAFLNIALQLPCESSSVVISGLRLLVPQSEDTETSTYTETRAWSEEGGPH*",
     "VP35": "MTSNRARVTYNPPPTTTGTRSCGPELSGWISEQLMTGKIPITDIFNEIETLPSISPSIHSKIKTPSVQTRSVQTQTDPNCNHDFAEVVKMLTSLTLVVQKQTLATESLEQRITDLEGSLKPVSEITKIVSALNRSCAEMVAKYDLLVMTTGRATATAAATEAYWAEHGRPPPGPSLYEEDAIRTKIEKQGDIVPKEVQEAFRNLDSTALLTEENFGKPDISAKDLRNIMYDHLPGFGTAFHQLVQVICKLGKDNSSLDVIHAEFQASLAEGDSPQCALIQITKRIPIFQDAAPPVIHIRSRGDIPKACQKSLRPVPPSPKIDRGWVCIFQLQDGKTLGLKI*",
-    "VP40": "MRRAILPTAPPEYMEAVYPMRTVSTSISSTSSGPNFPAPDVMMSDTPSNSLRPIADDNIDHPSHTPTSVSSAFILEAMVNVISGPKVLMKQIPIWLPLGVADQKTYSFDSTTAAIMLASYTITHFGKTSNPLVRINRLGPGIPDHPLRLLRIGNQAFLQEFVLPPVQLPQYFTFDLTALKLITQPLPAATWTDDTPTGPTGILRPGISFHPKLRPILLPGKTGKRGSSSDLTSPDKIQAIMNFLQDLKLVPIDPAKNIMGIEVPELLVHRLTGKKITTKNGQPIIPILLPKYIGMDPISQGDLTMVITQDCDTCHSPASLPPVSEK*",
-    "nuc": "CGGACACACAAAAAGAATGAAGGATTTTGAATCTTTATTGTGTGCGAGTAACTACGAGGAAGATTAAAGATTTTCCTCTCATTGAAATTGAAATTGAGATTCTAATCTCGACGGATCGATCCCCAATACCAACACTGAGAATTGGCCTGAAGAAGTCATCTGCTCCTTGGCAAAACCAAGAGCAGGCCCAAAGGGCCATTAGGCCACATCTGCTGAGCCTGCAGAACACGCAGGACTTACTTAGCAGAAGAGAGCGCGTGCCGAAGCCAGCCAACAAATTGACACAGCTGCTCACTCTGACCCTGAATTCATAAACAATATTAAGTTGACAACAGAGATACTAATCCAATATTTGGATCAAGAATCAAAATAGTGAAACGACTGACTATCCCTCCTTAGAATTAGCAAAGATCCTTTTGTAGACTATTGTGCTACATTCTCTATCCAAGACCTCAAAATGGATCCTCGTCCAATCAGAACCTGGATGATGCATAACACATCTGAAGTTGAAGCAGACTACCATAAGATTTTAACTGCCGGATTGTCCGTCCAGCAAGGCATTGTGAGACAAAGAATCATTCCTGTTTACCAAATCTCAAACCTGGAGGAAGTATGTCAACTCATCATACAGGCATTCGAGGCTGGCGTCGACTTCCAGGATAGTGCAGATAGCTTTTTGTTAATGCTATGTCTGCATCATGCCTATCAAGGGGATTATAAACAATTTTTGGAAAGTAATGCGGTAAAATACCTTGAAGGTCATGGATTCCGTTTTGAGATGAAGAAAAAGGAAGGTGTCAAGCGCCTGGAGGAACTACTCCCTGCTGCCTCGAGTGGAAAGAACATCAAGAGAACATTGGCTGCAATGCCCGAGGAGGAAACAACAGAAGCAAATGCTGGACAATTTCTTTCATTTGCTAGTCTGTTTCTCCCAAAATTGGTTGTCGGAGAAAAGGCCTGTCTGGAGAAGGTTCAACGACAAATCCAAGTGCACGCAGAACAAGGTCTGATTCAATATCCGACATCTTGGCAATCGGTGGGACATATGATGGTCATCTTCAGACTAATGCGAACCAACTTCCTGATTAAGTTCCTCCTAATACATCAAGGAATGCATATGGTTGCAGGGCATGATGCTAATGATGCCGTCATTGCCAACTCTGTAGCTCAAGCTCGTTTCTCCGGATTGTTGATAGTCAAAACAGTGCTTGATCATATCCTCCAAAAAACAGAGCACGGAGTTCGCCTGCATCCCTTGGCGCGAACAGCCAAAGTCAAAAATGAGGTGAGCTCTTTTAAGGCCGCTTTAGCCTCACTAGCACAACATGGAGAATATGCCCCGTTTGCTCGTCTGCTGAATCTATCTGGGGTTAACAATCTTGAGCATGGGCTTTTCCCTCAACTTTCTGCAATTGCTTTGGGAGTAGCAACTGCACATGGGAGCACTCTGGCTGGAGTCAATGTAGGAGAGCAATACCAACAACTGCGAGAAGCAGCCACTGAGGCCGAAAAGCAGTTGCAGAAATATGCTGAATCTCGTGAACTTGATCACCTAGGTCTTGATGATCAGGAAAAGAAAATCCTAAAAGACTTCCATCAGAAAAAGAATGAGATCAGCTTCCAGCAGACGACAGCCATGGTCACACTGCGGAAAGAGAGATTGGCCAAATTGACCGAAGCTATTACTTCCACCTCTATCCTTAAAACAGGAAGGCGGTATGATGATGACAATGACATACCCTTTCCAGGGCCAATCAATGATAACGAGAACTCTGGTCAGAACGATGACGATCCAACAGACTCCCAGGATACCACAATCCCGGATGTAATAATCGATCCAAACGATGGTGGGTATAATAATTACAGCGATTATGCAAATGATGCTGCAAGTGCTCCTGATGACCTAGTTCTTTTTGACCTTGAGGACGAGGATGATGCTGATAACCCGGCTCAGAACACGCCAGAAAAAAATGATAGACCAGCAACAACAAAGCTGAGAAATGGACGGGACCAGGATGGAAACCAAAGCGAAACTGCATCCCCACGGGCAGCCCCCAACCAATACAGAGACAAGCCAATGCCACAAGTACAGAACAGATCCGAAAATCATGACCAAACCCTTCAAACACAGTCCAGGGTTTTGACTCCTATCAGCGAGGAAGCAGACCCCAGCGACCACAACGATGGCGACAATGAAAGCATTCCTCCCCTGGAATCAGACGACGAGGGTAGCACTGATACTACTGCAGCAGAAACAAAGCCTGCCACTGCACCTCCCGCTCCCGTCTACCGAAGTATCTCCGTAGATGATTCTGTCCCCTCAGAGAACATTCCCGCACAGTCCAATCAAACGAACAATGAGGACAATGTCAGGAACAATGCCCAGTCGGAGCAATCCATTGCAGAAATGTATCAACATATCTTGAAAACACAAGGACCTTTTGATGCCATCCTTTACTACCATATGATGAAAGAAGAGCCCATCATTTTCAGCACTAGTGATGGGAAGGAGTATACATATCCAGACTCTCTTGAAGATGAATATCCACCCTGGCTCAGCGAGAAGGAAGCCATGAACGAAGACAATAGATTCATAACCATGGATGGTCAGCAGTTTTACTGGCCTGTGATGAATCATAGAAATAAATTCATGGCAATCCTCCAGCATCACAGGTGATCCGACCTCTAAAACTGAGCTCCTAACTACAAGCTACCCCATCACTCTGCCGGAATGCCAGAACCTCCCTCCAAAACAGCTCCACATCGAGAACCTCCGACGCGGTACACAGGCAAGACAGGCAACCTAATGATGTTCCTGCTCACCCACAACCGCAACCAACACTTGATCGACTTCCAAGACAACTACAACCCCCTTAGCCAACTCCACCACAGAAGCACCACCCCATAACAACAACCCCAAATCAACAACACTGCATGTAAGTATTGTCTCACCCCAAGATGATCCCTGGACACCAACAACCCCCTAACCTCCCCAAGTTGTCATTAAGAAAAAATATATGATGAAGATTAAAACCTTCATCGGAGCTATTTCTTCTACGCTTGGTTAGGACCAGTATTCACAAACTATTTTACAATCCCTACCCAATATGACCTCTAACAGAGCAAGGGTGACTTACAACCCACCACCAACAACCACAGGCACACGATCGTGTGGGCCGGAACTTTCCGGGTGGATCTCTGAGCAATTGATGACAGGCAAGATTCCGATTACCGATATCTTCAATGAAATTGAAACCTTACCTAGTATAAGTCCCTCGATCCACTCCAAAATCAAAACCCCAAGTGTTCAAACACGCAGTGTCCAGACCCAAACTGACCCAAATTGTAATCATGATTTTGCAGAGGTTGTGAAAATGCTAACATCTCTAACCCTTGTCGTACAAAAACAAACCCTTGCAACTGAATCACTTGAGCAACGCATTACTGACCTGGAAGGTAGCCTGAAACCAGTGTCTGAGATCACCAAGATTGTTTCTGCACTAAATAGATCCTGTGCAGAGATGGTGGCCAAATATGATCTTCTAGTAATGACAACTGGTCGTGCAACTGCCACTGCTGCAGCTACTGAAGCATACTGGGCAGAACATGGACGTCCTCCACCGGGGCCCTCATTGTACGAGGAGGATGCAATCAGGACTAAAATTGAAAAACAAGGGGATATAGTACCCAAGGAAGTGCAAGAGGCCTTCCGTAATCTGGATAGTACTGCCCTTCTAACGGAAGAGAATTTTGGGAAACCAGACATATCCGCAAAAGACTTGCGCAATATCATGTATGATCACCTCCCAGGTTTTGGCACAGCATTTCATCAACTAGTGCAAGTTATCTGCAAGTTAGGGAAGGACAATTCCTCACTTGATGTAATTCATGCAGAATTTCAGGCCAGCCTTGCTGAAGGAGACTCTCCTCAGTGTGCCCTGATTCAGATAACCAAACGGATTCCTATTTTCCAAGATGCAGCACCACCCGTAATCCATATTCGTTCACGCGGTGATATACCAAAGGCGTGTCAAAAGAGCCTCCGCCCAGTTCCACCATCACCAAAGATTGATAGGGGTTGGGTATGCATATTCCAGCTACAAGACGGAAAAACACTCGGACTCAAAATCTAAGGTGAACAATTGCACAACCTCCACAGTCGCCTATATTGCTTCCTTCCGGAATCAGGGTATGATCGCGTAAAAAATAAGCTTCCAACATATTGATACACGATCCATATCCATAATGCCATCTCCAGGAATATGAGAACGCAAGGCCATATCAGGACCCGATCTCAATTCCAATGCAACCTACTGTTAAGAATAAAATAACCAATGTCCTCTAGCCTCATATGTTCTCAAAAATACAAGTGATGAAGATTAAGAAAAAGCATCCTTTACTTGAGAGGAGCTAATTCTTTATACTTCATCTAATCTTTAAGTAAGTTGATCATTACCACCATGAGGAGGGCAATTCTACCTACTGCACCGCCAGAATACATGGAGGCTGTCTACCCAATGAGAACGGTTAGTACTAGTATCAACAGTACTTCCAGTGGTCCGAACTTTCCAGCACCGGATGTAATGATGAGTGATACACCCTCCAACTCACTCCGACCAATTGCTGATGATAACATCGATCATCCAAGTCATACACCAACCAGTGTTTCATCAGCCTTTATACTCGAGGCAATGGTGAATGTGATATCGGGGCCGAAGGTACTAATGAAGCAAATTCCTATATGGCTCCCCTTGGGTGTTGCTGATCAAAAAACATATAGTTTTGACTCAACTACAGCTGCAATTATGCTCGCATCGTACACCATCACTCACTTTGGCAAAACCTCCAATCCGCTTGTGAGAATCAATCGACTTGGTCCTGGGATCCCCGATCACCCGTTGCGGCTTCTAAGAATAGGAAATCAAGCCTTCTTGCAAGAGTTTGTGCTGCCTCCAGTTCAATTGCCGCAGTATTTCACTTTTGACCTGACGGCTCTAAAGCTGATCACTCAACCTCTCCCGGCAGCAACCTGGACAGATGATACTCCGACCGGTCCTACAGGAATACTTCGTCCTGGAATTTCCTTTCATCCCAAACTGAGACCTATCCTATTGCCAGGGAAGACCGGGAAAAGAGGATCCAGCTCCGATCTTACTTCTCCTGATAAAATACAAGCAATAATGAACTTTCTCCAAGACCTCAAACTCGTGCCGATTGATCCAGCCAAGAACATTATGGGTATTGAAGTGCCGGAACTCTTGGTCCACAGACTAACTGGAAAGAAAATCACAACAAAAAATGGTCAACCAATAATTCCTATTCTTCTACCAAAGTATATTGGCATGGATCCCATTTCTCAGGGAGACCTCACAATGGTCATCACTCAAGACTGTGACACTTGCCATTCTCCTGCTAGTCTTCCTCCAGTCAGCGAGAAATAAGCATGAAGTCCGAGGCTGCCTGGCCCACACGGCCCCCAGGGCCTTCGTCCGGCCACCGAACCAACCATCTGACCTTCATCAAAACCAAAAAATACCACCACGCGAAAGCTAAAATGCAGGACCACAATCCAACCAGCAACACCATCCATACACAGGTATCAATTGGGCTGCCGCAGCATATAGACCCAATAGCAAGCTGCTGTCCAGAAAATAGTTCCGGAAAGTAACTCAACCATCGCAAGCCCAATGCAGCTTTCAGAAATCCGCCAGCAACCCAACTCCACTGTACCCCCAATATTAACCTGAATCGACTAACCGCACTTTAATTTGAAGCACATTTGTTCAATGGGTTCATTATTAACAGTGTTGCTTTTAGATTGTACCTTTGCTCACAGATAGTAAATTGTTATGGTATCTAATCTTATTAAGAAAAAGAACACGATGAAGATTAACGCGACCTAGAGCGCTGCCTTCATCTCATCAATTTAACTTGTCAATAGCGCAACCTAGTTTGTGATTACTCATCTTCCGTAGTTGGCAAACACTTTGCTGATTAATTGTAGATATACCACAGTCATCATGGTTACATCAGGAATTCTACAATTGCCCCGTGAACGCTTCAGAAAAACATCATTTTTTGTTTGGGTAATAATCCTATTTCACAAAGTTTTCCCTATCCCATTGGGCGTAGTTCACAACAACACTCTCCAGGTAAGTGATATAGATAAATTGGTGTGCCGGGATAAACTTTCCTCCACAAGTCAGCTGAAATCGGTCGGGCTTAATCTAGAAGGTAATGGAGTTGCCACAGATGTACCAACAGCAACGAAGAGATGGGGATTCCGAGCTGGTGTTCCACCCAAAGTGGTGAACTACGAAGCTGGGGAGTGGGCTGAAAACTGCTACAACCTGGACATCAAGAAAGCAGATGGTAGCGAATGCCTACCTGAAGCCCCTGAGGGTGTAAGAGGCTTCCCTCGCTGCCGTTATGTGCACAAGGTTTCTGGAACAGGGCCGTGTCCTGAAGGTTTCGCTTTCCACAAAGAAGGCGCTTTCTTCCTGTATGATCGACTGGCATCAACAATCATCTATCGAAGCACCACGTTTTCAGAAGGTGTTGTGGCTTTCTTGATCCTCCCCAAGACTAAAAAGGACTTTTTCCAATCACCACCACTACATGAACCGGCCAATATGACAACAGACCCATCCAGCTACTACCACACAGTCACACTTAATTATGTGGCTGACAATTTTGGGACCAATATGACTAACTTTCTGTTTCAAGTGGATCATCTAACTTATGTGCAACTTGAACCAAGATTCACACCACAATTTCTTGTCCAACTCAATGAGACCATTTATACTAATGGGCGTCGCAGCAACACCACAGGAACACTAATTTGGAAAGTAAATCCTACTGTTGACACCGGCGTAGGTGAATGGGCCTTCTGGGAAAATAAAAAAACTTCACAAAAACCCTTTCAAGTGAAGAGCTGTCTGTCATATTTGTACCAAGAGCCCAGGATCCAGGCAGCAACCAGAAGACGAAGGTCACTCCCACCAGCTTCGCCAACAACCAAACCTCCAAGAACCACGAAGACTTGGTTCCAGAGGATCCCGCTTCAGTGGTTCAAGTGCGAGACCTCCAGAGGGAAAACACAGTGCCGACCTCACCCTTGGACACAGTCCCCACAACTCTGATCCCCGACACAATGGAGGAACAAACCACCAGCCACTACGAACTACCAAACATTTCCGGAAACCATCAAGAGAGGAACAACACCGCACACCCCGAAACTCTCGCCAACAATCCTCCAGACAACACAACCCCGTCGACACCACCTCAAGACGGTGAGCGGACAAGTTCCCACACAACACCCTCCCCCCGCCCAGTCCCAACCAGCACAATCCATCCCACCACACGAGAGACTCACATTCCCACCACAATGATAACAAGCCATGATACTGACAGTAATCGACCCAACCCAATTGACATCAGCGAGTCTACAGAGCCAGGACTACTCACCAACACCATAAGAGGGGTTGCAAATTTGCTGACAGGTTCAAGAAGAACCCGAAGGGAAATCACCTTGAGAACACAAGCCAAATGTAATCCGAACCTACACTATTGGACAACCCAAGATGAAGGGGCTGCCATTGGTCTAGCCTGGATACCTTACTTCGGGCCCGCAGCAGAGGGAATTTATACGGAAGGGATAATGCACAATCAAAATGGGCTAATTTGCGGGTTGAGGCAGCTAGCAAATGAGACGACTCAAGCCCTACAGTTATTCTTGCGTGCTACCACGGAATTGCGCACTTTCTCTATATTGAATCGAAAAGCCATCGACTTTTTACTCCAAAGATGGGGAGGAACGTGCCACATCTTAGGCCCAGATTGCTGTATTGAGCCCCATGATTGGACTAAGAACATTACTGACAAAATAGATCAAATCATTCATGATTTCATTGATAAACCTCTACCAGATCAAACAGATAATGACAATTGGTGGACAGGGTGGAGGCAATGGGTTCCTGCCGGGATCGGGATCACGGGGGTAATAATCGCAGTTATAGCACTGCTGTGTATTTGCAAATTTCTACTCTAATCTAGTCCGACTCTGTACCAGCATAATGGCCTCTAAAATAAGCTTTTGCTTCTGCTTCCTATAGTTAATACATTTCAGCAAAAATCAACTATTAAGTCAAAAGAAGATCCCTCTAATAATCCTAATTACCTTCAAAAATCTAGAACTTTATTAATTCTCAGGGTATTTAGAACAGCCAGATGACTTGACTAAGTTTGTACTGTAATAAAAAGATACTTGATGAAGATTAAGAAAAAGACAGTCTTGTGATTGTCACTAATCTTCATCTCAAAACATATTATTTTACCAGAAGCTACCATAGCCTACCTCCTTGACACATAGCAAACCTTACTCATGTTGATAATTGTTTGCCTGCTATTTACATATTTACTAACTTACAAAATTATCTTGGGGATTTCTCTGAACATATAATCAGGATTGGCATTTAAAACACAAGTTAGTCCTAATGGACTCATTTCATGAAAGAGGGCGTAGCAGAACTATTCGACAGAGTGCAAGAGATGGGCCGAGTCATCAAGTAAGAACAAGATCATCCTCCAGAGACAGCCACCGCAGCGAATATCATACACCTAGGAGCTCTTCCCAAGTTCGAGTCCCGACTGTGTTTCATCGGAAGCGTACTGATTCTTTGACAGTTCCACCAGCACCAAAGGACATATGTCCTACCTTAAGGAAAGGATTTTTGTGTGACAGCAATTTTTGTAAAAAGGACCATCAACTAGAAAGTTTAACAGATAGGGAGCTGCTTTTGCTGATTGCACGGAAAACCTGCGGCTCCCTTGAACAACAATTGAACATCACTGCTCCTAAAGATACACGATTAGCAAATCCAATTGCAGATGATTTCCAACAAAAAGACGGCCCAAAAATTACACTATTGACACTTTTGGAGACTGCGGAGTATTGGTCAAAACAAGATATCAAGGGCATTGATGACTCAAGACTAAGAGCATTACTAACCCTTTGTGCCGTCATGACGAGGAAATTCTCAAAATCCCAGCTTAGTCTATTGTGTGAGAGTCATCTACGACGAGAAGGGCTAGGACAGGATCAATCAGAATCTGTTCTTGAAGTGTACCAGCGCTTGCATAGCGACAAAGGCGGAAATTTTGAGGCAGCCCTATGGCAACAATGGGACCGACAGTCCTTGATCATGTTTATAACAGCATTTCTTAATATTGCTTTACAATTACCCTGTGAAAGTTCATCTGTTGTTATTTCAGGATTAAGGCTGCTAGTGCCTCAATCAGAAGATACCGAGACCTCAACCTACACCGAGACACGTGCATGGTCAGAGGAAGGTGGCCCCCATTAACATCTTCCACAGTCGAATCTACCATAACTTCCCTATTCAACGCAGGTAAGAATCAGTACTAAACCACAAGTGCAAAAATTAACAAAACACCAGCATAAGTGAAATCTTGTCTGTGATTAGCAACACGAATGATCTTCAATCCTGTTGCAATTCGCCAGTGATAATTGTATTCACATTGTGGCCACAATATACTGTCTTTTCCCATTGAAAAATAAGGCTGAATCTATTGCGCTACACAAACTTACAGGATTAGCACCACGACGGCTCAATACTATACCTATTGGTCACGGCTCGATGTGTTAATCACTTATATTGTATTCATTTGAAATTATTCATTAGGCAAATACTTTGATTAAGAAAAAATAATTGGAAAACCAGAAAATCCCTAGGTATTTAAATTCCTATCTCCGGAGATCCGAGATAATTAATCAAGCAATGAGGGAACAATGGTGAACAACAACATATTGTTGCCCCCTTTAGATTGGTCAGTTCCAAAAACAAGTGATGAAGATTAATGCAGATGTCCAAGGAACACATATTTGTGATTTAAACGTTCCAGTTAGACTCTGTTCAAGGATCTTCATCTTTTGTAGCTCCACTCTGAGTCACAACATAATTGAGTTTTTGCTCAGAACAGTTATCAGGATTAAATTCTCTCAAATAACTGAAACTACTAGCATCACTCTCAATTTCATTACTTACGACAATCATTATCTTAATAATATTTCCCTAAATTACTGACTTAATCAGCTTGTAATCAGATAATATCGAAACCAATTTATCATAAGGCATAATTTGTATAAGTGATTTAGGATTTACCCCAGAAGTGAAATAATTCTTAGAATAAAAGACCGACTAGAATATCCTTAAGGCTGTCTAACGTGCCACACAGCTAGGGTTAGCCTGACATCTGGAACAAGATCGATACTAATATAGGGATTTGTTTCATACTAACTCTCTGCAAACACAATGGCTAAGGCAACAGGTAGGTACAACTTGGTTTCACCTAAAAAGGACCTCGAGAGGGGGCTAGTTTTGAATGATTTGTGCACGTTTTTAGTTGATCAGACTATCCAGGGGTGGCGGGTGACTTGGGTTGGGATTGAATTTGACATCGCCCAGAAAGGGATGGCTCTACTGCATCGGTTAAAAACTGCTGACTTCGCTCCTGCATGGTCGATGACAAGGAATTTATTTCCTCATTTATTTCAAAATTCAAATTCTACTATTGAGTCTCCCCTCTGGGCATTACGAGTGATTCTGGCAGCTGGTATTCAAGACCAGTTAATTGACCAATCCTTGGTAGAACCGTTGGCCGGAGCCCTGAGCTTAGTCTCCGATTGGCTTCTCACAACAAACACAAACCATTTTCAAATGCGCACGCAGCACGCTAAAGAGCAACTGAGCTTGAAGATGCTATCATTAGTGCGCTCTAATATCTTGAAATTCATCAGTCAATTGGACGCACTACATGTCGTGAACTACAATGGACTCTTGAGCAGTATCGAAATTGGCACTAGAAATCATACCATTATCATCACAAGAACCAACATGGGTTTCCTGGTAGAATTACAGGAGCCTGATAAATCTGCCATGAATCAAAAGAAACCAGGACCAGTCAAGTTCTCCCTCCTGCATGAATCAACCTTCAAGGCTCTAATCAAAAAACCCGCAACTAAGATGCAGGCCTTGATTCTGGAATTTAACAGCTCCCTGGCAATATAGTCCAACGCTACCAACCATCATTTTTTGTAACTGCATCTCTTTTATTTCCTTTCTAACTTGATACAATTATAATCAAGATCCCTAATCCCTTTTGACGAAGTGGGCTAATTTTTGCTCATTCTAATAATAAATCATAACCTGAATAAAAGACACCACAATATTATAACCCAATAACACCTAGAGAATTGCTGAATTGCTAAAGATTATATACTCGCACTAAGAGACAAGTTAATCAATCTTTACTTAATAATATACTAAATGCTAGATAGCTCTGGCTAATTAACCTGAGTTGTGGATTACTCCTTTTAAAAGTCTATCAATTTAAGCTTATCACTAATATTAAGGAGGACTTTTTAAATAAGAGCAAGTGTTATGTAGTCTTACTAAGAATGATTTGAGGAAGATTAAGAAAAAGTGCTTGTGGGGTCTTTCCGTTGTGGAGGACACACGAGCAAACTTCTTCCTCTAATTTTAATATGGCAACTCAACATACACAATATCCAGATGCAAGATTATCTTCACCCATTGTCTTAGATCAATGTGATCTTGTCACCCGTGCTTGCGGTCTGTATTCTTCATACTCATTAAATCCTCAGTTGAAAAATTGTAGACTACCAAAACATATTTACCGCCTCAAATTTGATGCTACGGTTACAAAATTTTTAAGCGATGTTCCAATAGTTACATTGCCGATAGATTACTTGACCCCTTTACTTTTACGAACTTTATCCGGGGAGGGCTTATGCCCTGTCGAACCAAAGTGCAGCCAATTCTTAGATGAAATAGTAAGTTATGTTTTGCAGGATGCACGTTTTTTAAGATACTATTTTAGGCATGTTGGAGTACACGATGACAATGTTGGGAAAAATTTTGAGCCAAAGATTAAGGCTTTGATTTATGATAATGAATTTCTGCAACAATTGTTTTATTGGTACGATTTAGCAATCCTAACGCGTAGAGGGCGCCTGAATCGAGGGAATAACCGTTCAACATGGTTTGCAAATGACGATTTAATAGACATTCTCGGGTACGGTGATTATATTTTCTGGAAAATACCGTTGTCATTGTTGTCACTCAACACAGAGGGGATTCCTCATGCAGCTAAGGACTGGTATCACGCATCAATCTTCAAAGAAGCGGTTCAAGGTCACACACATATCGTGTCAGTTTCCACTGCAGATGTTTTAATTATGTGTAAGGACATCATAACCTGTCGTTTCAATACCACACTCATTGCAGCATTGGCAAATTTAGAAGATTCTATCTGTTCTGACTATCCACAACCTGAAACAATCTCTAATCTGTATAAAGCAGGGGATTACTTAATCTCGATACTGGGTTCAGAAGGTTATAAGGTCATAAAGTTTTTAGAACCACTATGTTTAGCTAAGATCCAATTGTGCTCAAATTACACTGAGAGGAAAGGGAGATTCCTTACTCAAATGCATTTGGCCGTTAATCACACACTTGAAGAACTTATTGAGGGCCGGGGATTGAAGTCACAACAAGACTGGAAGATGAGGGAATTTCACCGAATCTTAGTAAATTTAAAGTCAACACCACAACAACTCTGTGAATTGTTTTCAGTGCAAAAGCATTGGGGGCATCCTGTGCTACATAGCGAGAAGGCTATTCAGAAAGTAAAGAAACATGCAACCGTAATAAAAGCATTGCGTCCTATAATCATCTTTGAGACATATTGTGTGTTCAAGTACAGCATTGCCAAACATTATTTTGATAGCCAAGGGTCATGGTATAGTGTAATCTCAGATAAACATCTAACACCAGGTTTACATTCTTACATTAAGAGGAACCAATTTCCGCCACTGCCTATGATTAAAGACTTATTGTGGGAATTCTATCACCTTGATCATCCTCCCTTATTTTCCACCAAGATTATTAGTGACTTGAGTATTTTCATTAAGGATCGCGCTACCGCAGTGGAAAAAACATGTTGGGATGCAGTTTTCGAACCTAATGTTCTTGGATATAGTCCTCCAAACAAGTTCTCAACTAAGAGGGTTCCTGAACAGTTTCTTGAACAAGAAAATTTCTCGATTGATAGTGTTCTCACTTATGCCCAGCGCCTGGATTATCTACTTCCACAATACCGGAATTTTTCTTTCTCACTTAAGGAAAAAGAATTAAATGTAGGACGAGCTTTTGGTAAGCTACCTTATCCTACACGTAATGTTCAAACTTTATGTGAAGCCTTATTGGCAGATGGATTAGCTAAAGCCTTTCCTAGTAACATGATGGTTGTAACAGAGCGTGAACAGAAGGAAAGCCTCTTGCACCAGGCGTCGTGGCACCACACAAGTGACGATTTCGGTGAGAATGCCACTGTTAGAGGCAGCAGTTTTGTTACCGACCTAGAAAAATACAACTTGGCATTTAGATATGAGTTTACAGCTCCATTTATTGAATACTGTAATCGATGTTATGGTGTAAAAAATTTATTCAATTGGATGCATTATACGATACCGCAATGTTATATACATGTAAGTGATTATTATAATCCCCCTCATGGAGTTTCGCTAGAAAATCGGGAAGATCCCCCGGAAGGCCCTAGCTCTTACCGTGGTCATCTTGGGGGAATTGAGGGACTCCAACAGAAACTCTGGACCAGCATTTCATGTGCGCAAATCTCATTAGTTGAGATCAAGACTGGTTTCAAGTTGAGATCTGCGGTAATGGGTGATAATCAATGCATCACAGTTCTTTCCGTATTTCCTCTAGAGACAGATTCCAATGAGCAAGAGCATAGCTCCGAGGACAATGCTGCTCGCGTAGCAGCCAGTTTAGCCAAAGTCACGAGTGCCTGTGGCATCTTCCTAAAACCAGATGAGACTTTTGTGCATTCAGGCTTTATTTATTTCGGTAAGAAGCAATATTTAAATGGCGTTCAATTGCCACAATCACTCAAGACTGCTACCAGGATTGCTCCCTTGTCAGATGCAATCTTTGATGACCTTCAGGGAACTCTGGCTAGTATAGGAACGGCATTTGAGAGATCTATATCCGAGACTAGACATGTATACCCTTGCCGGGTGGTTGCCGCATTCCATACATTCTTCTCCGTTAGGATCCTCCAATACCACCACCTTGGTTTCAACAAAGGAACCGATCTAGGTCAACTATCACTAAGCAAACCGTTGGATTTCGGAACTATCACTCTTGCTTTAGCGGTACCTCAAGTTCTAGGAGGTTTATCGTTTTTAAACCCAGAAAAATGTTTTTATCGCAACCTTGGAGACCCCGTGACCTCTGGCCTATTCCAACTTAGGACTTACCTGCAAATGATCAACATGGACGACTTATTTCTACCTTTAATTGCCAAGAACCCCGGGAACTGTAGTGCAATTGACTTTGTACTCAACCCAAGCGGATTGAATGTCCCTGGGTCACAAGACCTAACATCTTTTTTACGTCAGATAGTGCGTAGAACAATCACATTGAGTGCAAAAAATAAGCTAATAAACACATTGTTTCACTCCTCAGCCGATTTAGAAGATGAGATGGTATGTAAATGGCTACTTTCTTCAACACCTGTAATGAGTCGGTTTGCTGCTGATATATTCTCTCGTACTCCGAGTGGGAAGCGCTTGCAGATCCTAGGTTATTTAGAAGGGACTAGAACCTTGCTAGCCTCCAAAGTCATCAATAACAATGCAGAGACTCCTATTTTAGATAGGTTGAGGAAAATCACACTGCAGAGATGGAGTTTGTGGTTTAGCTACCTAGACCACTGTGATCAGGTTCTAGCAGATGCTTTAATAAAAGTTTCTTGTACAGTTGATTTGGCGCAAATTTTACGTGAATATACCTGGGCACACATACTAGAGGGAAGACAGCTCATTGGTGCAACACTTCCTTGCATGTTAGAACAATTTAATGTGTTTTGGCTCAAATCGTACGAACAATGCCCTAAATGTGCAAAATCTAGAAATCCAAAAGGAGAGCCATTTGTGTCAATTGCAATTAAGAAACAAGTTGTGAGTGCATGGCCGAATCAGTCACGGTTAAATTGGACCATTGGGGACGGTGTACCTTACATCGGGTCTCGAACAGAGGACAAGATTGGGCAGCCAGCAATCAAGCCTAAGTGTCCCTCTGCTGCCTTACGTGAAGCAATAGAGTTGACATCTAGACTAACATGGGTTACCCAAGGTGGTGCCAATAGTGATTTGCTAGTTAAACCTTTTGTAGAGGCACGAGTAAACCTGAGTGTGCAGGAGATCCTTCAAATGACGCCTTCTCATTATTCAGGGAACATCGTACATCGGTATAATGACCAATACAGCCCTCATTCTTTCATGGCAAATAGAATGAGTAATTCCGCGACGAGATTGGTGGTGTCGACAAATACTCTCGGGGAGTTCTCAGGTGGGGGGCAATCAGCAAGGGACAGCAATATCATCTTTCAAAATGTAATCAATTTTGCGGTTGCCCTATTTGATTTACGATTTCGGAACACCGAAACATCCTCCATTCAGCATAATCGTGCCCATCTCCATCTTTCACAGTGTTGCACACGGGAAGTCCCAGCTCAATACCTAACCTACACGTCTACGCTTTCCTTGGATCTCACAAGGTACCGAGAGAATGAGTTAATTTATGATAACAATCCATTAAAAGGTGGACTTAATTGCAACCTATCCTTTGATAATCCACTTTTCAAGGGCCAAAGGCTCAATATCATAGAGGAGGATTTGATTAGATTTCCTCATTTATCTGGGTGGGAACTTGCGAAAACCATCATTCAGTCCATTATCTCAGACAGCAATAACTCATCCACAGACCCCATTAGCAGTGGAGAAACACGATCATTCACAACTCACTTTCTCACATATCCTAAGGTTGGGCTCCTCTATAGTTTCGGCGCCATCGTGAGTTATTACTTAGGGAATACCATTATTAGGACCAAAAAGCTAGACCTCAGTCATTTTATGTATTACTTAACAACTCAAATCCATAATTTGCCACATCGCTCGTTGAGGATACTTAAGCCCACTTTTAAACATGTTAGTGTGATATCAAGACTAATGAGTATTGATCCTCATTTTTCAATCTACATCGGGGGTACGGCAGGTGATCGAGGGCTTTCGGATGCTACCAGACTATTCCTTCGAGTGGCCATTTCTTCCTTCCTTCAATTTATCAAAAAATGGATCGTGGAATACAGGACAGCTATTCCTCTGTGGGTTATATACCCTTTGGAGGGACAAAATCCAGATCCAATTAATAGCTTTCTACATCAGATTATAGCCTTACTGCAAAATGAATCCCCTCAAAACAACATCCAATTCCAAGAAGACAGAAATAATCAACAGTTGTCCGATAATCTAGTTTACATGTGCAAGAGCACTGCCAGTAATTTCTTCCATGCATCACTTGCCTATTGGAGGAGCCGGCACAAAGGACGGCCCAAAAATCGATCGACCGAAGAACAGACAGTTAAACCCAGACCATATGATAATTTTCATTCTGTTAAATGTGCCTCAAACCCACCAAGCATCCCCAAATCTAAGTCAGGAACTCAAGGCTCAAGCGCATTTTTTGAGAAACTTGAATATGATAAAGAAAGAGAATTGCCAACAGCTTCCACACCAGCCGAACAATCCAAGACCTATATCAAGGCCCTATCCAGCCGAATTTATCATGGTAAAACACCATCCAATGCCGCAAAAGATGATTCAACAACCTCCAAGGGCTGCGATTCCAAAGAAGAAAATGCCGTTCAAGCTTCACACCGAATTGTCCTACCATTTTTTACATTGTCACAGAACGACTACAGAACTCCCTCAGCTAAAAAGTCAGAGTATGTAACTGAAATCACCAAACTAATTCGACAATTAAAGGCAATTCCAGATACCACTGTATACTGTCGCTTTACAGGGGTTGTATCTTCAATGCATTATAAGCTTGATGAGGTTCTCTGGGAATTCGATAGTTTCAAAACTGCTGTGACTCTAGCTGAAGGAGAAGGGTCAGGTGCCTTATTACTACTACAAAAATATAAGGTTAGAACAATCTTTTTTAACACTTTAGCTACAGAGCATAGCATCGAGGCAGAAATAGTTTCTGGGACAACCACACCTCGAATGCTCCTTCCTGTAATGGCCAAACTTCATGATGATCAAATAAATGTAATATTAAACAATTCTGCTAGCCAGGTTACTGATATCACTAACCCTGCATGGTTCACTGACCAGAAATCTAGAATCCCCACACAAGTTGAGATTATGACTATGGATGCTGAAACGACAGAAAATATTAATCGGTCAAAATTATATGAGGCTATCCAGCAATTAATTGTTTCACACATTGATACAAGGGTGCTAAAGATTGTTATTATAAAGGTTTTTTTAAGTGATATTGATGGTCTCCTGTGGCTTAATGACCATCTTGCCCCTTTATTCGGATCCGGCTATTTAATTAAACCGATTACTTCGAGTCCAAAGTCAAGCGAATGGTACTTATGTCTTTCAAATTTCCTTTCAGCTTCTCGACGACGGCCTCATCAGGGTCATGCTACCTGTATGCAAGTCATCCAAACAGCGCTACGACTCCAAGTTCAAAGGAGTTCATACTGGCTTAGCCATTTAGTGCAATATGCTGATATTAATTTGCACTTGAGTTATGTTAATTTGGGTTTCCCTTCATTGGAAAAGGTTCTTTACCATCGATATAACCTAGTTGATTCACGGAAGGGTCCACTGGTCTCGATCCTTTACCATTTAACACACTTGCAAGCAGAAATTAGAGAATTAGTGTGTGACTATAATCAGCAACGACAAAGTCGAACCCAAACATACCACTTCATCAAAACGACAAAGGGCCGGATTACAAAATTAGTCAATGACTACCTTAAATTTTATCTCGTAGTGCAAGCACTGAAGCATAATTGTCTTTGGCAGGAAGAACTCAGAACACTTCCTGACTTAATCAATGTTTGCAATCGATTTTACCATATAAGGGACTGCTCATGTGAAGATCGATTTTTAATTCAAACTCTTTACTTAACCCGTATGCAAGACTCAGAAGTAAAATTAATGGAGAGATTAACCGGGTTTCTAGGATTGTATCCTAATGGTATTAACGCTTAAGATCCCCTTAGAGGCATCGCAATATGACTCCAAACATTAAATGATATTGCTGTCAATACATCTACCTGACCGAGAGCAAGGTTTATTATAAAAAATCTATACACATGACTGCAATGCGTAATTTATACCGAAACACAGTGAGGGCTGCACATGCAGGTTCCTGTTGAGCTTAAAAAGATCATGCAATACAAAATGATATTTGTATACTAATCATGTTAATACTAACTAACAGTACTCACTGCATATACTCTATCAATTAAGAAAAATTACTGTGGTTTATGCATTTAAATGACATCACGGATGGATATAATATAGTTAATTCTTACCTAAATGTTGAGTTATAGTAATTTGAAGTTGTAATTATGATTAGTGCTTATACTATAAATAATAGCTATACCAAGTATACACAAGAAGTTATGATTTTGTATTCAAGTTATATTCACAGGAACTTGTGATTAATAACAAAAGTCTCAGTTGTTGGTTGTTGAGTTGTAAAACCCCCGTTAAAAATTTATTTTCCACTTATAACTAATAATAATCATAGATCAGTATGAGTTGAGGCTATTTAGACCTTAGAAAAATTGTGCGATGTTTTTTACCATGTCAATCTTGATTTCAATGATATTGGAGGGCTTGTCGATAAATTTAGTAATTAACATTAAGTCAGTGTGGAACCTCATTGGATATTTGATCGTACACAAAATATCTTTACAAAATTGTTTTCTCTTTTTTGTGTGTCCA"
+    "VP40": "MRRAILPTAPPEYMEAVYPMRTVSTSINSTSSGPNFPAPDVMMSDTPSNSLRPIADDNIDHPSHTPTSVSSAFILEAMVNVISGPKVLMKQIPIWLPLGVADQKTYSFDSTTAAIMLASYTITHFGKTSNPLVRINRLGPGIPDHPLRLLRIGNQAFLQEFVLPPVQLPQYFTFDLTALKLITQPLPAATWTDDTPTGPTGILRPGISFHPKLRPILLPGKTGKRGSSSDLTSPDKIQAIMNFLQDLKLVPIDPAKNIMGIEVPELLVHRLTGKKITTKNGQPIIPILLPKYIGMDPISQGDLTMVITQDCDTCHSPASLPPVSEK*",
+    "nuc": "CGGACACACAAAAAGAATGAAGGATTTTGAATCTTTATTGTGTGCGAGTAACTACGAGGAAGATTAAAGATTTTCCTCTCATTGAAATTGAAATTGAGATTCTAATCTCGACGGATCGATCCCCAATACCAACACTGAGAATTGGCCTGAAGAAGTCATCTGCTCCTTGGCAAAACCAAGAGCAGGCCCAAAGGGCCATTAGGCCACATCTGCTGAGCCTGCAGAACACGCAGGACTTACTTAGCAGAAGAGAGCGCGTGCCGAAGCCAGCCAACAAATTGACACAGCTGCTCACTCTGACCCTGAATTCATAAACAATATTAAGTTGACAACAGAGATACTAATCCAATATTTGGATCAAGAATCAAAATAGTGAAACGACTGACTATCCCTCCTTAGAATTAGCAAAGATCCTTTTGTAGACTATTGTGCTACATTCTCTATCCAAGACCTCAAAATGGATCCTCGTCCAATCAGAACCTGGATGATGCATAACACATCTGAAGTTGAAGCAGACTACCATAAGATTTTAACTGCCGGATTGTCCGTCCAGCAAGGCATTGTGAGACAAAGAATCATTCCTGTTTACCAAATCTCAAACCTGGAGGAAGTATGTCAACTCATCATACAGGCATTCGAGGCTGGCGTCGACTTCCAGGATAGTGCAGATAGCTTTTTGTTAATGCTATGTCTGCATCATGCCTATCAAGGGGATTATAAACAATTTTTGGAAAGTAATGCGGTAAAATACCTTGAAGGTCATGGATTCCGTTTTGAGATGAAGAAAAAGGAAGGTGTCAAGCGCCTGGAGGAACTACTCCCTGCTGCCTCGAGTGGAAAGAACATCAAGAGAACATTGGCTGCAATGCCCGAGGAGGAAACAACAGAAGCAAATGCTGGACAATTTCTTTCATTTGCTAGTCTGTTTCTCCCAAAATTGGTTGTCGGAGAAAAGGCCTGTCTGGAGAAGGTTCAACGACAAATCCAAGTGCACGCAGAACAAGGTCTGATTCAATATCCGACATCTTGGCAATCGGTGGGACATATGATGGTCATCTTCAGACTAATGCGAACCAACTTCCTGATTAAGTTCCTCCTAATACATCAAGGAATGCATATGGTTGCAGGGCATGATGCTAATGATGCCGTCATTGCCAACTCTGTAGCTCAAGCTCGTTTCTCCGGATTGTTGATAGTCAAAACAGTGCTTGATCATATCCTCCAAAAAACAGAGCACGGAGTTCGCCTGCATCCCTTGGCGCGAACAGCCAAAGTCAAAAATGAGGTGAGCTCTTTTAAGGCCGCTTTAGCCTCACTAGCACAACATGGAGAATATGCCCCGTTTGCTCGTCTGCTGAATCTATCTGGGGTTAACAATCTTGAGCATGGGCTTTTCCCTCAACTTTCTGCAATTGCTTTGGGAGTAGCAACTGCACATGGGAGCACTCTGGCTGGAGTCAATGTAGGAGAGCAATACCAACAACTGCGAGAAGCAGCCACTGAGGCCGAAAAGCAGTTGCAGAAATATGCTGAATCTCGTGAACTTGATCACCTAGGTCTTGATGATCAGGAAAAGAAAATCCTAAAAGACTTCCATCAGAAAAAGAATGAGATCAGCTTCCAGCAGACGACAGCCATGGTCACACTGCGGAAAGAGAGATTGGCCAAATTGACTGAAGCTATTACTTCCACCTCTATCCTCAAAACAGGAAGGCGGTATGATGATGACAATGACATACCCTTTCCAGGGCCAATCAATGATAACGAGAACTCTGGTCAGAACGATGACGATCCAACAGACTCCCAGGATACCACAATCCCGGATGTAATAATCGATCCAAACGATGGTGGGTATAATAATTACAGCGATTATGCAAATGATGCTGCAAGTGCTCCTGATGACCTAGTTCTTTTTGACCTTGAGGACGAGGATGATGCTGATAACCCGGCTCAGAACACGCCAGAAAAAAATGATAGACCAGCAACAACAAAGCTGAGAAATGGACGGGACCAGGATGGAAACCAAAGCGAAACTGCATCCCCACGGGCAGCCCCCAACCAATACAGAGACAAGCCAATGCCACAAGTACAGAACAGATCCGAAAATCATGACCAAACCCTTCAAACACAGTCCAGGGTTTTGACTCCTATCAGCGAGGAAGCAGACCCCAGCGACCACAACGATGGCGACAATGAAAGCATTCCTCCCCTGGAATCAGACGACGAGGGTAGCACTGATACTACTGCAGCAGAAACAAAGCCTGCCACTGCACCTCCCGCTCCCGTCTACCGAAGTATCTCCGTAGATGATTCTGTCCCCTCAGAGAACATTCCCGCACAGTCCAATCAAACGAACAATGAGGACAATGTCAGGAACAATGCCCAGTCGGAGCAATCCATTGCAGAAATGTATCAACATATCTTGAAAACACAAGGACCTTTTGATGCCATCCTTTACTACCATATGATGAAAGAAGAGCCCATCATTTTCAGCACTAGTGATGGGAAGGAGTATACATATCCAGACTCTCTTGAAGATGAGTATCCACCCTGGCTCAGCGAGAAGGAAGCCATGAACGAAGACAATAGATTCATAACCATGGATGGTCAGCAGTTTTACTGGCCTGTGATGAATCATAGAAATAAATTCATGGCAATCCTCCAGCATCACAGGTGATCCGACCTCTAAAACTGAGCTCCTAACTACAAGCTACCCCATCACTCTGCCGGAATGCCAGAACCTCCCTCCAAAACAGCTCCACATCGAGAACCTCCGACGCGGTACACAGGCAAGACAGGCAACCTAATGATGTTCCTGTTCACCCACAACCGCAACCAACACTTGATCGACTTCCAAGACAACTACAACCCCCTTAGCCAACTCCACCACAGAAGCACCACCCCATAACAACAACCCCAAATCAACAACACTGCATGTAAGTATTGTCTCACCCCAAGATGATCCCTGGACACCAACAACCCCCTAACCTCCCCAAGTTGTCATTAAGAAAAAATATATGATGAAGATTAAAACCTTCATCGGAGCTATTTCTTCTACGCTTGGTTAGGACCAGTATTCACAAACTATTTTACAATCCCTACCCAATATGACCTCTAACAGAGCAAGGGTGACTTACAACCCACCACCAACAACCACAGGCACACGATCGTGTGGGCCGGAACTTTCCGGGTGGATCTCTGAGCAATTGATGACAGGCAAGATTCCGATTACCGATATCTTCAATGAAATTGAAACCTTACCTAGTATAAGTCCCTCGATCCACTCCAAAATCAAAACCCCAAGTGTTCAAACACGCAGTGTCCAGACCCAAACTGACCCAAATTGTAATCATGATTTTGCAGAGGTTGTGAAAATGCTAACATCTCTAACCCTTGTCGTACAAAAACAAACCCTTGCAACTGAATCACTTGAGCAACGCATTACTGACCTGGAAGGTAGCCTGAAACCAGTGTCTGAGATCACCAAGATTGTTTCTGCACTAAATAGATCCTGTGCAGAGATGGTGGCCAAATATGATCTTCTAGTAATGACAACTGGTCGTGCAACTGCCACTGCTGCAGCTACTGAAGCATACTGGGCAGAACATGGACGTCCTCCACCGGGGCCCTCATTGTACGAGGAGGATGCAATCAGGACTAAAATTGAAAAACAAGGGGATATAGTACCCAAGGAAGTGCAAGAGGCCTTCCGTAATCTGGATAGTACTGCCCTTCTAACGGAAGAGAATTTTGGGAAACCAGACATATCCGCAAAAGACTTGCGCAATATCATGTATGATCACCTCCCAGGTTTTGGCACAGCATTTCATCAACTAGTGCAAGTTATCTGCAAGTTAGGGAAGGACAATTCCTCACTTGATGTAATTCATGCAGAATTTCAGGCCAGCCTTGCTGAAGGAGACTCTCCTCAGTGTGCCCTGATTCAGATAACCAAACGGATTCCTATTTTCCAAGATGCAGCACCACCCGTAATCCATATTCGTTCACGCGGTGATATACCAAAGGCGTGTCAAAAGAGCCTCCGCCCAGTTCCACCATCACCAAAGATTGATAGGGGTTGGGTATGCATATTCCAGCTACAAGACGGAAAAACACTCGGACTCAAAATCTAAGGTGAACAATTGCACAACCTCCACAGTCGCCTATATTGCTTCCTTCCGGAATCAGGGTATGATCGCGTAAAAAATAAGCTTCCAACATATTGATACACGATCCATATCCATAATGCCATCTCCAGGAATATGAGAACGCAAGGCCATATCAGGACCCGATCTCAATTCCAATGCAACCTACTGTTAAGAATAAAATAACCAATGTCCTCTAGCCTCATATGTTCTCAAAAATACAAGTGATGAAGATTAAGAAAAAGCATCCTTTACTTGAGAGGAGCTAATTCTTTATACTTCATCTAATCTTTAAGTAAGTTGATCATTACCACCATGAGGAGGGCAATTCTACCTACTGCACCGCCAGAATACATGGAGGCTGTCTACCCAATGAGAACGGTTAGTACTAGTATCAACAGTACCTCCAGTGGTCCGAACTTTCCAGCACCGGATGTAATGATGAGTGATACACCCTCCAACTCACTCCGACCAATTGCTGATGATAACATCGATCATCCAAGTCATACACCAACCAGTGTTTCATCAGCCTTTATACTCGAGGCAATGGTGAATGTGATATCGGGGCCGAAGGTACTAATGAAGCAAATTCCTATATGGCTCCCCTTGGGTGTTGCTGATCAAAAAACATATAGTTTTGACTCAACTACAGCTGCAATTATGCTCGCATCGTACACCATCACTCACTTTGGCAAAACCTCCAATCCGCTTGTGAGAATCAATCGACTTGGTCCTGGGATCCCCGATCACCCGTTGCGGCTTCTAAGAATAGGAAATCAAGCCTTCTTGCAAGAGTTTGTGCTGCCTCCAGTTCAATTGCCGCAGTATTTCACTTTTGACCTGACGGCTCTAAAGCTGATCACTCAACCTCTCCCGGCAGCAACCTGGACAGATGATACTCCGACCGGTCCTACAGGAATACTTCGTCCTGGAATTTCCTTTCATCCCAAACTGAGACCTATCCTATTGCCAGGGAAGACCGGGAAAAGAGGATCCAGCTCCGATCTTACTTCTCCTGATAAAATACAAGCAATAATGAACTTTCTCCAAGACCTCAAACTCGTGCCGATTGATCCAGCCAAGAACATTATGGGTATTGAAGTGCCGGAACTCTTGGTCCACAGACTAACTGGAAAGAAAATCACAACAAAAAATGGTCAACCAATAATTCCTATTCTTCTACCAAAGTATATTGGCATGGATCCCATTTCTCAGGGAGACCTCACAATGGTCATCACTCAAGACTGTGACACTTGCCATTCTCCTGCTAGTCTTCCTCCAGTCAGCGAGAAATAAGCATGAAGTCCGAGGCTGCCTGGCCCACACGGCCCCCAGGGCCTTCGTCCGGCCACCGAACCAACCATCCGACCTTCATCAAAACCAAAAAATACCACCACGCGAAAGCTAAAATGCAGGACCACAATCCAACCAGCAACACCATCCATACACAGGTATCAATTGGGCTGCCGCAGCATATAGACCCAATAGCAAGCTGCTGTCCAGAAAATAGTTCCGGAAAGTAACTCAACCATCGCAAGCCCAATGCAGCTTTCAGAAATCCGCCAGCAACCCAACTCCACTGTACCCCCAATATTAACCTGAATCGACTAACCGCACTTTAATTTGAAGCACATTTGTTCAATGGGTTCATTATTAACAGTGTTGCTTTTAGATTGTACCTTTGCTCACAGATAGTAAATTGTTATGGTATCTAATCTTATTAAGAAAAAGAACACGATGAAGATTAACGCGACCTAGAGCGCTGCCTTCATCTCATCAATTTAACTTGTCAATAGCGCAACCTAGTTTGTGATTACTCATCTTCCGTAGTTGGCAAACACTTTGCTGATTAATTGTAGATATACCACAGTCATCATGGTTACATCAGGAATTCTACAATTGCCCCGTGAACGCTTCAGAAAAACATCATTTTTTGTTTGGGTAATAATCCTATTTCACAAAGTTTTCCCTATCCCATTGGGCGTAGTTCACAACAACACTCTCCAGGTAAGTGATATAGATAAATTGGTGTGCCGGGATAAACTTTCCTCCACAAGTCAGCTGAAATCGGTCGGGCTTAATCTAGAAGGTAATGGAGTTGCCACAGATGTACCAACAGCAACGAAGAGATGGGGATTCCGAGCTGGTGTTCCACCCAAAGTGGTGAACTACGAAGCTGGGGAGTGGGCTGAAAACTGCTACAACCTGGACATCAAGAAAGCAGATGGTAGCGAATGCCTACCTGAAGCCCCTGAGGGTGTAAGAGGCTTCCCTCGCTGCCGTTATGTGCACAAGGTTTCTGGAACAGGGCCGTGTCCTGAAGGTTTCGCTTTCCACAAAGAAGGCGCTTTCTTCCTGTATGATCGACTGGCATCAACAATCATCTATCGAAGCACCACGTTTTCAGAAGGTGTTGTGGCTTTCTTGATCCTCCCCAAGACTAAAAAGGACTTTTTCCAATCACCACCACTACATGAACCGGCCAATATGACAACAGACCCATCCAGCTACTACCACACAGTCACACTTAATTATGTGGCTGACAATTTTGGGACCAATATGACTAACTTTCTGTTTCAAGTGGATCATCTAACTTATGTGCAACTTGAACCAAGATTCACACCACAATTTCTTGTCCAACTCAATGAGACCATTTATACTAATGGGCGTCGCAGCAACACCACAGGAACACTAATTTGGAAAGTAAATCCTACTGTTGACACCGGCGTAGGTGAATGGGCCTTCTGGGAAAATAAAAAAACTTCACAAAAACCCTTTCAAGTGAAGAGCTGTCTGTCATATTTGTACCAAGAGCCCAGGATCCAGGCAGCAACCAGAAGACGAAGGTCACTCCCACCAGCTTCGCCAACAACCAAACCTCCAAGAACCACGAAGACTTGGTTCCAGAGGATCCCGCTTCAGTGGTTCAAGTGCGAGACCTCCAGAGGGAAAACACAGTGCCGACCTCACCCTTAGACACAGTCCCCACAACTCTGATCCCCGACACAATGGAGGAACAAACCACCAGCCACTACGAACTACCAAACATTTCCGGAAACCATCAAGAGAGGAACAACACCGCACACCCCGAAACTCTCGCCAACAATCCCCCAGACAACACAACCCCGTCGACACCACCTCAAGACGGTGAGCGGACAAGTTCCCACACAACACCCTCCCCCCGCCCAGTCCCAACCAGCACAATCCATCCCACCACACGAGAGACTCACATTCCCACCACAATGATAACAAGCCATGATACTGACAGTAATCGACCCAACCCAATTGACATCAGCGAGTCTACAGAGCCAGGACTACTCACCAACACCATAAGAGGGGTTGCAAATTTGCTGACAGGTTCAAGAAGAACCCGAAGGGAAATCACCTTGAGAACACAAGCCAAATGTAATCCGAACCTACACTATTGGACAACCCAAGATGAAGGGGCTGCCATTGGTCTAGCCTGGATACCTTACTTCGGGCCCGCAGCAGAGGGAATTTATACGGAAGGGATAATGCACAATCAAAATGGGCTAATTTGCGGGTTGAGGCAGCTAGCAAATGAGACGACTCAAGCCCTACAGTTATTCTTGCGTGCTACCACGGAATTGCGCACTTTCTCTATATTGAATCGAAAAGCCATCGACTTTTTACTCCAAAGATGGGGAGGAACGTGCCACATCTTAGGCCCAGATTGCTGTATTGAGCCCCATGATTGGACTAAGAACATTACTGACAAAATAGATCAAATCATTCATGATTTCATTGATAAACCTCTACCAGATCAAACAGATAATGACAATTGGTGGACAGGGTGGAGGCAATGGGTTCCTGCCGGGATCGGGATCACGGGGGTAATAATCGCAGTTATAGCACTGCTGTGTATTTGCAAATTTCTACTCTAATCTAGTCCGACTCTGTACCAGCATAATGGCCTCTAAAATAAGCTTTTGCTTCTGCTTCCTATAGTTAATACATCTCAGCAAAAATCAACTATTAAGTCAAAAGAAGATCCCTCTAATAATCCTAATTACCTTCAAAAATCTAGAACTTTATTAATTCTCAGGGTATTTAGAACAGCCAGATGACTTGACTAAGTTTGTACTGTAATAAAAAGATACTTGATGAAGATTAAGAAAAAGACAGTCTTGTGATTGTCACTAATCTTCATCTCAAAACATATTATTTTACCAGAAGCTACCATAGCCTACCTCCTTGACACATAGCAAACCTTACTCATGTTGATAATTGTTTGCCTGCTATTTACATATTTACTAACTTACAAAATTATCTTGGGGATTTCTCTGAACATATAATCAGGATTGGCATTTAAAACACAAGTTAGTCCTAATGGACTCATTTCATGAAAGAGGGCGTAGCAGAACTATTCGACAGAGTGCAAGAGATGGGCCGAGTCATCAAGTAAGAACAAGATCATCCTCCAGAGACAGCCACCGCAGCGAATATCATACACCTAGGAGCTCTTCCCAAGTTCGAGTCCCGACTGTGTTTCATCGGAAGCGTACTGATTCTTTGACAGTTCCACCAGCACCAAAGGACATATGTCCTACCTTAAGGAAAGGATTTTTGTGTGACAGCAATTTTTGTAAAAAGGACCATCAACTAGAAAGTTTAACAGATAGGGAGCTGCTTTTGCTGATTGCACGGAAAACCTGCGGCTCCCTTGAACAACAATTGAACATCACTGCTCCTAAAGATACACGATTAGCAAATCCAATTGCAGATGATTTCCAACAAAAAGACGGCCCAAAAATTACACTATTGACACTTTTGGAGACTGCGGAGTATTGGTCAAAACAAGATATCAAGGGCATTGATGACTCAAGACTAAGAGCATTACTAACCCTTTGTGCCGTCATGACGAGGAAATTCTCAAAATCCCAGCTTAGTCTATTGTGTGAGAGTCATCTACGACGAGAAGGGCTAGGACAGGATCAATCAGAATCTGTTCTTGAAGTGTACCAGCGCTTGCATAGCGACAAAGGCGGAAATTTTGAGGCAGCCCTATGGCAACAATGGGACCGACAGTCCTTGATCATGTTTATAACAGCATTTCTTAATATTGCTTTACAATTACCCTGTGAAAGTTCATCTGTTGTTATTTCAGGATTAAGGCTGCTAGTGCCTCAATCAGAAGATACCGAGACCTCAACCTACACCGAGACACGTGCATGGTCAGAGGAAGGTGGCCCCCATTAACATCTTCCACAGTCGAATCTACCATAACTTCCCTATTCAACGCAGGTAAGAATCAGTACTAAACCACAAGTGCAAAAATTAACAAAACACCAGCATAAGTGAAATCTTGTCTGTGATTAGCAATACGAATGATCTTCAATCCTGTTGCAATTCGCCAGTGATAATTGTATTCACATTGTGGCCACAATATACTGTCTTTTCCCATTGAAAAATAAGGCTGAATCTATTGCGCTACACAAACTTACAGGATTAGCACCACGACGGCTCAATACTATACCTATTGGTCACGGCTCGATGTGTTAATCACTTATATTGTATTCATTTGAAATTATTCATTAGGCAAATACTTTGATTAAGAAAAAATAATTGGAAAACCAGAAAATCCCTAGGTATTTAAATTCCTATCTCCGGAGATCCGAGATAATTAATCAAGCAATGAAGGAACAATGGTGAACAACAACATATTGTTGCCCCCTTTAGATTGGTCAGTTCCAAAAACAAGTGATGAAGATTAATGCAGATGTCCAAGGAACACATATTTGTGATTTAAACGTTCCAGTTAGACTCTGTTCAAGGATCTTCATCTTTTGTAGCTCCACTCTGAGTCACAACATAATTGAGTTTTTGCTCAGAACAGTTATCAGGATTAAATTCTCTCAAATAACTGAAACTACTAGCATCACTCTCAATTTCATTACTTACGACAATCATTATCTTAATAATATTTCCCTAAATTACTGACTTAATCAGCTTGTAATCAGATAATATCGAAACCAATTTATCATAAGGCATAATTTGTATAAGTGATTTAGGATTTACCCCAGAAGTGAAATAATTCTTAGAATAAAAGACCGACTAGAATATCCTTAAGGCTGTCTAACGTGCCACACAGCTAGGGTTAGCCTGACATCTGGAACAAGATCGATACTAATATAGGGATTTGTTTCATACTAACTCTCTGCAAACACAATGGCTAAGGCAACAGGTAGGTACAACTTGGTTTCACCTAAAAAGGACCTCGAGAGGGGGCTAGTTTTGAATGATTTGTGCACGTTTTTAGTTGATCAGACTATCCAGGGGTGGCGGGTGACTTGGGTTGGGATTGAATTTGATATCGCCCAGAAAGGGATGGCTCTACTGCATCGGTTAAAAACTGCTGACTTCGCTCCTGCATGGTCGATGACAAGGAATTTATTTCCTCATTTATTCCAAAATTCAAATTCTACTATTGAGTCTCCCCTCTGGGCATTACGAGTGATTCTGGCAGCTGGTATTCAAGACCAGTTAATTGACCAATCCTTGGTAGAACCGTTGGCCGGAGCCCTGAGCTTAGTCTCCGATTGGCTTCTCACAACAAACACAAACCATTTTCAAATGCGCACGCAGCACGCTAAAGAGCAACTGAGCTTGAAGATGCTATCATTAGTGCGCTCTAATATCTTGAAATTCATCAGTCAATTGGACGCACTACATGTCGTGAACTACAATGGACTCTTGAGCAGTATCGAAATTGGCACTAGAAATCATACCATTATCATCACAAGAACCAACATGGGTTTCCTGGTAGAATTACAGGAGCCTGATAAATCTGCCATGAATCAAAAGAAACCAGGACCAGTCAAGTTCTCCCTCCTGCATGAATCAACCTTCAAGGCTCTAATCAAAAAACCCGCAACTAAGATGCAGGCCTTGATTCTGGAATTTAACAGCTCCCTGGCAATATAGTCCAACGCTACCAACCATCATTTTTTGTAACTGCATCTCTTTTATTTCCTTTCTAACTTGATACAATTATAATCAAGATCCCTAATCCCTTTTGACGAAGTGGGCTAATTTTTGCTCATTCTAATAATAAATCATAACCTGAATAAAAGACACCACAATATTATAACCCAATAACACCTAGAGAATTGCTAAATTGCTAAAGATTATATACTCGCACTAAGGGACAAGTTAATCAATCTTTACTTAATAATATACTAAATGCTAGATAGCTCTGGCTAATTAACCTGAGTTGTGGATTACTCCTTTTAAAAGTCTATCAATTTAAGCTTATCACTAATATTAAGGAGGACTTTTTAAATAAGAGCAAGTGTTATGTAGTCTTACTAAGAATGATTTGAGGAAGATTAAGAAAAAGTGCTTGTGGGGTCTTTCCGTTGTGGAGGACACACGAGCAAACTTCTTCCTCTAATTTTAATATGGCAACTCAACATACACAATATCCAGATGCAAGATTATCTTCACCCATTGTCTTAGATCAATGTGATCTTGTCACCCGTGCTTGCGGTCTGTATTCTTCATACTCATTAAATCCTCAGTTGAAAAATTGTAGACTACCAAAACATATTTACCGCCTCAAATTTGATGCTACGGTTACAAAATTTTTAAGCGATGTTCCAATAGTTACATTGCCGATAGATTACTTGACCCCTTTACTTTTACGAACTTTATCCGGGGAGGGCTTATGCCCTGTCGAACCAAAGTGCAGCCAATTCTTAGATGAAATAGTAAGTTATGTTTTGCAGGATGCACGTTTTTTAAGATACTATTTTAGGCATGTTGGAGTACACGATGACAATGTTGGGAAAAATTTTGAGCCAAAGATTAAGGCTTTGATTTATGATAATGAATTTCTGCAACAATTGTTTTATTGGTACGATTTAGCAATCCTAACGCGTAGAGGGCGCCTGAATCGAGGGAATAACCGTTCAACATGGTTTGCAAATGACGATTTAATAGACATTCTCGGGTACGGTGATTATATTTTCTGGAAAATACCGTTGTCATTGTTGTCACTCAACACAGAGGGGATTCCTCATGCAGCTAAGGACTGGTATCACGCATCAATCTTCAAAGAAGCGGTTCAAGGTCACACACATATCGTGTCAGTTTCCACTGCAGATGTTTTAATTATGTGTAAGGACATCATAACCTGTCGTTTCAATACCACACTCATTGCAGCATTGGCAAATTTAGAAGATTCTATCTGTTCTGACTATCCACAACCTGAAACAATCTCTAATCTGTATAAAGCAGGGGATTACTTAATCTCGATACTGGGTTCAGAAGGTTATAAGGTCATAAAGTTTTTAGAACCACTATGTTTAGCTAAGATCCAATTGTGCTCAAATTACACTGAGAGGAAAGGGAGATTCCTTACTCAAATGCATTTGGCCGTTAATCACACACTTGAAGAACTTATTGAGGGCCGGGGATTGAAGTCACAACAAGACTGGAAGATGAGGGAATTTCACCGAATCTTAGTAAATTTAAAGTCAACACCACAACAACTCTGTGAATTGTTTTCAGTGCAAAAGCATTGGGGGCATCCTGTGCTACATAGCGAGAAGGCTATTCAGAAAGTAAAGAAACATGCAACCGTAATAAAAGCATTGCGTCCTATAATCATCTTTGAGACATATTGTGTGTTCAAGTACAGCATTGCCAAACATTATTTTGATAGCCAAGGGTCATGGTATAGTGTAATCTCAGATAAACATCTAACACCAGGTTTACATTCTTACATTAAGAGGAACCAATTTCCGCCACTGCCTATGATTAAAGACTTATTGTGGGAATTCTATCACCTTGATCATCCTCCCTTATTTTCCACCAAGATTATTAGTGACTTGAGTATTTTCATTAAGGATCGCGCTACCGCAGTGGAAAAAACATGTTGGGATGCAGTTTTCGAGCCTAATGTTCTTGGATATAGTCCTCCAAACAAGTTCTCAACTAAGAGGGTTCCTGAACAGTTTCTTGAACAAGAAAATTTCTCGATTGATAGTGTTCTCACTTATGCCCAGCGCCTGGATTATCTACTTCCACAATACCGGAATTTTTCTTTCTCACTTAAGGAAAAAGAATTAAATGTAGGACGAGCTTTTGGTAAGCTACCTTATCCTACACGTAATGTTCAAACTTTATGTGAAGCCTTATTGGCAGATGGATTAGCTAAAGCCTTTCCTAGTAACATGATGGTTGTAACAGAGCGTGAACAGAAGGAAAGCCTCTTGCACCAGGCGTCGTGGCACCACACAAGTGACGATTTCGGTGAGAATGCCACTGTTAGAGGCAGCAGTTTTGTTACCGACCTAGAAAAATACAACTTGGCATTTAGATATGAGTTTACAGCTCCATTTATTGAATACTGTAATCGATGTTATGGTGTAAAAAATTTATTCAATTGGATGCATTATACGATACCGCAATGTTATATACATGTAAGTGATTATTATAATCCCCCTCATGGAGTTTCGCTAGAAAATCGGGAAGATCCCCCGGAAGGCCCTAGCTCTTACCGTGGTCATCTTGGGGGAATTGAGGGACTCCAACAGAAACTCTGGACCAGCATTTCATGTGCGCAAATCTCATTAGTTGAGATCAAGACTGGTTTCAAGTTGAGATCTGCGGTAATGGGTGATAATCAATGCATCACAGTTCTTTCCGTATTTCCTCTAGAGACAGATTCCAATGAGCAAGAGCATAGCTCCGAGGACAATGCTGCTCGCGTAGCAGCCAGTTTAGCCAAAGTCACGAGTGCCTGTGGCATCTTCCTAAAACCAGATGAGACTTTTGTGCATTCAGGCTTTATTTATTTCGGTAAGAAGCAATATTTAAATGGCGTTCAATTGCCACAATCACTCAAGACTGCTACCAGGATTGCTCCCTTGTCAGATGCAATCTTTGATGACCTTCAGGGAACTCTGGCTAGTATAGGAACGGCATTTGAGAGATCTATATCCGAGACTAGACATGTATACCCTTGCCGGGTGGTTGCCGCATTCCATACATTCTTCTCCGTTAGGATCCTCCAATACCACCACCTTGGTTTCAACAAAGGAACCGATCTAGGTCAACTATCACTAAGCAAACCGTTGGATTTCGGAACTATCACTCTTGCTTTAGCGGTACCTCAAGTTCTAGGAGGTTTATCGTTTTTAAACCCAGAAAAATGTTTTTATCGCAACCTTGGAGACCCCGTGACCTCTGGCCTATTCCAACTTAGGACTTACCTGCAAATGATCAACATGGACGACTTATTTCTACCTTTAATTGCCAAGAACCCCGGGAACTGTAGTGCAATTGACTTTGTACTCAACCCAAGCGGATTGAATGTCCCTGGGTCACAAGACCTAACATCTTTTTTACGTCAGATAGTGCGTAGAACAATCACATTGAGTGCAAAAAATAAGCTAATAAACACATTGTTTCACTCCTCAGCCGATTTAGAAGATGAGATGGTATGTAAATGGCTACTTTCTTCAACACCTGTAATGAGTCGGTTTGCTGCTGATATATTCTCTCGTACTCCGAGTGGGAAGCGCCTGCAGATCCTAGGTTATTTAGAAGGGACTAGAACCTTGCTAGCCTCCAAAGTCATCAATAACAATGCAGAGACTCCTATTTTAGATAGGTTGAGGAAAATCACACTGCAGAGATGGAGTTTGTGGTTTAGCTACCTAGACCACTGTGATCAGGTTCTAGCAGATGCTTTAATAAAAGTTTCTTGTACAGTTGATTTGGCGCAAATTTTACGTGAATATACCTGGGCACACATACTAGAGGGAAGACAGCTCATTGGTGCAACACTTCCTTGCATGTTAGAACAATTTAATGTGTTTTGGCTCAAATCGTACGAACAATGCCCTAAATGTGCAAAATCTAGAAATCCAAAAGGAGAGCCATTTGTGTCAATTGCAATTAAGAAACAAGTTGTGAGTGCATGGCCGAATCAGTCACGGTTAAATTGGACCATTGGGGACGGTGTACCTTACATCGGGTCTCGAACAGAGGACAAGATTGGGCAGCCAGCAATCAAGCCTAAGTGTCCCTCTGCTGCCTTACGTGAAGCAATAGAGTTGACATCTAGACTAACATGGGTTACCCAAGGTGGTGCCAATAGTGATTTGCTAGTTAAACCTTTTGTAGAGGCACGAGTAAACCTGAGTGTGCAGGAGATCCTTCAAATGACGCCTTCTCATTATTCAGGGAACATCGTACATCGGTATAATGACCAATACAGCCCTCATTCTTTCATGGCAAATAGAATGAGTAATTCCGCGACGAGATTGGTGGTGTCGACAAATACTCTCGGGGAGTTCTCAGGTGGGGGGCAATCAGCAAGGGACAGCAATATCATCTTTCAAAATGTAATCAATTTTGCGGTTGCCCTATTTGATTTACGATTTCGGAACACCGAAACATCCTCCATTCAGCATAATCGTGCCCATCTCCATCTTTCACAGTGTTGCACACGGGAAGTCCCAGCTCAATACCTAACCTACACGTCTACGCTTTCCTTGGATCTCACAAGGTACCGAGAGAATGAGTTAATTTATGATAACAATCCATTAAAAGGTGGACTTAATTGCAACCTATCCTTTGATAATCCACTTTTCAAGGGCCAAAGGCTCAATATCATAGAGGAGGATTTGATTAGATTTCCACATTTATCTGGGTGGGAACTTGCGAAAACCATCATTCAGTCCATTATCTCAGACAGCAATAACTCATCCACAGACCCCATTAGCAGTGGAGAAACACGATCATTCACAACTCACTTTCTCACATATCCTAAGGTTGGGCTCCTCTATAGTTTCGGCGCCATCGTGAGTTATTACTTAGGGAATACCATTATTAGGACCAAAAAGCTAGACCTCAGTCATTTCATGTATTACTTAACAACTCAAATCCATAATTTGCCACATCGCTCGTTGAGGATACTTAAGCCCACTTTTAAACATGTTAGTGTGATATCAAGACTAATGAGTATTGATCCTCATTTTTCAATCTACATCGGGGGTACAGCAGGTGATCGAGGGCTTTCGGATGCTACCAGACTATTCCTTCGAGTGGCCATTTCTTCCTTCCTTCAATTTATCAAAAAATGGATCGTGGAATACAGGACAGCTATTCCTCTGTGGGTTATATACCCTTTGGAGGGACAAAATCCAGATCCAATTAATAGCTTTCTACATCAGATTATAGCCTTACTGCAAAATGAATCCCCTCAAAACAACATCCAATTCCAAGAAGACAGAAATAATCAACAGTTGTCCGATAATCTAGTTTACATGTGCAAGAGCACTGCCAGTAATTTCTTCCATGCATCACTTGCCTATTGGAGGAGCCGGCACAAAGGACGGCCCAAAAATCGATCGACCGAAGAACAGACAGTTAAACCCAGACCATATGATAATTTTCATTCTGTTAAATGTGCCTCAAACCCACCAAGCATCCCCAAATCTAAGTCAGGAACTCAAGGCTCAAGCGCATTTTTTGAGAAACTTGAATATGATAAAGAAAGAGAATTGCCAACAGCTTCCACACCAGCCGAACAACCCAAGACCTATATCAAGGCCCTATCCAGCCGAATTTATCATGGTAAAACACCATCCAATGCCGCAAAAGATGATTCAACAACCTCCAAGGGCTGCGATTCCAAAGAAGAAAATGCCGTTCAAGCTTCACACCGAATTGTCCTACCATTTTTTACATTGTCACAGAACGACTACAGAACTCCCTCAGCTAAAAAGTCAGAGTATGTAACTGAAATCACCAAACTAATTCGACAATTAAAGGCAATTCCAGATACCACTGTATACTGTCGCTTTACAGGGGTTGTATCTTCAATGCATTATAAGCTTGATGAGGTTCTCTGGGAATTCGATAGTTTCAAAACTGCTGTGACTCTAGCTGAAGGAGAAGGGTCAGGTGCCTTATTACTACTACAAAAATATAAGGTTAGAACAATCTTTTTTAACACTTTAGCTACAGAGCATAGCATCGAGGCAGAAATAGTTTCTGGGACAACCACACCTCGAATGCTCCTTCCTGTAATGGCCAAACTTCATGATGATCAAATAAATGTAATATTAAACAATTCTGCTAGCCAGGTTACTGATATCACTAACCCTGCATGGTTCACTGACCAGAAATCTAGAATCCCCACACAAGTTGAGATTATGACTATGGATGCTGAAACGACAGAAAATATTAATCGGTCAAAATTATATGAGGCTATCCAGCAATTAATTGTTTCACACATTGATACAAGGGTGCTAAAGATTGTTATTATAAAGGTTTTTTTAAGTGATATTGATGGTCTCCTGTGGCTTAATGACCATCTTGCCCCTTTATTCGGATCCGGCTATTTAATTAAACCGATTACTTCGAGTCCAAAGTCAAGCGAATGGTACTTATGTCTTTCAAATTTCCTTTCAGCTTCTCGACGACGGCCTCATCAGGGTCATGCTACCTGTATGCAAGTCATCCAAACAGCGCTACGACTCCAAGTTCAAAGGAGTTCATACTGGCTTAGCCATTTAGTGCAATATGCTGATATTAATTTGCACTTGAGTTATGTTAATTTGGGTTTCCCTTCATTGGAAAAGGTTCTTTACCATCGATATAACCTAGTTGATTCACGGAAGGGTCCACTGGTCTCGATCCTTTACCATTTAACACACTTGCAAGCAGAAATTAGAGAATTAGTGTGTGACTATAATCAGCAACGACAAAGTCGAACCCAAACATACCACTTCATCAAAACGACAAAGGGCCGGATTACAAAATTAGTCAATGACTACCTTAAATTTTATCTCGTAGTGCAAGCACTGAAGCATAATTGTCTTTGGCAGGAAGAACTCAGAACACTTCCTGACTTAATCAATGTTTGCAATCGATTTTACCATATAAGGGACTGCTCATGTGAAGATCGATTTTTAATTCAAACTCTTTACTTAACCCGTATGCAAGACTCAGAAGTAAAATTAATGGAGAGATTAACCGGGTTTCTAGGATTGTATCCTAATGGTATTAACGCTTAAGATCCCCTTAGAGGCATCGCAATATGACTCCAAACATTAAATGATATTGCTGTCAATATATCTACCTGACCGAGAGCAAGGTTTATTATAAAAAATCTATACACATGACTGCAATGCGTAATTTATACCGAAACACAGTGAGGGCTGCACATGCAGGTTCCTGTTGAGCTTAAAAAGATCATGCAATACAAAATGATATTTGTATACTAATCATGTTAATACTAACTAACAGTACTCACTGCATATACTCTATCAATTAAGAAAAATTACTGTGGTTTATGCATTTAAATGACATCACGGATGGATATAATATAGTTAATTCTTACCTAAATGTTGAGTTATAGTAATTTGAAGTTATAATTATGATTAGTGCTTATACTATAAATAATAGCTATACCAAGTATACACAAGAAGTTATGATTTTGTATTCAAGTTATATTCACAGGAACTTGTGATTAATAACAAAAGTCTCAGTTGTTGGTTGTTGAGTTGTAAAACCCCCGTTAAAAATTTATTTTCCACTTATAACTAATAATAATCATAGATCAGTATGAGTTGAGGCTATTTAGACCTTAGAAAAATTGTGCGATGTTTTTTACCATGTCAATCTTGATTTCAATGATATTGGAGGGCTTGTCGATAAATTTAGTAATTAACATTAAGTCAGTGTGGAACCTCATTGGATATTTGATCGTACACAAAATATCTTTACAAAATTGTTTTCTCTTTTTTGTGTGTCCA"
   }
 }

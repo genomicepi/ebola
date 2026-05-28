@@ -46,6 +46,11 @@
       "type": "categorical"
     },
     {
+      "key": "country_label",
+      "title": "Country label",
+      "type": "categorical"
+    },
+    {
       "key": "division",
       "title": "Division",
       "type": "categorical"
@@ -61,7 +66,7 @@
     "division"
   ],
   "display_defaults": {
-    "tip_label": "country",
+    "tip_label": "country_label",
     "color_by": "outbreak",
     "geo_resolution": "division"
   },
@@ -76,6 +81,7 @@
     "INSDC_accession",
     "restrictedUntil",
     "outbreak",
+    "country_label",
     "strain"
   ]
 }

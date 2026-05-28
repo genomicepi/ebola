@@ -36,6 +36,10 @@ rule add_strain_name:
     run:
         import pandas as pd
         metadata = pd.read_csv(input.metadata, sep="\t")
+        country_labels = {
+            "Democratic Republic of the Congo": "DRC",
+        }
+        metadata["country_label"] = metadata["country"].replace(country_labels)
         metadata["strain"] = metadata.apply(
             lambda row: f"{row['accession']}|{row['strain']}|{row['country']}/{row['date']}",
             axis=1,
