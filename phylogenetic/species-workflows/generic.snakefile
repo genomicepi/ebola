@@ -217,3 +217,25 @@ rule export:
                     --include-root-sequence-inline \
                     --output {output.auspice_tree}
         """
+
+if 'seqset' in config:
+    rule seqset_payload:
+        input:
+            metadata="results/{species}/metadata.tsv",
+        output:
+            payload=f"{REPO}/seqsets/ebola_{{species}}_seqset_update.json",
+        params:
+            seqset_id=lambda w: config['seqset']['id'],
+            name=lambda w: config['seqset']['name'],
+            description=lambda w: config['seqset']['description'],
+            focal_outbreak=lambda w: config['seqset']['focal_outbreak'],
+        shell:
+            r"""
+            python {REPO}/scripts/generate_seqset_payload.py \
+                --metadata {input.metadata:q} \
+                --output {output.payload:q} \
+                --seqset-id {params.seqset_id:q} \
+                --name {params.name:q} \
+                --description {params.description:q} \
+                --focal-outbreak {params.focal_outbreak:q}
+            """

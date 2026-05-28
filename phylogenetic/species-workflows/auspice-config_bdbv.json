@@ -5,10 +5,6 @@
   ],
   "data_provenance": [
     {
-      "name": "GenBank",
-      "url": "https://www.ncbi.nlm.nih.gov/genbank/"
-    },
-    {
       "name": "Pathoplexus",
       "url": "https://pathoplexus.org"
     }
@@ -30,9 +26,9 @@
       "title": "Outbreak",
       "type": "categorical",
       "scale": [
-        ["Bdbv-2007", "#0f766e"],
-        ["Bdbv-2012", "#d97706"],
-        ["Bdbv-2026", "#2563eb"]
+        ["Bdbv-2007", "#78c2ad"],
+        ["Bdbv-2012", "#6cc3d5"],
+        ["Bdbv-2026", "#ff7851"]
       ]
     },
     {

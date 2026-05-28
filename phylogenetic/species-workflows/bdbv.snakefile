@@ -20,6 +20,12 @@ config['fasta_reference'] = REPO / "shared" / "bdbv" / "reference.fasta"
 config['gff_annotation'] = REPO / "shared" / "bdbv" / "annotation.gff"
 config['nextclade_pathogen_json'] = REPO / "nextclade" / "dataset_files" / "bdbv" / "pathogen.json"
 config['warning'] = "This dataset sources RESTRICTED sequences from [Pathoplexus](https://pathoplexus.org/). Please see [virological](https://virological.org/t/initial-genomes-from-may-2026-bundibugyo-virus-disease-outbreak-in-the-democratic-republic-of-the-congo-and-uganda/1032) for more detail on the ongoing outbreak in DRC & Uganda."
+config['seqset'] = {
+    "id": "PP_SS_2047",
+    "name": "Bundibugyo ebolavirus 2026 outbreak build",
+    "description": "Bundibugyo ebolavirus sequences used in the GenomicEpi 2026 outbreak community build. Bdbv-2026 records are focal; historical BDBV records are background.",
+    "focal_outbreak": "Bdbv-2026",
+}
 
 # Define an input function so that species can vary which node-data files are generated/used
 def node_data_files(wildcards):
@@ -34,4 +40,4 @@ include: "generic.snakefile"
 rule all:
     input:
         tree=expand("auspice/ebola_{species}.json", species=config['species']),
-
+        seqset=expand(f"{REPO}/seqsets/ebola_{{species}}_seqset_update.json", species=config['species']),
