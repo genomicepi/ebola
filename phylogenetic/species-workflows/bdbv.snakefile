@@ -19,7 +19,7 @@ config['genbank_reference'] = REPO / "shared" / "bdbv" / "reference.gb"
 config['fasta_reference'] = REPO / "shared" / "bdbv" / "reference.fasta"
 config['gff_annotation'] = REPO / "shared" / "bdbv" / "annotation.gff"
 config['nextclade_pathogen_json'] = REPO / "nextclade" / "dataset_files" / "bdbv" / "pathogen.json"
-config['warning'] = "This dataset sources RESTRICTED sequences from [Pathoplexus](https://pathoplexus.org/). Please see [virological](https://virological.org/t/initial-genomes-from-may-2026-bundibugyo-virus-disease-outbreak-in-the-democratic-republic-of-the-congo-and-uganda/1032) for more detail on the ongoing outbreak in DRC & Uganda."
+config['warning'] = "This build includes some restricted sequences from [Pathoplexus](https://pathoplexus.org/). Please see [Pathoplexus SeqSet PP_SS_2047](https://pathoplexus.org/seqsets/PP_SS_2047) for information about included sequences, and follow this [virological post](https://virological.org/t/initial-genomes-from-may-2026-bundibugyo-virus-disease-outbreak-in-the-democratic-republic-of-the-congo-and-uganda/1032) for more details on sequencing efforts."
 config['seqset'] = {
     "id": "PP_SS_2047",
     "name": "Bundibugyo ebolavirus 2026 outbreak build",
