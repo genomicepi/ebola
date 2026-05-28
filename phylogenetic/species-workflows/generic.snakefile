@@ -39,7 +39,13 @@ rule add_strain_name:
         country_labels = {
             "Democratic Republic of the Congo": "DRC",
         }
+        outbreak_labels = {
+            "Bdbv-2007": "2007 Outbreak",
+            "Bdbv-2012": "2012 Outbreak",
+            "Bdbv-2026": "2026 Outbreak",
+        }
         metadata["country_label"] = metadata["country"].replace(country_labels)
+        metadata["outbreak_label"] = metadata["outbreak"].replace(outbreak_labels)
         metadata["strain"] = metadata.apply(
             lambda row: f"{row['accession']}|{row['strain']}|{row['country']}/{row['date']}",
             axis=1,

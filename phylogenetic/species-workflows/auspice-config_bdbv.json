@@ -22,13 +22,13 @@
       "type": "temporal"
     },
     {
-      "key": "outbreak",
+      "key": "outbreak_label",
       "title": "Outbreak",
       "type": "categorical",
       "scale": [
-        ["Bdbv-2007", "#78c2ad"],
-        ["Bdbv-2012", "#6cc3d5"],
-        ["Bdbv-2026", "#ff7851"]
+        ["2007 Outbreak", "#78c2ad"],
+        ["2012 Outbreak", "#6cc3d5"],
+        ["2026 Outbreak", "#ff7851"]
       ]
     },
     {
@@ -63,11 +63,11 @@
   ],
   "display_defaults": {
     "tip_label": "country_label",
-    "color_by": "outbreak",
+    "color_by": "outbreak_label",
     "geo_resolution": "division"
   },
   "filters": [
-    "outbreak",
+    "outbreak_label",
     "country",
     "division",
     "author"
@@ -77,6 +77,7 @@
     "INSDC_accession",
     "restrictedUntil",
     "outbreak",
+    "outbreak_label",
     "country_label",
     "strain"
   ]
