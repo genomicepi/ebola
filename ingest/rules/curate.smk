@@ -315,10 +315,7 @@ def metadata_all_fields(wildcards):
     return f"data/{wildcards.species}/metadata_acessions.tsv"
 
 def metadata_fields(wildcards):
-    config_values = config["curate"]["metadata_columns"]
-    if not wildcards.species == 'ebov':
-        config_values = [x for x in config_values if x!='outbreak']
-    return ",".join(config_values)
+    return ",".join(config["curate"]["metadata_columns"])
 
     
 
