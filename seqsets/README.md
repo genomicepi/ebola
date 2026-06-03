@@ -88,7 +88,9 @@ changes; the script treats that as a successful no-op.
 
 The `BDBV build and SeqSet` workflow can be run manually from GitHub Actions.
 It always runs the BDBV ingest and phylogenetic build and uploads the generated
-SeqSet payload as an artifact.
+SeqSet payload as an artifact. It runs the build directly with
+`nextstrain build --docker`, so it does not require the AWS/OIDC permissions
+used by the scheduled Nextstrain upload workflow.
 
 The workflow includes an `update_seqset` checkbox. When checked, a second job
 downloads the generated payload and runs `scripts/update_pathoplexus_seqset.mjs`.

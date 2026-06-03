@@ -18,36 +18,47 @@ on:
 
 jobs:
   bdbv:
-    permissions:
-      id-token: write
-    uses: nextstrain/.github/.github/workflows/pathogen-repo-build.yaml@master
-    secrets: inherit
-    with:
-      runtime: docker
-      env: |
-        NEXTSTRAIN_DOCKER_IMAGE: ${{ inputs.image }}
-      run: |
-        nextstrain build ingest \
+    runs-on: ubuntu-latest
+    env:
+      NEXTSTRAIN_DOCKER_IMAGE: ${{ inputs.image }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install Nextstrain CLI
+        run: python -m pip install --upgrade nextstrain-cli
+
+      - name: Run BDBV ingest
+        run: |
+          nextstrain build --docker ingest \
           results/bdbv/sequences.fasta \
           results/bdbv/metadata.tsv \
           --cores 4 \
           -pf
 
-        nextstrain build phylogenetic \
+      - name: Run BDBV phylogenetic build
+        run: |
+          nextstrain build --docker phylogenetic \
           --snakefile species-workflows/bdbv.snakefile \
           --cores 4 \
           -pf
 
-      artifact-name: bdbv-build-and-seqset-output
-      artifact-paths: |
-        ingest/benchmarks/
-        ingest/logs/
-        ingest/.snakemake/log/
-        phylogenetic/benchmarks/
-        phylogenetic/logs/
-        phylogenetic/.snakemake/log/
-        phylogenetic/auspice/ebola_bdbv.json
-        seqsets/ebola_bdbv_seqset_update.json
+      - uses: actions/upload-artifact@v6
+        with:
+          name: bdbv-build-and-seqset-output
+          if-no-files-found: warn
+          path: |
+            ingest/benchmarks/
+            ingest/logs/
+            ingest/.snakemake/log/
+            phylogenetic/benchmarks/
+            phylogenetic/logs/
+            phylogenetic/.snakemake/log/
+            phylogenetic/auspice/ebola_bdbv.json
+            seqsets/ebola_bdbv_seqset_update.json
 
   update-seqset:
     needs: [bdbv]
