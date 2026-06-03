@@ -46,6 +46,157 @@ jobs:
           --cores 4 \
           -pf
 
+      - name: Summarize generated SeqSet payload
+        env:
+          UPDATE_SEQSET_REQUESTED: ${{ inputs.update_seqset }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import subprocess
+          from pathlib import Path
+
+          payload_path = Path("seqsets/ebola_bdbv_seqset_update.json")
+          auspice_path = Path("phylogenetic/auspice/ebola_bdbv.json")
+          summary_path = Path("seqsets/seqset-summary.md")
+          payload = json.loads(payload_path.read_text())
+          auspice = json.loads(auspice_path.read_text())
+
+          def records_by_accession(data):
+              return {record["accession"]: record for record in data.get("records", [])}
+
+          def iter_nodes(node):
+              yield node
+              for child in node.get("children", []):
+                  yield from iter_nodes(child)
+
+          def is_tip(node):
+              return not node.get("children")
+
+          def get_node_attr(node, key):
+              value = node.get("node_attrs", {}).get(key)
+              if isinstance(value, dict):
+                  return value.get("value")
+              return value
+
+          current = records_by_accession(payload)
+
+          try:
+              previous_text = subprocess.check_output(
+                  ["git", "show", f"HEAD:{payload_path}"],
+                  text=True,
+              )
+              previous_payload = json.loads(previous_text)
+              previous = records_by_accession(previous_payload)
+          except subprocess.CalledProcessError:
+              previous = {}
+
+          try:
+              previous_auspice_text = subprocess.check_output(
+                  ["git", "show", f"HEAD:{auspice_path}"],
+                  text=True,
+              )
+          except subprocess.CalledProcessError:
+              previous_auspice_text = ""
+
+          current_accessions = set(current)
+          previous_accessions = set(previous)
+          added = sorted(current_accessions - previous_accessions)
+          removed = sorted(previous_accessions - current_accessions)
+          focal_changed = sorted(
+              accession
+              for accession in current_accessions & previous_accessions
+              if bool(current[accession].get("isFocal")) != bool(previous[accession].get("isFocal"))
+          )
+
+          focal = sorted(
+              accession
+              for accession, record in current.items()
+              if record.get("isFocal")
+          )
+          background_count = len(current) - len(focal)
+          auspice_changed = auspice_path.read_text() != previous_auspice_text
+          tips = [node for node in iter_nodes(auspice["tree"]) if is_tip(node)]
+          bdbv_2026_tips = [
+              node for node in tips
+              if get_node_attr(node, "outbreak") == "Bdbv-2026"
+          ]
+
+          lines = [
+              "# BDBV Pathoplexus SeqSet summary",
+              "",
+              f"SeqSet: `{payload.get('seqSetId', 'unknown')}`",
+              f"Name: `{payload.get('name', 'unknown')}`",
+              f"Pathoplexus update requested: `{os.environ['UPDATE_SEQSET_REQUESTED']}`",
+              "",
+              "## Generated payload",
+              "",
+              f"- Total records: **{len(current):,}**",
+              f"- Focal records: **{len(focal):,}**",
+              f"- Background records: **{background_count:,}**",
+              "",
+              "## Auspice JSON",
+              "",
+              f"- Path: `{auspice_path}`",
+              f"- Changed compared with committed file: **{'yes' if auspice_changed else 'no'}**",
+              f"- Total terminal nodes: **{len(tips):,}**",
+              f"- `Bdbv-2026` terminal nodes: **{len(bdbv_2026_tips):,}**",
+              "",
+              "## Changes compared with committed payload",
+              "",
+              f"- Added accessions: **{len(added):,}**",
+              f"- Removed accessions: **{len(removed):,}**",
+              f"- Focal/background status changes: **{len(focal_changed):,}**",
+              "",
+          ]
+
+          def add_accession_list(title, accessions):
+              lines.extend([f"### {title}", ""])
+              if not accessions:
+                  lines.extend(["None.", ""])
+                  return
+              for accession in accessions[:50]:
+                  record = current.get(accession) or previous.get(accession)
+                  focal_label = "focal" if record and record.get("isFocal") else "background"
+                  lines.append(f"- `{accession}` ({focal_label})")
+              if len(accessions) > 50:
+                  lines.append(f"- ...and {len(accessions) - 50:,} more")
+              lines.append("")
+
+          add_accession_list("Added accessions", added)
+          add_accession_list("Removed accessions", removed)
+
+          lines.extend(["### Focal/background status changes", ""])
+          if focal_changed:
+              for accession in focal_changed[:50]:
+                  before = "focal" if previous[accession].get("isFocal") else "background"
+                  after = "focal" if current[accession].get("isFocal") else "background"
+                  lines.append(f"- `{accession}`: {before} -> {after}")
+              if len(focal_changed) > 50:
+                  lines.append(f"- ...and {len(focal_changed) - 50:,} more")
+          else:
+              lines.append("None.")
+          lines.append("")
+
+          if not added and not removed and not focal_changed:
+              lines.extend([
+                  "## Result",
+                  "",
+                  "No SeqSet accession changes were generated.",
+                  "",
+              ])
+
+          summary = "\n".join(lines)
+          summary_path.write_text(summary)
+
+          github_step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
+          if github_step_summary:
+              with open(github_step_summary, "a") as handle:
+                  handle.write(summary)
+          else:
+              print(summary)
+          PY
+
       - uses: actions/upload-artifact@v6
         with:
           name: bdbv-build-and-seqset-output
@@ -59,6 +210,7 @@ jobs:
             phylogenetic/.snakemake/log/
             phylogenetic/auspice/ebola_bdbv.json
             seqsets/ebola_bdbv_seqset_update.json
+            seqsets/seqset-summary.md
 
   update-seqset:
     needs: [bdbv]
@@ -84,4 +236,12 @@ jobs:
           PATHOPLEXUS_USERNAME: ${{ secrets.PATHOPLEXUS_USERNAME }}
           PATHOPLEXUS_PASSWORD: ${{ secrets.PATHOPLEXUS_PASSWORD }}
           PATHOPLEXUS_SEQSET_PAYLOAD: seqsets/ebola_bdbv_seqset_update.json
-        run: node scripts/update_pathoplexus_seqset.mjs
+        run: |
+          node scripts/update_pathoplexus_seqset.mjs | tee seqsets/pathoplexus-update.log
+          {
+            echo "# Pathoplexus update result"
+            echo
+            echo '```text'
+            cat seqsets/pathoplexus-update.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

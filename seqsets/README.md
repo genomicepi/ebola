@@ -92,6 +92,12 @@ SeqSet payload as an artifact. It runs the build directly with
 `nextstrain build --docker`, so it does not require the AWS/OIDC permissions
 used by the scheduled Nextstrain upload workflow.
 
+After the build, the workflow writes a GitHub Actions job summary with the
+generated payload counts, whether the Auspice JSON changed, Auspice terminal
+node counts, added accessions, removed accessions, and any focal/background
+status changes compared with the committed payload. The same summary is uploaded
+as `seqsets/seqset-summary.md` in the build artifact.
+
 The workflow includes an `update_seqset` checkbox. When checked, a second job
 downloads the generated payload and runs `scripts/update_pathoplexus_seqset.mjs`.
 The repository must have these secrets configured for the update job:
