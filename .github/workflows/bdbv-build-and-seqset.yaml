@@ -1,0 +1,76 @@
+name: BDBV build and SeqSet
+
+defaults:
+  run:
+    shell: bash --noprofile --norc -eo pipefail {0}
+
+on:
+  workflow_dispatch:
+    inputs:
+      update_seqset:
+        description: "Update Pathoplexus SeqSet PP_SS_2047 after generating the payload"
+        required: true
+        default: false
+        type: boolean
+      image:
+        description: 'Specific container image to use (will override the default of "nextstrain build")'
+        required: false
+
+jobs:
+  bdbv:
+    permissions:
+      id-token: write
+    uses: nextstrain/.github/.github/workflows/pathogen-repo-build.yaml@master
+    secrets: inherit
+    with:
+      runtime: docker
+      env: |
+        NEXTSTRAIN_DOCKER_IMAGE: ${{ inputs.image }}
+      run: |
+        nextstrain build ingest \
+          results/bdbv/sequences.fasta \
+          results/bdbv/metadata.tsv \
+          --cores 4 \
+          -pf
+
+        nextstrain build phylogenetic \
+          --snakefile species-workflows/bdbv.snakefile \
+          --cores 4 \
+          -pf
+
+      artifact-name: bdbv-build-and-seqset-output
+      artifact-paths: |
+        ingest/benchmarks/
+        ingest/logs/
+        ingest/.snakemake/log/
+        phylogenetic/benchmarks/
+        phylogenetic/logs/
+        phylogenetic/.snakemake/log/
+        phylogenetic/auspice/ebola_bdbv.json
+        seqsets/ebola_bdbv_seqset_update.json
+
+  update-seqset:
+    needs: [bdbv]
+    if: ${{ inputs.update_seqset }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
+      - uses: actions/download-artifact@v6
+        with:
+          name: bdbv-build-and-seqset-output
+          path: .
+
+      - name: Verify generated SeqSet payload
+        run: test -f seqsets/ebola_bdbv_seqset_update.json
+
+      - name: Update Pathoplexus SeqSet
+        env:
+          PATHOPLEXUS_USERNAME: ${{ secrets.PATHOPLEXUS_USERNAME }}
+          PATHOPLEXUS_PASSWORD: ${{ secrets.PATHOPLEXUS_PASSWORD }}
+          PATHOPLEXUS_SEQSET_PAYLOAD: seqsets/ebola_bdbv_seqset_update.json
+        run: node scripts/update_pathoplexus_seqset.mjs
