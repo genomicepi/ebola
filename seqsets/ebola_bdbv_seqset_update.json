@@ -2699,6 +2699,256 @@
       "isFocal": true
     },
     {
+      "accession": "PP_007ERMZ",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERNX",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERPV",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERQT",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERRR",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERSP",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERTM",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERUK",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERVH",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERWF",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERXD",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERYB",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ERZ9",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ES07",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ES15",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ES23",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ES31",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ES4Z",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ES5X",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ES6V",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ES7T",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ES8R",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ES9P",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESAM",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESBK",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESCH",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESDF",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESED",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESFB",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESG9",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESH6",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESJ4",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESK2",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESL0",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESMY",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESNW",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESPU",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESQS",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESRQ",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESSN",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESTL",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESUJ",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESVG",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESWE",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESXC",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESYA",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ESZ8",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ET06",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ET14",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_007ET22",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
       "accession": "PP_006X5RB",
       "type": "Loculus",
       "isFocal": false
