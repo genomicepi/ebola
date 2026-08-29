@@ -3244,6 +3244,11 @@
       "isFocal": true
     },
     {
+      "accession": "PP_007JXB5",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
       "accession": "PP_006X5RB",
       "type": "Loculus",
       "isFocal": false
