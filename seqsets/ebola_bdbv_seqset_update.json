@@ -449,11 +449,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0076534",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0076542",
       "type": "Loculus",
       "isFocal": true
@@ -5070,6 +5065,21 @@
     },
     {
       "accession": "PP_0081K21",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_0081WXZ",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_0081WYX",
+      "type": "Loculus",
+      "isFocal": true
+    },
+    {
+      "accession": "PP_0081WZV",
       "type": "Loculus",
       "isFocal": true
     },
