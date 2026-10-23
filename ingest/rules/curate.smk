@@ -360,3 +360,22 @@ rule subset_to_restricted_data:
             : > {output.sequences:q}
         fi
         """
+
+
+rule curate_legacy_results:
+    """
+    Produce unpartitioned results/{species}/metadata.tsv and sequences.fasta
+    for backwards compatibility with existing pipelines.
+    """
+    input:
+        metadata = "data/{species}/metadata.tsv",
+        sequences = "data/{species}/sequences.fasta",
+    output:
+        metadata = "results/{species}/metadata.tsv",
+        sequences = "results/{species}/sequences.fasta",
+    shell:
+        r"""
+        cp {input.metadata:q} {output.metadata:q}
+        cp {input.sequences:q} {output.sequences:q}
+        """
+

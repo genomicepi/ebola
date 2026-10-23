@@ -54,12 +54,14 @@ def _warning(wildcards):
     return []
 
 
-def _description(wildcards):
+def _description(wildcards, input):
     """
     Returns a list of arguments to be supplied to `augur export v2` for the description text.
     A config-specified 'description' key is expected to be a markdown file and the file
     is resolved (and thus must exist).
     """
+    if hasattr(input, "description") and input.description:
+        return ['--description', str(input.description[0])]
     if fname:=config['export'][f"{wildcards.species}/{wildcards.build}"].get('description'):
         return ['--description', resolve_config_path(fname)({})]
     return []
@@ -119,6 +121,7 @@ rule export:
         node_data_jsons = node_data_files,
         lat_longs = lambda w: "results/{species}/{build}/lat_longs.tsv" if config['export'][f"{w.species}/{w.build}"].get('lat_longs') else BASE_LAT_LONGS,
         auspice_config = _auspice_configs,
+        description = lambda w: [config['export'][f"{w.species}/{w.build}"]['description']] if config['export'][f"{w.species}/{w.build}"].get('description') else [],
     output:
         auspice_json = "auspice/ebola_{species}_{build}.json" # TODO XXX remap name to match URLs?
     params:

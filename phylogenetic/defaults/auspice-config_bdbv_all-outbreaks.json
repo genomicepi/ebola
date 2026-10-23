@@ -1,20 +1,15 @@
 {
   "title": "Bundibugyo ebolavirus genomes",
   "maintainers": [
-    {"name": "Eddy Lusamaki, Institut National de Recherche Biomédicale", "url": "https://inrb.net/"},
-    {"name": "Nextstrain", "url": "https://nextstrain.org"}
+    {"name": "GenomicEpi", "url": "https://github.com/genomicepi"}
   ],
   "data_provenance": [
-    {
-      "name": "GenBank",
-      "url": "https://www.ncbi.nlm.nih.gov/genbank/"
-    },
     {
       "name": "Pathoplexus",
       "url": "https://pathoplexus.org"
     }
   ],
-  "build_url": "https://github.com/nextstrain/ebola",
+  "build_url": "https://github.com/genomicepi/ebola",
   "colorings": [
     {
       "key": "gt",
@@ -30,6 +25,16 @@
       "key": "date",
       "title": "Sampling Date",
       "type": "temporal"
+    },
+    {
+      "key": "outbreak_label",
+      "title": "Outbreak",
+      "type": "categorical",
+      "scale": [
+        ["2007 Outbreak", "#78c2ad"],
+        ["2012 Outbreak", "#6cc3d5"],
+        ["2026 Outbreak", "#ff7851"]
+      ]
     },
     {
       "key": "outbreak",
@@ -56,6 +61,11 @@
         ["Democratic Republic of the Congo","#E67231"],
         ["Uganda","#DC2F24"]
       ]
+    },
+    {
+      "key": "country_label",
+      "title": "Country label",
+      "type": "categorical"
     },
     {
       "key": "division",
@@ -107,11 +117,12 @@
     "division"
   ],
   "display_defaults": {
-    "tip_label": "strain",
-    "color_by": "date",
-    "geo_resolution": "country"
+    "tip_label": "country_label",
+    "color_by": "outbreak_label",
+    "geo_resolution": "division"
   },
   "filters": [
+    "outbreak_label",
     "country",
     "division",
     "author"
@@ -122,6 +133,9 @@
     "division",
     "PPX_accession",
     "INSDC_accession",
-    "restrictedUntil"
+    "restrictedUntil",
+    "outbreak",
+    "outbreak_label",
+    "country_label"
   ]
 }

@@ -19,16 +19,27 @@ rule process_bdbv_locations:
 
         epicenter_zones = ["Bunia", "Mongbwalu", "Rwampara"]
 
-        with open(output.metadata, 'w') as output:
-            with open(input.metadata,'r') as metadata:
+        country_labels = {
+            "Democratic Republic of the Congo": "DRC",
+        }
+        outbreak_labels = {
+            "Bdbv-2007": "2007 Outbreak",
+            "Bdbv-2012": "2012 Outbreak",
+            "Bdbv-2026": "2026 Outbreak",
+        }
 
-                metadata_reader = csv.DictReader(metadata,delimiter="\t")
-                header = metadata_reader.fieldnames + [inferred_key,augmented_key]
+        with open(output.metadata, 'w') as output_handle:
+            with open(input.metadata,'r') as metadata_handle:
 
-                writer = csv.DictWriter(output, fieldnames=header,delimiter="\t")
+                metadata_reader = csv.DictReader(metadata_handle,delimiter="\t")
+                header = metadata_reader.fieldnames + [inferred_key, augmented_key, 'country_label', 'outbreak_label']
+
+                writer = csv.DictWriter(output_handle, fieldnames=header,delimiter="\t")
                 writer.writeheader()
 
                 for row in metadata_reader:
+                    row['country_label'] = country_labels.get(row.get('country'), row.get('country'))
+                    row['outbreak_label'] = outbreak_labels.get(row.get('outbreak'), row.get('outbreak'))
                     location = row.get('location')
                     if not location: # some samples do not have locations in the metadata
                         writer.writerow(row)

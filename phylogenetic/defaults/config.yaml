@@ -68,11 +68,8 @@ subsample:
         min_length: 5000
         exclude_where:
           - nextclade_qc=bad
-          - nextclade_qc=mediocre
         include: defaults/include_bdbv_all-outbreaks.txt 
         exclude: defaults/exclude_bdbv_drc-uganda-2026.txt
-        group_by: ['year', 'month']
-        sequences_per_group: 25
   bdbv/drc-uganda-2026:
     samples:
       outbreak:
@@ -228,12 +225,24 @@ export:
 
   bdbv/all-outbreaks:
     auspice_config: "defaults/auspice-config_bdbv_all-outbreaks.json"
-    description: ../nextclade/defaults/description.md
+    description: "results/bdbv/all-outbreaks/description.md"
     warning: &bdbv_warning >-
-      This dataset sources RESTRICTED sequences from [Pathoplexus](https://pathoplexus.org/).
-      Please see [virological](https://virological.org/t/initial-genomes-from-may-2026-bundibugyo-virus-disease-outbreak-in-the-democratic-republic-of-the-congo-and-uganda/1032) for more detail on the ongoing outbreak in DRC & Uganda.
+      This build includes some restricted sequences from [Pathoplexus](https://pathoplexus.org/).
+      Please see [Pathoplexus SeqSet PP_SS_2047](https://pathoplexus.org/seqsets/PP_SS_2047) for information
+      about included sequences, and follow this [virological post](https://virological.org/t/initial-genomes-from-may-2026-bundibugyo-virus-disease-outbreak-in-the-democratic-republic-of-the-congo-and-uganda/1032)
+      for more details on sequencing efforts.
   
   bdbv/drc-uganda-2026:
     auspice_config: "defaults/auspice-config_bdbv_drc-uganda-2026.json"
     description: ../nextclade/defaults/description.md
     warning: *bdbv_warning
+
+custom_rules:
+  - rules/genomicepi.smk
+
+seqset:
+  id: "PP_SS_2047"
+  name: "Bundibugyo ebolavirus 2026 outbreak build"
+  description: "Bundibugyo ebolavirus sequences used in the GenomicEpi 2026 outbreak community build. Bdbv-2026 records are focal; historical BDBV records are background."
+  focal_outbreak: "Bdbv-2026"
+
