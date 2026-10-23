@@ -3,4 +3,16 @@
 
 config['builds'] = ['bdbv/all-outbreaks']
 
+# Default to local ingest outputs (contains all open and restricted sequences)
+if 'inputs' not in config:
+    config['inputs'] = [
+        {
+            "name": "local_ingest",
+            "species": "bdbv",
+            "metadata": "../ingest/results/bdbv/metadata.tsv",
+            "id_field": "accession",
+            "sequences": "../ingest/results/bdbv/sequences.fasta",
+        }
+    ]
+
 include: "../Snakefile"

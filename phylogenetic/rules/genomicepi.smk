@@ -49,3 +49,4 @@ rule copy_community_auspice:
         cp {input.auspice:q} {output.phylo_auspice:q}
         cp {input.auspice:q} {output.root_auspice:q}
         """
+
