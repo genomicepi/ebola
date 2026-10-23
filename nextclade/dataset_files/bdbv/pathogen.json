@@ -12,8 +12,7 @@
   "attributes": {
     "name": "Bundibugyo ebolavirus",
     "reference accession": "NC_014373.1",
-    "reference name": "UGA/2007/Butalya-811250",
-    "experimental": true
+    "reference name": "UGA/2007/Butalya-811250"
   },
   "compatibility": {
     "cli": "3.0.0-alpha.0",
@@ -28,12 +27,32 @@
     "readme": "README.md",
     "reference": "reference.fasta"
   },
-  "defaultCds": "GP",
+  "mutationPatterns": {
+    "patterns": [
+      {
+        "id": "adar",
+        "name": "ADAR-like RNA editing",
+        "description": "ADAR-mediated A-to-I editing, observed as T>C in sequenced genomes",
+        "events": [
+          {
+            "type": "nucSubstitution",
+            "ref": ["T"],
+            "qry": ["C"],
+            "bothStrands": false
+          }
+        ],
+        "cluster": {
+          "windowSize": 50,
+          "cutoff": 3
+        }
+      }
+    ]
+  },
   "qc": {
     "frameShifts": {
       "enabled": true,
       "ignoredFrameShifts": [],
-      "scoreWeight": 20
+      "scoreWeight": 50
     },
     "missingData": {
       "enabled": true,
@@ -42,21 +61,21 @@
     },
     "mixedSites": {
       "enabled": true,
-      "mixedSitesThreshold": 40
+      "mixedSitesThreshold": 20
     },
     "privateMutations": {
-      "cutoff": 300,
+      "cutoff": 10,
       "enabled": true,
-      "typical": 50,
-      "weightLabeledSubstitutions": 6,
-      "weightReversionSubstitutions": 6,
+      "typical": 3,
+      "weightLabeledSubstitutions": 3,
+      "weightReversionSubstitutions": 3,
       "weightUnlabeledSubstitutions": 1
     },
     "snpClusters": {
-      "clusterCutOff": 10,
-      "enabled": false,
-      "scoreWeight": 10,
-      "windowSize": 100
+      "clusterCutOff": 3,
+      "enabled": true,
+      "scoreWeight": 50,
+      "windowSize": 50
     },
     "stopCodons": {
       "enabled": true,
@@ -67,13 +86,5 @@
   "schemaVersion": "3.0.0",
   "shortcuts": [
     "nextstrain/ebola/bdbv"
-  ],
-  "version": {
-    "updatedAt": "2026-04-14T11:55:23Z",
-    "tag": "2026-04-14--11-55-23Z",
-    "compatibility": {
-      "cli": "3.0.0-alpha.0",
-      "web": "3.0.0-alpha.0"
-    }
-  }
+  ]
 }

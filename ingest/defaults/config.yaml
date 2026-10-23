@@ -87,7 +87,6 @@ curate:
     "INSDC_accession__url",
     "strain",
     "date",
-    "outbreak",
     "region",
     "country",
     "division",
@@ -163,7 +162,6 @@ ppx_metadata_fields:
  - "ncbiUpdateDate"
  - "ncbiVirusName"
  - "ncbiVirusTaxId"
- - "outbreak"
  - "purposeOfSampling"
  - "purposeOfSequencing"
  - "qualityControlDetails"
