@@ -66,6 +66,11 @@ subsample:
     samples:
       everything:
         min_length: 5000
+        exclude_where:
+          - nextclade_qc=bad
+          - nextclade_qc=mediocre
+        include: defaults/include_bdbv_all-outbreaks.txt 
+        exclude: defaults/exclude_bdbv_drc-uganda-2026.txt
   bdbv/drc-uganda-2026:
     samples:
       outbreak:
