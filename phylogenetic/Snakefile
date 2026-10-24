@@ -15,6 +15,12 @@ print("Relative filepaths will be searched for using the `AUGUR_SEARCH_PATHS`"
     "\n\t" + "\n\t".join(os.environ["AUGUR_SEARCH_PATHS"].split(':')) + "\n",
     file=sys.stderr)
 
+from pathlib import Path
+
+# Ensure workflow.basedir points to the phylogenetic directory if invoked via a subfolder Snakefile
+if os.path.basename(workflow.basedir) == "species-workflows":
+    workflow.basedir = str(Path(workflow.basedir).parent)
+
 configfile: os.path.join(workflow.basedir, 'defaults', 'config.yaml')
 if os.path.exists("config.yaml"):
     configfile: "config.yaml"
