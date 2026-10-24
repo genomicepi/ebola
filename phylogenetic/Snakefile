@@ -1,0 +1,91 @@
+from snakemake.utils import min_version
+import os 
+
+# Minimum Snakemake version needed for the storage plugins used in remote_files.smk
+min_version("8.0.0")
+
+# Set up config structure first
+include: "../shared/vendored/snakemake/config.smk"
+include: "rules/config.smk"
+
+set_min_augur_version("34.0.0")
+
+print("Relative filepaths will be searched for using the `AUGUR_SEARCH_PATHS`"
+   " env variable, which has the following directories:"
+    "\n\t" + "\n\t".join(os.environ["AUGUR_SEARCH_PATHS"].split(':')) + "\n",
+    file=sys.stderr)
+
+from pathlib import Path
+
+def find_phylo_dir():
+    for start in [Path(workflow.current_basedir), Path(workflow.basedir), Path.cwd()]:
+        for candidate in [start, *start.parents]:
+            if candidate.name == 'species-workflows':
+                continue
+            if (candidate / 'defaults' / 'config.yaml').is_file() and (candidate / 'Snakefile').is_file():
+                return candidate.resolve()
+            if (candidate / 'phylogenetic' / 'defaults' / 'config.yaml').is_file():
+                return (candidate / 'phylogenetic').resolve()
+    return Path(workflow.basedir).resolve()
+
+PHYLO_DIR = str(find_phylo_dir())
+REPO_DIR = str(Path(PHYLO_DIR).parent)
+
+# Preserve builds or inputs if already specified before Snakefile inclusion
+specified_builds = config.get('builds')
+specified_inputs = config.get('inputs')
+
+configfile: os.path.join(PHYLO_DIR, 'defaults', 'config.yaml')
+if os.path.exists(os.path.join(PHYLO_DIR, "config.yaml")):
+    configfile: os.path.join(PHYLO_DIR, "config.yaml")
+
+if specified_builds:
+    config['builds'] = specified_builds
+if specified_inputs:
+    config['inputs'] = specified_inputs
+
+validate_config()
+write_subsample_configs()
+
+# certain commands (but not all) use SEARCH_PATHS
+SEARCH_PATHS = [PHYLO_DIR, workflow.basedir, os.getcwd()]
+
+wildcard_constraints:
+    species=r"[^/_]+",
+    build=r"[^/_]+",
+
+include: "../shared/vendored/snakemake/remote_files.smk"
+include: "rules/multiple_inputs.smk"
+include: "rules/nextclade.smk"
+include: "rules/subsample.smk"
+include: "rules/construct_phylogeny.smk"
+include: "rules/adar.smk"
+include: "rules/annotate_phylogeny.smk"
+include: "rules/export.smk"
+
+# Allow users to import custom rules provided via the config.
+# This allows users to run custom rules that can extend or override the workflow.
+# A concrete example of using custom rules is the extension of the workflow with
+# rules to support the Nextstrain automation that uploads files and sends internal
+# Slack notifications.
+# For extensions, the user will have to specify the custom rule targets when
+# running the workflow.
+# For overrides, the custom Snakefile will have to use the `ruleorder` directive
+# to allow Snakemake to handle ambiguous rules
+# https://snakemake.readthedocs.io/en/stable/snakefiles/rules.html#handling-ambiguous-rules
+if "custom_rules" in config:
+    for rule_file in config["custom_rules"]:
+        include: rule_file
+
+all_targets = [f"auspice/ebola_{b.replace('/', '_')}.json" for b in config['builds']]
+if any("bdbv" in b for b in config['builds']):
+    all_targets.extend([
+        "auspice/ebola_bdbv.json",
+        str(Path(REPO_DIR) / "auspice" / "ebola_bdbv.json"),
+        str(Path(REPO_DIR) / "seqsets" / "ebola_bdbv_seqset_update.json"),
+    ])
+
+rule all:
+    default_target: True
+    input:
+        all_targets

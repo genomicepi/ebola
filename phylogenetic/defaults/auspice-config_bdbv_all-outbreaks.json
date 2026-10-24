@@ -1,0 +1,141 @@
+{
+  "title": "Bundibugyo ebolavirus genomes",
+  "maintainers": [
+    {"name": "GenomicEpi", "url": "https://github.com/genomicepi"}
+  ],
+  "data_provenance": [
+    {
+      "name": "Pathoplexus",
+      "url": "https://pathoplexus.org"
+    }
+  ],
+  "build_url": "https://github.com/genomicepi/ebola",
+  "colorings": [
+    {
+      "key": "gt",
+      "title": "Genotype",
+      "type": "categorical"
+    },
+    {
+      "key": "year",
+      "title": "Sampling Year",
+      "type": "categorical"
+    },
+    {
+      "key": "date",
+      "title": "Sampling Date",
+      "type": "temporal"
+    },
+    {
+      "key": "outbreak_label",
+      "title": "Outbreak",
+      "type": "categorical",
+      "scale": [
+        ["2007 Outbreak", "#78c2ad"],
+        ["2012 Outbreak", "#6cc3d5"],
+        ["2026 Outbreak", "#ff7851"]
+      ]
+    },
+    {
+      "key": "outbreak",
+      "title": "Outbreak (Nextclade name)",
+      "type": "categorical",
+      "scale": [
+        ["Bdbv-2007","#416DCE"],
+        ["Bdbv-2012","#84BA6F"],
+        ["Bdbv-2026","#E1502A"]
+      ]
+    },
+    {
+      "key": "country",
+      "title": "Country",
+      "type": "categorical",
+      "scale": [
+        ["Guinea","#3F4DCB"],
+        ["Sierra Leone","#4681C9"],
+        ["Liberia","#5AA4A8"],
+        ["Mali","#78B67E"],
+        ["Nigeria","#9EBE5A"],
+        ["Gabon","#C5B945"],
+        ["Republic of the Congo","#E0A23A"],
+        ["Democratic Republic of the Congo","#E67231"],
+        ["Uganda","#DC2F24"]
+      ]
+    },
+    {
+      "key": "country_label",
+      "title": "Country label",
+      "type": "categorical"
+    },
+    {
+      "key": "division",
+      "title": "Province",
+      "type": "categorical"
+    },
+    {
+      "key": "dataUseTerms",
+      "title": "Data use terms",
+      "type": "categorical",
+      "scale": [
+        ["RESTRICTED","#fc8d59"],
+        ["OPEN","#1d91c0"]
+      ]
+    },
+    {
+      "key": "author",
+      "title": "Author",
+      "type": "categorical"
+    },
+    {
+      "key": "host",
+      "title": "Host",
+      "type": "categorical"
+    },
+    {
+      "key": "date_submitted",
+      "title": "Date Submitted (PPX)",
+      "type": "temporal"
+    },
+    {
+      "key": "nextclade_qc",
+      "title": "sequence QC (Nextclade)",
+      "type": "categorical",
+      "scale": [
+        ["good","#225ea8"],
+        ["mediocre","#fe9929"],
+        ["bad","#d53e4f"]
+      ]
+    },
+    {
+      "key": "genome_coverage",
+      "title": "Genome coverage",
+      "type": "continuous"
+    }
+  ],
+  "geo_resolutions": [
+    "country",
+    "division"
+  ],
+  "display_defaults": {
+    "tip_label": "country_label",
+    "color_by": "outbreak_label",
+    "geo_resolution": "division"
+  },
+  "filters": [
+    "outbreak_label",
+    "country",
+    "division",
+    "author"
+  ],
+  "metadata_columns": [
+    "strain",
+    "date",
+    "division",
+    "PPX_accession",
+    "INSDC_accession",
+    "restrictedUntil",
+    "outbreak",
+    "outbreak_label",
+    "country_label"
+  ]
+}

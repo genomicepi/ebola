@@ -1,49 +1,45 @@
-"""
-This part of the workflow creates additonal annotations for the phylogenetic tree.
 
-REQUIRED INPUTS:
+def _root_seq(wildcards):
+    """If the config specifies a root-sequence file we resolve it and return an array o
+    arguments for `augur ancestral`. Since we resolve file paths the files must exist
+    which avoids the need to use Snakemake's input functionaly.
+    """
+    if p:=config['ancestral'][f"{wildcards.species}/{wildcards.build}"].get('root-sequence', False):
+        resolved = resolve_config_path(p)({})
+        return ['--root-sequence', resolved]
+    return []
 
-    metadata            = results/{build}/filtered.tsv
-    prepared_sequences  = results/prepared_sequences.fasta
-    tree                = results/tree.nwk
 
-OUTPUTS:
+def _aa_reconstruction_via_ancestral(wildcards):
+    genes = config['ancestral'][f"{wildcards.species}/{wildcards.build}"].get('genes', False)
+    if genes is False:
+        return ""
+    if not isinstance(genes, str):
+        raise Exception(f"ancestral's 'genes' config option must be a string ({wildcards.species}/{wildcards.build})")
+    # Note: translations produced by run_nextclade
+    translations_pattern = f"results/{wildcards.species}/translations/%GENE.fasta"
+    annotation_file = resolve_config_path(config['ancestral'][f"{wildcards.species}/{wildcards.build}"]['annotation'])({})
+    return f"--genes {genes} --translations {translations_pattern} --annotation {annotation_file} --report-inconsistent-translation"
 
-    node_data = results/*.json
-
-    There are no required outputs for this part of the workflow as it depends
-    on which annotations are created. All outputs are expected to be node data
-    JSON files that can be fed into `augur export`.
-
-    See Nextstrain's data format docs for more details on node data JSONs:
-    https://docs.nextstrain.org/page/reference/data-formats.html
-
-This part of the workflow usually includes the following steps:
-
-    - augur traits
-    - augur ancestral
-    - augur translate
-    - augur clades
-
-See Augur's usage docs for these commands for more details.
-
-Custom node data files can also be produced by build-specific scripts in addition
-to the ones produced by Augur commands.
-"""
 
 rule ancestral:
-    """Reconstructing ancestral sequences and mutations"""
+    """Reconstructing mutations and (optionally) AA translations too"""
     input:
-        tree = "results/{build}/tree.nwk",
-        alignment = "results/{build}/aligned.fasta"
+        tree = "results/{species}/{build}/tree.nwk",
+        alignment = "results/{species}/{build}/subsampled.fasta", # unmasked
+        # Note: input.annotation_file not directly used by the shell block, necessary for snakemake input checking. File is referenced by params.aa_reconstruction
+        annotation_file = lambda w: resolve_config_path(config['ancestral'][f"{w.species}/{w.build}"]['annotation'])({}) if _aa_reconstruction_via_ancestral(w) else [],
     output:
-        node_data = "results/{build}/nt_muts.json"
+        node_data = "results/{species}/{build}/muts.json"
     params:
-        inference = lambda w: config["build_params"][w.build]["ancestral"]["inference"],
+        aa_reconstruction = _aa_reconstruction_via_ancestral,
+        inference = lambda w: conditional('--inference', config['ancestral'][f"{w.species}/{w.build}"].get('inference', False)),
+        extra_args = lambda w: config['ancestral'][f"{w.species}/{w.build}"].get('extra_args', ''), # will be replaced with config-in-YAML in the short/medium term
+        root_seq = _root_seq,
     benchmark:
-        "benchmarks/{build}/ancestral.txt"
+        "benchmarks/{species}/{build}/ancestral.txt"
     log:
-        "logs/{build}/ancestral.txt"
+        "logs/{species}/{build}/ancestral.txt"
     shell:
         r"""
         exec &> >(tee {log:q})
@@ -51,47 +47,73 @@ rule ancestral:
         augur ancestral \
             --tree {input.tree:q} \
             --alignment {input.alignment:q} \
-            --output-node-data {output.node_data:q} \
-            --inference {params.inference:q}
+            {params.aa_reconstruction} \
+            {params.inference} \
+            {params.root_seq} \
+            {params.extra_args} \
+            --output-node-data {output.node_data:q}
         """
 
 rule translate:
-    """Translating amino acid sequences"""
     input:
-        tree = "results/{build}/tree.nwk",
-        node_data = "results/{build}/nt_muts.json",
-        reference = lambda w: config["build_params"][w.build]["files"]["reference"],
+        tree = "results/{species}/{build}/tree.nwk",
+        muts = "results/{species}/{build}/muts.json",
+        reference = lambda w: resolve_config_path(config['translate'][f"{w.species}/{w.build}"]["reference"]),
     output:
-        node_data = "results/{build}/aa_muts.json"
+        node_data = "results/{species}/{build}/aa_muts.json"
+    params:
+        genes = lambda w: conditional('--genes', config['translate'][f"{w.species}/{w.build}"].get('genes', False)),
     benchmark:
-        "benchmarks/{build}/translate.txt"
+        "benchmarks/{species}/{build}/translate.txt"
     log:
-        "logs/{build}/translate.txt"
+        "logs/{species}/{build}/translate.txt"
     shell:
         r"""
         exec &> >(tee {log:q})
 
         augur translate \
             --tree {input.tree:q} \
-            --ancestral-sequences {input.node_data:q} \
+            --ancestral-sequences {input.muts:q} \
+            {params.genes} \
             --reference-sequence {input.reference:q} \
+            --output-node-data {output.node_data:q}
+        """
+
+rule count_mutations:
+    """Count the nucleotide and amino-acid mutations per node"""
+    input:
+        muts = "results/{species}/{build}/muts.json",
+        aa_muts = lambda w: [] if _aa_reconstruction_via_ancestral(w) else f"results/{w.species}/{w.build}/aa_muts.json"
+    output:
+        node_data = "results/{species}/{build}/muts-counts.json"
+    params:
+        script = os.path.join(workflow.basedir, "scripts", "collect-mutations.py"),
+        cds = lambda w: config['count_mutations'][f"{w.species}/{w.build}"].get('cds', []),
+        counts = lambda w: config['count_mutations'][f"{w.species}/{w.build}"].get('counts', ''),
+    shell:
+        r"""
+        python {params.script} \
+            --muts {input.muts:q} \
+            --aa-muts {input.aa_muts:q} \
+            --cds {params.cds} \
+            --counts {params.counts} \
             --output {output.node_data:q}
         """
 
 rule traits:
-    """Inferring ancestral traits for {params.columns!s}"""
     input:
-        tree = "results/{build}/tree.nwk",
-        metadata = "results/{build}/filtered.tsv"
+        tree = "results/{species}/{build}/tree.nwk",
+        metadata = "results/{species}/{build}/metadata.tsv",
     output:
-        node_data = "results/{build}/traits.json",
+        node_data = "results/{species}/{build}/traits.json",
     params:
-        columns = lambda w: config["build_params"][w.build]["traits"]["columns"],
-        id_column = config["id_column"],
+        columns = lambda w: config['traits'][f"{w.species}/{w.build}"]['columns'],
+        confidence = lambda w: conditional('--confidence', config['traits'][f"{w.species}/{w.build}"].get('confidence', False)),
+        bias = lambda w: conditional('--sampling-bias-correction', config['traits'][f"{w.species}/{w.build}"].get('bias', False)),
     benchmark:
-        "benchmarks/{build}/traits.txt"
+        "benchmarks/{species}/{build}/traits.txt"
     log:
-        "logs/{build}/traits.txt"
+        "logs/{species}/{build}/traits.txt"
     shell:
         r"""
         exec &> >(tee {log:q})
@@ -99,8 +121,55 @@ rule traits:
         augur traits \
             --tree {input.tree:q} \
             --metadata {input.metadata:q} \
-            --metadata-id-columns {params.id_column:q} \
-            --output {output.node_data:q} \
             --columns {params.columns:q} \
-            --confidence
+            {params.confidence} \
+            {params.bias} \
+            --output {output.node_data:q}
+        """
+
+
+
+rule sampling_year:
+    input:
+        metadata = "results/{species}/{build}/metadata.tsv",
+    output:
+        node_data = "results/{species}/{build}/sampling-year.json",
+        config_block = "results/{species}/{build}/sampling-year.config.json",
+    params:
+        script = os.path.join(workflow.basedir, "scripts", "get_year.py"),
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+
+        python {params.script} \
+            --metadata {input.metadata:q} \
+            --output {output.node_data:q} \
+            --output-config {output.config_block:q}
+        """
+
+
+rule label_outbreaks:
+    input:
+        metadata = "results/{species}/{build}/metadata.tsv",
+        tree = "results/{species}/{build}/tree.nwk",
+    output:
+        node_data = "results/{species}/{build}/outbreaks.json"
+    params:
+        script = os.path.join(workflow.basedir, "scripts", "label_outbreaks.py"),
+    benchmark:
+        "benchmarks/{species}/{build}/label_outbreaks.txt"
+    log:
+        "logs/{species}/{build}/label_outbreaks.txt"
+    wildcard_constraints:
+        # these could be relaxed if we generalised the script
+        species="ebov",
+        build="all-outbreaks",
+    shell:
+        r"""
+        exec &> >(tee {log:q})
+
+        python {params.script} \
+            --metadata {input.metadata:q} \
+            --tree {input.tree:q} \
+            --output {output.node_data:q}
         """

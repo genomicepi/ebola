@@ -37,18 +37,20 @@ rule all:
 
 rule filter:
     input:
-        data=lambda w: f"data/{w.species}/sequences.fasta",
-        metadata=lambda w: f"data/{w.species}/metadata.tsv",
+        data=lambda w: f"../ingest/results/{w.species}/sequences.fasta",
+        metadata=lambda w: f"../ingest/results/{w.species}/metadata.tsv",
         exclude="defaults/exclude_{species}.txt",
     output:
         filtered_data="results/{species}/sequences.fasta",
         filtered_metadata="results/{species}/metadata_raw.tsv",
     params:
-        min_length=5000,
+        min_length=18000,
     shell:
         """
         augur filter --metadata-id-columns accession --sequences {input.data} --metadata {input.metadata} \
                      --min-length {params.min_length} \
+                     --subsample-max-sequences 500 \
+                     --group-by year month \
                      --exclude {input.exclude} \
                      --output-sequences {output.filtered_data} \
                      --output-metadata {output.filtered_metadata}
@@ -64,8 +66,12 @@ rule add_strain_name:
         import pandas as pd
 
         metadata = pd.read_csv(input.metadata, sep="\t")
+        def get_country_code(country):
+            return {"Uganda": "UGA", "Democratic Republic of the Congo": "COD", "Congo": "COG"}.get(country, country)
+        def get_admindiv(row):
+            return row["location"] if not pd.isna(row["location"]) else row["division"]
         metadata["strain"] = metadata.apply(
-            lambda row: f"{row['accession']}|{row['strain']}|{row['country']}/{row['date']}",
+            lambda row: f"{row['accession']}|{get_admindiv(row)}|{get_country_code(row['country'])}/{row['date']}",
             axis=1,
         )
         metadata.to_csv(output.metadata_with_strain, sep="\t", index=False)
@@ -116,7 +122,7 @@ rule tree:
         """
         augur tree \
             --alignment {input.aligned} \
-            --tree-builder-args "--seqtype DNA" \
+            --tree-builder-args "--seqtype DNA --polytomy " \
             --output {output.tree}
         """
 
@@ -202,16 +208,16 @@ rule augment_auspice_config:
             json.dump(config, f, indent=2)
 
 
-# generated changelog by fetching from GitHub raw URL specified in config.yaml, then prepending "## Unreleased" header to the top of the changelog content
-# rule generate_changelog:
-#     output:
-#         changelog="results/{species}/CHANGELOG.md",
-#     params:
-#         changelog_url=lambda w: config["changelog_url"].format(species=w.species),
-#     shell:
-#         """
-#         curl -s {params.changelog_url} | cat <(printf "## Unreleased\n\n{default_update_message}\n\n") - > {output.changelog}
-#         """
+# generate changelog by fetching from GitHub raw URL specified in config.yaml, then prepending "## Unreleased" header to the top of the changelog content
+rule generate_changelog:
+    output:
+        changelog="results/{species}/CHANGELOG.md",
+    params:
+        changelog_url=lambda w: config["changelog_url"].format(species=w.species),
+    shell:
+        """
+        curl -s {params.changelog_url} | cat <(printf "## Unreleased\n\n{default_update_message}\n\n") - > {output.changelog}
+        """
 
 
 rule export:
@@ -275,7 +281,7 @@ rule example_sequences:
     shell:
         """
         augur filter --metadata-id-columns accession strain --metadata {input.metadata} --sequences {input.sequences} \
-                     --subsample-max-sequences 10 --min-length 500 \
+                     --subsample-max-sequences 10 --min-length 500 --group-by year --exclude-where "dataUseTerms=RESTRICTED" \
                      --output-sequences {output.example_sequences}
         """
 
@@ -300,4 +306,14 @@ rule assemble_dataset:
         cp {input.changelog} {params.dataset_dir}/CHANGELOG.md
         cp dataset_files/{wildcards.species}/README.md {params.dataset_dir}/README.md
 
+        """
+
+
+rule clean_bdbv:
+    shell:
+        """
+        rm -rf results/bdbv/*
+        rm -rf datasets/bdbv/*
+        rm -rf auspice/tree_*.json
+        rm -rf data/bdbv/*
         """

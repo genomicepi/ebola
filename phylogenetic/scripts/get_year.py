@@ -49,29 +49,33 @@ def suggest_colors(years, fname):
     c = colors[len(years)] # colors is 1-indexed
     
     config = {
-        "key": "year",
-        "title": "Sampling Year",
-        "type": "categorical",
-        "scale": [[year, c[idx]] for idx,year in enumerate(years)]
+        "colorings": [
+            {
+                "key": "year",
+                "title": "Sampling Year",
+                "type": "categorical",
+                "scale": [[year, c[idx]] for idx,year in enumerate(years)]
+            }
+        ]
     }
 
-    print(f"Suggested auspice-config colors entry:")
-    print(json.dumps(config))
     if fname:
         with open(fname, 'w') as fh:
             json.dump(config, fh, indent=2)
+    else:
+        print(f"Suggested auspice-config colors entry:")
+        print(json.dumps(config))
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--metadata", required=True, help="Metadata TSV")
-    parser.add_argument("--id-columns", nargs="+", help="ID columns in Metadata TSV", default=['accession'])
     parser.add_argument("--output", required=True, help="Node Data JSON output")
     parser.add_argument("--output-config", required=False, help="JSON coloring entry for an auspice-config JSON")
 
     args = parser.parse_args()
 
-    m = read_metadata(args.metadata, id_columns=args.id_columns)
+    m = read_metadata(args.metadata)
     nodes = {name: {'year': date.split('-')[0]} for name,date in zip(m.index, m['date']) if date and not date.startswith('X')}
     with open(args.output, 'w') as fh:
         json.dump({"nodes": nodes}, fh)
