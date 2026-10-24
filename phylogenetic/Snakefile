@@ -17,18 +17,28 @@ print("Relative filepaths will be searched for using the `AUGUR_SEARCH_PATHS`"
 
 from pathlib import Path
 
-# Ensure workflow.basedir points to the phylogenetic directory if invoked via a subfolder Snakefile
-if os.path.basename(workflow.basedir) == "species-workflows":
-    workflow.basedir = str(Path(workflow.basedir).parent)
+def find_phylo_dir():
+    for start in [Path(workflow.current_basedir), Path(workflow.basedir), Path.cwd()]:
+        for candidate in [start, *start.parents]:
+            if candidate.name == 'species-workflows':
+                continue
+            if (candidate / 'defaults' / 'config.yaml').is_file() and (candidate / 'Snakefile').is_file():
+                return candidate.resolve()
+            if (candidate / 'phylogenetic' / 'defaults' / 'config.yaml').is_file():
+                return (candidate / 'phylogenetic').resolve()
+    return Path(workflow.basedir).resolve()
 
-configfile: os.path.join(workflow.basedir, 'defaults', 'config.yaml')
-if os.path.exists("config.yaml"):
-    configfile: "config.yaml"
+PHYLO_DIR = str(find_phylo_dir())
+REPO_DIR = str(Path(PHYLO_DIR).parent)
+
+configfile: os.path.join(PHYLO_DIR, 'defaults', 'config.yaml')
+if os.path.exists(os.path.join(PHYLO_DIR, "config.yaml")):
+    configfile: os.path.join(PHYLO_DIR, "config.yaml")
 validate_config()
 write_subsample_configs()
 
 # certain commands (but not all) use SEARCH_PATHS
-SEARCH_PATHS = [workflow.basedir, os.getcwd()]
+SEARCH_PATHS = [PHYLO_DIR, workflow.basedir, os.getcwd()]
 
 wildcard_constraints:
     species=r"[^/_]+",
@@ -48,8 +58,8 @@ def all_targets():
     if any("bdbv" in b for b in config['builds']):
         targets.extend([
             "auspice/ebola_bdbv.json",
-            os.path.join(workflow.basedir, "..", "auspice", "ebola_bdbv.json"),
-            os.path.join(workflow.basedir, "..", "seqsets", "ebola_bdbv_seqset_update.json"),
+            os.path.join(REPO_DIR, "auspice", "ebola_bdbv.json"),
+            os.path.join(REPO_DIR, "seqsets", "ebola_bdbv_seqset_update.json"),
         ])
     return targets
 

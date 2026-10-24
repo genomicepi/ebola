@@ -1,7 +1,16 @@
 import os
 from pathlib import Path
 
-REPO = Path(workflow.basedir).parent
+def find_repo_root():
+    for start in [Path(workflow.current_basedir), Path(workflow.basedir), Path.cwd()]:
+        for candidate in [start, *start.parents]:
+            if (candidate / 'nextstrain-pathogen.yaml').is_file():
+                return candidate.resolve()
+            if (candidate / 'phylogenetic').is_dir() and (candidate / 'ingest').is_dir():
+                return candidate.resolve()
+    return Path(workflow.basedir).parent.resolve()
+
+REPO = find_repo_root()
 
 rule build_description:
     input:
