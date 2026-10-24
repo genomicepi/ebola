@@ -20,6 +20,7 @@ rule build_description:
         description="results/{species}/{build}/description.md",
     shell:
         r"""
+        mkdir -p $(dirname {output.description:q})
         python {REPO}/scripts/render_build_description.py \
             --metadata {input.metadata:q} \
             --template {input.template:q} \
@@ -38,6 +39,7 @@ rule seqset_payload:
         focal_outbreak=lambda w: config.get('seqset', {}).get('focal_outbreak', 'Bdbv-2026'),
     shell:
         r"""
+        mkdir -p $(dirname {output.payload:q})
         python {REPO}/scripts/generate_seqset_payload.py \
             --metadata {input.metadata:q} \
             --output {output.payload:q} \
@@ -55,6 +57,8 @@ rule copy_community_auspice:
         root_auspice=str(REPO / "auspice" / "ebola_bdbv.json"),
     shell:
         r"""
+        mkdir -p $(dirname {output.phylo_auspice:q})
+        mkdir -p $(dirname {output.root_auspice:q})
         cp {input.auspice:q} {output.phylo_auspice:q}
         cp {input.auspice:q} {output.root_auspice:q}
         """

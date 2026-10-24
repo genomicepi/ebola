@@ -30,7 +30,8 @@ def main():
     with open(args.metadata, newline="") as handle:
         reader = csv.DictReader(handle, delimiter="\t")
         for row in reader:
-            accession = normalize_accession(row["PPX_accession"])
+            raw_acc = row.get("PPX_accession") or row.get("accession") or ""
+            accession = normalize_accession(raw_acc)
             if not accession:
                 continue
 
