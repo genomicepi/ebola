@@ -63,18 +63,6 @@ include: "rules/adar.smk"
 include: "rules/annotate_phylogeny.smk"
 include: "rules/export.smk"
 
-all_targets = [f"auspice/ebola_{b.replace('/', '_')}.json" for b in config['builds']]
-if any("bdbv" in b for b in config['builds']):
-    all_targets.extend([
-        "auspice/ebola_bdbv.json",
-        str(Path(REPO_DIR) / "auspice" / "ebola_bdbv.json"),
-        str(Path(REPO_DIR) / "seqsets" / "ebola_bdbv_seqset_update.json"),
-    ])
-
-rule all:
-    input:
-        all_targets
-
 # Allow users to import custom rules provided via the config.
 # This allows users to run custom rules that can extend or override the workflow.
 # A concrete example of using custom rules is the extension of the workflow with
@@ -88,3 +76,16 @@ rule all:
 if "custom_rules" in config:
     for rule_file in config["custom_rules"]:
         include: rule_file
+
+all_targets = [f"auspice/ebola_{b.replace('/', '_')}.json" for b in config['builds']]
+if any("bdbv" in b for b in config['builds']):
+    all_targets.extend([
+        "auspice/ebola_bdbv.json",
+        str(Path(REPO_DIR) / "auspice" / "ebola_bdbv.json"),
+        str(Path(REPO_DIR) / "seqsets" / "ebola_bdbv_seqset_update.json"),
+    ])
+
+rule all:
+    default_target: True
+    input:
+        all_targets
