@@ -24,11 +24,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_006Y8ME",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_006Y8NC",
       "type": "Loculus",
       "isFocal": true
@@ -60,11 +55,6 @@
     },
     {
       "accession": "PP_00711S5",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00711T3",
       "type": "Loculus",
       "isFocal": true
     },
@@ -134,11 +124,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0075Z66",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0075Z74",
       "type": "Loculus",
       "isFocal": true
@@ -150,11 +135,6 @@
     },
     {
       "accession": "PP_0075Z90",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0075ZAY",
       "type": "Loculus",
       "isFocal": true
     },
@@ -239,11 +219,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_00763VM",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_00763WK",
       "type": "Loculus",
       "isFocal": true
@@ -275,11 +250,6 @@
     },
     {
       "accession": "PP_0076427",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0076435",
       "type": "Loculus",
       "isFocal": true
     },
@@ -384,22 +354,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_00764QW",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_00764RU",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_00764SS",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00764TQ",
       "type": "Loculus",
       "isFocal": true
     },
@@ -424,22 +384,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_00764YE",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_00764ZC",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007650A",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0076518",
       "type": "Loculus",
       "isFocal": true
     },
@@ -494,17 +444,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_00765DJ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_00765EG",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00765FE",
       "type": "Loculus",
       "isFocal": true
     },
@@ -565,11 +505,6 @@
     },
     {
       "accession": "PP_00765TP",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00765UM",
       "type": "Loculus",
       "isFocal": true
     },
@@ -655,11 +590,6 @@
     },
     {
       "accession": "PP_0076RND",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0076RPB",
       "type": "Loculus",
       "isFocal": true
     },
@@ -824,11 +754,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007A2K0",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007A2LY",
       "type": "Loculus",
       "isFocal": true
@@ -869,22 +794,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007A2UG",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007A2VE",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007A2WC",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007A2XA",
       "type": "Loculus",
       "isFocal": true
     },
@@ -939,11 +854,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007A38N",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007A39L",
       "type": "Loculus",
       "isFocal": true
@@ -979,11 +889,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007A4G5",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007A4H2",
       "type": "Loculus",
       "isFocal": true
@@ -995,11 +900,6 @@
     },
     {
       "accession": "PP_007A4KY",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007A4LW",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1074,16 +974,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007A510",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007A52Y",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007A53W",
       "type": "Loculus",
       "isFocal": true
@@ -1109,17 +999,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007A58L",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007A59J",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007A5AG",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1194,11 +1074,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007A5TF",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007A5UD",
       "type": "Loculus",
       "isFocal": true
@@ -1210,11 +1085,6 @@
     },
     {
       "accession": "PP_007A5W9",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007A5X7",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1239,22 +1109,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007A62X",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007A63V",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007A64T",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007A65R",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1280,11 +1140,6 @@
     },
     {
       "accession": "PP_007A6BD",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007A6CB",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1324,11 +1179,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007AE99",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007AEA7",
       "type": "Loculus",
       "isFocal": true
@@ -1339,17 +1189,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007AED1",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007AEEZ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007AEFX",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1369,22 +1209,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007AEKN",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007AELL",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007AEMJ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007AENG",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1529,11 +1354,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007AFLK",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007AFMH",
       "type": "Loculus",
       "isFocal": true
@@ -1545,16 +1365,6 @@
     },
     {
       "accession": "PP_007AFPD",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007AFQB",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007AFR9",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1604,11 +1414,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007BWNY",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BWQU",
       "type": "Loculus",
       "isFocal": true
@@ -1624,17 +1429,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007BWTN",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BWUL",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BWVJ",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1749,16 +1544,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007BXJ5",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BXK3",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BXL1",
       "type": "Loculus",
       "isFocal": true
@@ -1784,47 +1569,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007BXRR",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BXSP",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BXTM",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BXUK",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BXVH",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BXWF",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BXXD",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BXYB",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BXZ9",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1834,52 +1579,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007BY15",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BY23",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BY31",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BY4Z",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BY5X",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BY6V",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BY7T",
       "type": "Loculus",
       "isFocal": true
     },
     {
-      "accession": "PP_007BY8R",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BYAM",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BYBK",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1919,27 +1624,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007BYK2",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BYL0",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007BYMY",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BYNW",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BYPU",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1955,16 +1645,6 @@
     },
     {
       "accession": "PP_007BYSN",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BYTL",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BYUJ",
       "type": "Loculus",
       "isFocal": true
     },
@@ -1989,11 +1669,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007BYZ8",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BZ06",
       "type": "Loculus",
       "isFocal": true
@@ -2009,32 +1684,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007BZ30",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BZ4Y",
       "type": "Loculus",
       "isFocal": true
     },
     {
-      "accession": "PP_007BZ5W",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BZ6U",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BZ7S",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BZ8Q",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2084,11 +1739,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007BZJ3",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007BZK1",
       "type": "Loculus",
       "isFocal": true
@@ -2105,16 +1755,6 @@
     },
     {
       "accession": "PP_007BZNV",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BZPT",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007BZQR",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2174,16 +1814,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C4UA",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C4V8",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C4Y2",
       "type": "Loculus",
       "isFocal": true
@@ -2194,42 +1824,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C50Y",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C51W",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C52U",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C53S",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C54Q",
       "type": "Loculus",
       "isFocal": true
     },
     {
-      "accession": "PP_007C55N",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C56L",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C57J",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2254,11 +1854,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C5C8",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C5D6",
       "type": "Loculus",
       "isFocal": true
@@ -2279,17 +1874,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C5HX",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C5JV",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C5KT",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2329,22 +1914,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C5TB",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C5U9",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007C5V7",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C5W5",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2369,11 +1944,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C61V",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C62T",
       "type": "Loculus",
       "isFocal": true
@@ -2394,17 +1964,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C66K",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C67H",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C68F",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2434,22 +1994,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C6E3",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C6F1",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C6GZ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C6HW",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2489,11 +2034,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C6RE",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C6TA",
       "type": "Loculus",
       "isFocal": true
@@ -2510,16 +2050,6 @@
     },
     {
       "accession": "PP_007C6W4",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C6X2",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C6Y0",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2559,32 +2089,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C76J",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C77G",
       "type": "Loculus",
       "isFocal": true
     },
     {
-      "accession": "PP_007C78E",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C79C",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C7AA",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C7B8",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2619,22 +2129,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007C7KR",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007C7LP",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C7MM",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007C7NK",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2664,27 +2159,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007ERRR",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ERSP",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007ERTM",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ERUK",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ERVH",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2700,11 +2175,6 @@
     },
     {
       "accession": "PP_007ERYB",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ERZ9",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2729,71 +2199,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007ES4Z",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ES5X",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ES6V",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ES7T",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ES8R",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ES9P",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESAM",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESBK",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESCH",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESDF",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESED",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESFB",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESG9",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007ESH6",
       "type": "Loculus",
       "isFocal": true
@@ -2805,11 +2210,6 @@
     },
     {
       "accession": "PP_007ESK2",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESL0",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2834,37 +2234,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007ESRQ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007ESSN",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESTL",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESUJ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESVG",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESWE",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ESXC",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2885,11 +2255,6 @@
     },
     {
       "accession": "PP_007ET14",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007ET22",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2924,11 +2289,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007EVWB",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007EVX9",
       "type": "Loculus",
       "isFocal": true
@@ -2939,47 +2299,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007EVZ5",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007EW03",
       "type": "Loculus",
       "isFocal": true
     },
     {
-      "accession": "PP_007EW11",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007EW2Z",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007EW3X",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007EW4V",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007EW5T",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007EW6R",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007EW7P",
       "type": "Loculus",
       "isFocal": true
     },
@@ -2994,11 +2319,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007EWAH",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007EWBF",
       "type": "Loculus",
       "isFocal": true
@@ -3009,22 +2329,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007EWDB",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007EWE9",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007EWF7",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007EWG5",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3059,11 +2369,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007EWPQ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007EWQN",
       "type": "Loculus",
       "isFocal": true
@@ -3089,22 +2394,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007EWVC",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007EXRK",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007EXSH",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007EXTF",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3179,11 +2474,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007EY8K",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007EY9H",
       "type": "Loculus",
       "isFocal": true
@@ -3199,22 +2489,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007EYCB",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007EYD9",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007EYE7",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007EYF5",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3250,11 +2530,6 @@
     },
     {
       "accession": "PP_007JZA5",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007JZB3",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3339,22 +2614,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007JZU2",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007JZV0",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007JZWY",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007JZXW",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3384,11 +2649,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007K03G",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007K04E",
       "type": "Loculus",
       "isFocal": true
@@ -3399,22 +2659,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007K06A",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007K078",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007K086",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007K094",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3440,11 +2690,6 @@
     },
     {
       "accession": "PP_007K0EU",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007K0FS",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3500,11 +2745,6 @@
     },
     {
       "accession": "PP_007K0S3",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007K0T1",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3609,26 +2849,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007KSMM",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007KSNK",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007KSPH",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007KSQF",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007L9XG",
       "type": "Loculus",
       "isFocal": true
@@ -3670,11 +2890,6 @@
     },
     {
       "accession": "PP_007LSMK",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007LSNH",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3744,11 +2959,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007LT2P",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007LT3M",
       "type": "Loculus",
       "isFocal": true
@@ -3809,11 +3019,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007LTFX",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007LTGV",
       "type": "Loculus",
       "isFocal": true
@@ -3850,11 +3055,6 @@
     },
     {
       "accession": "PP_007LTPE",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007LTQC",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3914,22 +3114,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007LU2N",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007LU3L",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_007LU4J",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007LU5G",
       "type": "Loculus",
       "isFocal": true
     },
@@ -3964,11 +3154,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007LUC2",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007LUD0",
       "type": "Loculus",
       "isFocal": true
@@ -3979,22 +3164,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007LUFW",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007LUGU",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007LUHR",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_007LUJP",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4024,11 +3194,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007LUQB",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_007LUR9",
       "type": "Loculus",
       "isFocal": true
@@ -4044,11 +3209,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_007LVB3",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_00803PA",
       "type": "Loculus",
       "isFocal": true
@@ -4060,16 +3220,6 @@
     },
     {
       "accession": "PP_00803R6",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00803S4",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00803T2",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4119,11 +3269,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_008043G",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_008044E",
       "type": "Loculus",
       "isFocal": true
@@ -4135,11 +3280,6 @@
     },
     {
       "accession": "PP_008046A",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0080478",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4159,11 +3299,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_00804B0",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_00804CY",
       "type": "Loculus",
       "isFocal": true
@@ -4175,16 +3310,6 @@
     },
     {
       "accession": "PP_00804EU",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00804FS",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00804GQ",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4239,11 +3364,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_00804T1",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_00804UZ",
       "type": "Loculus",
       "isFocal": true
@@ -4260,11 +3380,6 @@
     },
     {
       "accession": "PP_00804XT",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00804YR",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4314,17 +3429,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0080585",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0080593",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00805A1",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4335,11 +3440,6 @@
     },
     {
       "accession": "PP_00805CX",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00805DV",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4379,22 +3479,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_00805MC",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00805NA",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_00805P8",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00805Q6",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4409,27 +3494,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_00805T0",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_00805UY",
       "type": "Loculus",
       "isFocal": true
     },
     {
-      "accession": "PP_00805VW",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_00805WU",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_00805XS",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4444,17 +3514,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_008060L",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_008061J",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_008062G",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4619,27 +3679,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081DEH",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081DFF",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081DGD",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081DHA",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081DJ8",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4674,27 +3714,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081FWG",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081FXE",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081FYC",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081FZA",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081G08",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4714,17 +3734,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081G40",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081G5Y",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081G6W",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4749,22 +3759,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081GBL",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081GCJ",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_0081GDG",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081GEE",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4784,27 +3784,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081GJ5",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081GK3",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081GL1",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_0081GMZ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081GNX",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4825,26 +3810,6 @@
     },
     {
       "accession": "PP_0081GSP",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081GTM",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081GUK",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081GVH",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081GWF",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4889,22 +3854,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081H5X",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081H6V",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081H7T",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081H8R",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4919,16 +3869,6 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081J7S",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081J8Q",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081J9N",
       "type": "Loculus",
       "isFocal": true
@@ -4939,17 +3879,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081JBJ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081JCG",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081JDE",
       "type": "Loculus",
       "isFocal": true
     },
@@ -4969,17 +3899,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081JH5",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081JJ3",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081JK1",
       "type": "Loculus",
       "isFocal": true
     },
@@ -5009,22 +3929,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081JRP",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081JSM",
       "type": "Loculus",
       "isFocal": true
     },
     {
       "accession": "PP_0081JTK",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081JUH",
       "type": "Loculus",
       "isFocal": true
     },
@@ -5044,22 +3954,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081JY9",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081JZ7",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0081K05",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081K13",
       "type": "Loculus",
       "isFocal": true
     },
@@ -5069,27 +3964,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0081WXZ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081WYX",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0081WZV",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0082BPY",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0082BQW",
       "type": "Loculus",
       "isFocal": true
     },
@@ -5099,27 +3974,7 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0082BSS",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0082BTQ",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0082BUN",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_0082BVL",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
-      "accession": "PP_0082BWJ",
       "type": "Loculus",
       "isFocal": true
     },
@@ -5134,37 +3989,12 @@
       "isFocal": true
     },
     {
-      "accession": "PP_0082CCL",
-      "type": "Loculus",
-      "isFocal": true
-    },
-    {
       "accession": "PP_006X5RB",
       "type": "Loculus",
       "isFocal": false
     },
     {
       "accession": "PP_006X5YX",
-      "type": "Loculus",
-      "isFocal": false
-    },
-    {
-      "accession": "PP_006X5ZV",
-      "type": "Loculus",
-      "isFocal": false
-    },
-    {
-      "accession": "PP_006X60T",
-      "type": "Loculus",
-      "isFocal": false
-    },
-    {
-      "accession": "PP_006X61R",
-      "type": "Loculus",
-      "isFocal": false
-    },
-    {
-      "accession": "PP_006X62P",
       "type": "Loculus",
       "isFocal": false
     },
@@ -5255,11 +4085,6 @@
     },
     {
       "accession": "PP_006X6PE",
-      "type": "Loculus",
-      "isFocal": false
-    },
-    {
-      "accession": "PP_006X6QC",
       "type": "Loculus",
       "isFocal": false
     },
